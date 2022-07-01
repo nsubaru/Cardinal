@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -12,5 +12,93 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ammintrin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)base.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.NTAPI.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cfg.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)concurrencysal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)dlgs.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DriverSpecs.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)emmintrin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)guiddef.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)imminitrin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)interlocked.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)InterlockedAPi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)intrin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)intrin0.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)lsalookup.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mmintrin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mountdev.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mountmgr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)nmmintrin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntbcd.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntdbg.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntexapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntgdi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntintsafe.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntioapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntkeapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntldr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntlpcapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntmisc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntmmapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntnls.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntobapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntpebteb.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntpfapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntpnpapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntpoapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntpsapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntregapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntrtl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntsam.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntseapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntsmss.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)nttmapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)nttp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntwow64.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntxcapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ntzwapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)phnt.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)phnt_ntdef.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)phnt_windows.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pmmintrin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sdkddkver.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sdv_driverspecs.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)smmintrin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)specstrings.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)specstrings_strict.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)specstrings_undef.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)subprocesstag.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)tmmintrin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)winapifamily.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)winpackagefamily.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)winres.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)winresrc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)winsta.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)winver.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wmmintrin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)xmmintrin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)zmminitrin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)commctrl.rh" />
+    <None Include="$(MSBuildThisFileDirectory)dde.rh" />
+    <None Include="$(MSBuildThisFileDirectory)ntdll.def" />
+    <None Include="$(MSBuildThisFileDirectory)ntdll.exp" />
+    <None Include="$(MSBuildThisFileDirectory)winnt.rh" />
+    <None Include="$(MSBuildThisFileDirectory)winuser.rh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="$(MSBuildThisFileDirectory)ehvecctr.obj" />
+    <Object Include="$(MSBuildThisFileDirectory)ehveccvb.obj" />
+    <Object Include="$(MSBuildThisFileDirectory)ehvecdtr.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="$(MSBuildThisFileDirectory)ntdll.lib" />
   </ItemGroup>
 </Project>

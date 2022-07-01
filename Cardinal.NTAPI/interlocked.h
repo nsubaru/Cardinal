@@ -1,0 +1,141 @@
+#pragma once
+
+#include "intrin.h"
+#include "ntintsafe.h"
+
+#pragma intrinsic(_BitScanForward)
+#pragma intrinsic(_BitScanReverse)
+#pragma intrinsic(_BitScanForward64)
+#pragma intrinsic(_BitScanReverse64)
+
+//
+// Interlocked intrinsic functions.
+//
+
+#define InterlockedIncrement16 _InterlockedIncrement16
+#define InterlockedIncrementAcquire16 _InterlockedIncrement16
+#define InterlockedIncrementRelease16 _InterlockedIncrement16
+#define InterlockedIncrementNoFence16 _InterlockedIncrement16
+#define InterlockedDecrement16 _InterlockedDecrement16
+#define InterlockedDecrementAcquire16 _InterlockedDecrement16
+#define InterlockedDecrementRelease16 _InterlockedDecrement16
+#define InterlockedDecrementNoFence16 _InterlockedDecrement16
+#define InterlockedCompareExchange16 _InterlockedCompareExchange16
+#define InterlockedCompareExchangeAcquire16 _InterlockedCompareExchange16
+#define InterlockedCompareExchangeRelease16 _InterlockedCompareExchange16
+#define InterlockedCompareExchangeNoFence16 _InterlockedCompareExchange16
+
+#define InterlockedAnd _InterlockedAnd
+#define InterlockedAndAcquire _InterlockedAnd
+#define InterlockedAndRelease _InterlockedAnd
+#define InterlockedAndNoFence _InterlockedAnd
+#define InterlockedOr _InterlockedOr
+#define InterlockedOrAcquire _InterlockedOr
+#define InterlockedOrRelease _InterlockedOr
+#define InterlockedOrNoFence _InterlockedOr
+#define InterlockedXor _InterlockedXor
+#define InterlockedXorAcquire _InterlockedXor
+#define InterlockedXorRelease _InterlockedXor
+#define InterlockedXorNoFence _InterlockedXor
+#define InterlockedIncrement _InterlockedIncrement
+#define InterlockedIncrementAcquire _InterlockedIncrement
+#define InterlockedIncrementRelease _InterlockedIncrement
+#define InterlockedIncrementNoFence _InterlockedIncrement
+#define InterlockedDecrement _InterlockedDecrement
+#define InterlockedDecrementAcquire _InterlockedDecrement
+#define InterlockedDecrementRelease _InterlockedDecrement
+#define InterlockedDecrementNoFence _InterlockedDecrement
+#define InterlockedAdd _InlineInterlockedAdd
+#define InterlockedAddAcquire _InlineInterlockedAdd
+#define InterlockedAddRelease _InlineInterlockedAdd
+#define InterlockedAddNoFence _InlineInterlockedAdd
+#define InterlockedExchange _InterlockedExchange
+#define InterlockedExchangeAcquire _InterlockedExchange
+#define InterlockedExchangeNoFence _InterlockedExchange
+#define InterlockedExchangeAdd _InterlockedExchangeAdd
+#define InterlockedExchangeAddAcquire _InterlockedExchangeAdd
+#define InterlockedExchangeAddRelease _InterlockedExchangeAdd
+#define InterlockedExchangeAddNoFence _InterlockedExchangeAdd
+#define InterlockedCompareExchange _InterlockedCompareExchange
+#define InterlockedCompareExchangeAcquire _InterlockedCompareExchange
+#define InterlockedCompareExchangeRelease _InterlockedCompareExchange
+#define InterlockedCompareExchangeNoFence _InterlockedCompareExchange
+
+#define InterlockedAnd64 _InterlockedAnd64
+#define InterlockedAnd64Acquire _InterlockedAnd64
+#define InterlockedAnd64Release _InterlockedAnd64
+#define InterlockedAnd64NoFence _InterlockedAnd64
+#define InterlockedAndAffinity InterlockedAnd64
+#define InterlockedOr64 _InterlockedOr64
+#define InterlockedOr64Acquire _InterlockedOr64
+#define InterlockedOr64Release _InterlockedOr64
+#define InterlockedOr64NoFence _InterlockedOr64
+#define InterlockedOrAffinity InterlockedOr64
+#define InterlockedXor64 _InterlockedXor64
+#define InterlockedXor64Acquire _InterlockedXor64
+#define InterlockedXor64Release _InterlockedXor64
+#define InterlockedXor64NoFence _InterlockedXor64
+#define InterlockedIncrement64 _InterlockedIncrement64
+#define InterlockedIncrementAcquire64 _InterlockedIncrement64
+#define InterlockedIncrementRelease64 _InterlockedIncrement64
+#define InterlockedIncrementNoFence64 _InterlockedIncrement64
+#define InterlockedDecrement64 _InterlockedDecrement64
+#define InterlockedDecrementAcquire64 _InterlockedDecrement64
+#define InterlockedDecrementRelease64 _InterlockedDecrement64
+#define InterlockedDecrementNoFence64 _InterlockedDecrement64
+#define InterlockedAdd64 _InlineInterlockedAdd64
+#define InterlockedAddAcquire64 _InlineInterlockedAdd64
+#define InterlockedAddRelease64 _InlineInterlockedAdd64
+#define InterlockedAddNoFence64 _InlineInterlockedAdd64
+#define InterlockedExchange64 _InterlockedExchange64
+#define InterlockedExchangeAcquire64 InterlockedExchange64
+#define InterlockedExchangeNoFence64 InterlockedExchange64
+#define InterlockedExchangeAdd64 _InterlockedExchangeAdd64
+#define InterlockedExchangeAddAcquire64 _InterlockedExchangeAdd64
+#define InterlockedExchangeAddRelease64 _InterlockedExchangeAdd64
+#define InterlockedExchangeAddNoFence64 _InterlockedExchangeAdd64
+#define InterlockedCompareExchange64 _InterlockedCompareExchange64
+#define InterlockedCompareExchangeAcquire64 InterlockedCompareExchange64
+#define InterlockedCompareExchangeRelease64 InterlockedCompareExchange64
+#define InterlockedCompareExchangeNoFence64 InterlockedCompareExchange64
+#define InterlockedCompareExchange128 _InterlockedCompareExchange128
+
+#define InterlockedExchangePointer _InterlockedExchangePointer
+#define InterlockedExchangePointerNoFence _InterlockedExchangePointer
+#define InterlockedExchangePointerAcquire _InterlockedExchangePointer
+#define InterlockedCompareExchangePointer _InterlockedCompareExchangePointer
+#define InterlockedCompareExchangePointerAcquire _InterlockedCompareExchangePointer
+#define InterlockedCompareExchangePointerRelease _InterlockedCompareExchangePointer
+#define InterlockedCompareExchangePointerNoFence _InterlockedCompareExchangePointer
+
+#define InterlockedExchangeAddSizeT(a, b) InterlockedExchangeAdd64((LONG64 *)a, b)
+#define InterlockedExchangeAddSizeTAcquire(a, b) InterlockedExchangeAdd64((LONG64 *)a, b)
+#define InterlockedExchangeAddSizeTNoFence(a, b) InterlockedExchangeAdd64((LONG64 *)a, b)
+#define InterlockedIncrementSizeT(a) InterlockedIncrement64((LONG64 *)a)
+#define InterlockedIncrementSizeTNoFence(a) InterlockedIncrement64((LONG64 *)a)
+#define InterlockedDecrementSizeT(a) InterlockedDecrement64((LONG64 *)a)
+#define InterlockedDecrementSizeTNoFence(a) InterlockedDecrement64((LONG64 *)a)
+
+#define BitTest64 _bittest64
+#define BitTestAndComplement64 _bittestandcomplement64
+#define BitTestAndSet64 _bittestandset64
+#define BitTestAndReset64 _bittestandreset64
+#define InterlockedBitTestAndSet64 _interlockedbittestandset64
+#define InterlockedBitTestAndSet64Acquire _interlockedbittestandset64
+#define InterlockedBitTestAndSet64Release _interlockedbittestandset64
+#define InterlockedBitTestAndSet64NoFence _interlockedbittestandset64
+#define InterlockedBitTestAndReset64 _interlockedbittestandreset64
+#define InterlockedBitTestAndReset64Acquire _interlockedbittestandreset64
+#define InterlockedBitTestAndReset64Release _interlockedbittestandreset64
+#define InterlockedBitTestAndReset64NoFence _interlockedbittestandreset64
+
+__forceinline
+LONG64
+_InlineInterlockedAdd64(
+	_Inout_ _Interlocked_operand_ LONG64 volatile* Addend,
+	_In_ LONG64 Value
+)
+
+{
+	return InterlockedExchangeAdd64(Addend, Value) + Value;
+}
