@@ -7,7 +7,7 @@ import :Types;
 import :Interlocked;
 import :TypeTraits;
 
-namespace Cardinal::Core
+export namespace Cardinal::Core
 {
     /// <summary>
     /// Atomic counter. It is using the "InterlockedXXX" functions

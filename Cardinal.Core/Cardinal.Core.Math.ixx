@@ -74,6 +74,18 @@ export namespace Cardinal::Core::Math
 	constexpr UInt64 Max() { return 0xFFFFFFFFFFFFFFFFui64; };
 
 	/// <summary>
+	/// Maximal value of UChar
+	/// </summary>
+	template<>
+	constexpr UChar Max() { return 0xFFFFui64; };
+
+	/// <summary>
+	/// Maximal value of AChar
+	/// </summary>
+	template<>
+	constexpr AChar Max() { return 0xFFui64; };
+
+	/// <summary>
 	/// Minimal type value
 	/// </summary>
 	template<typename T>
@@ -138,6 +150,18 @@ export namespace Cardinal::Core::Math
 	/// </summary>
 	template<>
 	constexpr UInt64 Min() { return 0x0000000000000000ui64; };
+
+	/// <summary>
+	/// Minimal value of UChar
+	/// </summary>
+	template<>
+	constexpr UChar Min() { return 0x0000ui64; };
+
+	/// <summary>
+	/// Minimal value of AChar
+	/// </summary>
+	template<>
+	constexpr AChar Min() { return 0x00ui64; };
 
 	/// <summary>
 	/// Number of digits in numeric

@@ -14,3 +14,4 @@ export import :TypeTraits.Decay;
 export import :TypeTraits.Function;
 export import :TypeTraits.Lambda;
 export import :TypeTraits.Invockable;
+export import :TypeTraits.Utils;

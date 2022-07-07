@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="KMS">
+      <UniqueIdentifier>{5b15f5a2-bdbc-48d9-a639-ace6ee2f9930}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{5fdeed78-9938-4499-a369-b15881a150f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threading">
+      <UniqueIdentifier>{25bd222a-1a06-478a-831d-d4d3d9528e98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KMS\Keyboard">
+      <UniqueIdentifier>{71b9cb34-6b20-4ea2-bcd7-f02c9ed3196e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KMS\Keyboard\LowLevel">
+      <UniqueIdentifier>{63c44df0-614f-40e3-b70b-4894a57f144b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{f164898f-ec8f-4976-b2d5-b2c5ecfe7a8b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Base.ixx">
+      <Filter>KMS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Memory.ixx">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Base.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Memory.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Internal.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.LockPrimitives.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Keyboard.Base.ixx">
+      <Filter>KMS\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Keyboard.VkCodes.ixx">
+      <Filter>KMS\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Keyboard.Code.ixx">
+      <Filter>KMS\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Keyboard.KeyboardLayout.ixx">
+      <Filter>KMS\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Keyboard.Keyboard.ixx">
+      <Filter>KMS\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Keyboard.ixx">
+      <Filter>KMS\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Keyboard.Keyboard.cpp">
+      <Filter>KMS\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Console.ixx">
+      <Filter>KMS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Shell.ixx">
+      <Filter>KMS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.KMS.ixx">
+      <Filter>KMS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Console.cpp">
+      <Filter>KMS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Shell.cpp">
+      <Filter>KMS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Debug.ixx">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Debug.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)EntryPoint.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)EntryPoint.ixx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Keyboard.LowLevel.Base.h">
+      <Filter>KMS\Keyboard\LowLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Keyboard.LowLevel.KeyTable.h">
+      <Filter>KMS\Keyboard\LowLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Keyboard.LowLevel.VirtualKeys.h">
+      <Filter>KMS\Keyboard\LowLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.KMS.Keyboard.LowLevel.h">
+      <Filter>KMS\Keyboard\LowLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.SEH.h" />
+  </ItemGroup>
+</Project>

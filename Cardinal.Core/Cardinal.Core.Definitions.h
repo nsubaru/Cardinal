@@ -352,24 +352,24 @@ a61, a62, a63, a64, a65, a66, ...) a66
 #pragma warning(pop)
 
 /// <summary>
-/// If "RefCountClass" is inserted into a class body in ".h" file, the given class automatically got reference count
+/// If "RefCountClass" is inserted into a class body, the given class automatically got reference count
 /// </summary>
 /// <param name = "ClassName">Class name</param>
 /// <param name = "This">A pointer in which is inserted a copy data, must contain a variable "RefCount" of "RefCountT" type</param>
 /// <remarks>
 /// "Define" adds a constructor, addition operator, moving operator and destructor
 /// </remarks>
-#define RefCountClass(ClassName, This) \
-/**<summary>Copying constructor</summary><param name = "Orig">Original</param>*/ \
-__forceinline ClassName(const ClassName & Orig) :This(Orig.This) { if(This != nullptr) ++This->RefCount; }; \
-/**<summary>Moving constructor</summary><param name = "Orig">Original</param>*/ \
-__forceinline ClassName(ClassName && From) : This(From.This) { From.This = nullptr; }; \
-/**<summary>Copying operator</summary><param name = "Orig">Original</param><returns>Reference to the current object</returns>*/ \
-__forceinline ClassName & operator=(const ClassName & Orig){this->~ClassName(); this->ClassName::ClassName(Orig); return *this; }; \
-/**<summary>Moving operator</summary><param name = "Orig">Original</param><returns>Reference to the current object</returns>*/ \
-__forceinline ClassName & operator=(ClassName && From){if(this == &From) return *this; this->~ClassName(); this->ClassName::ClassName(Rem::Core::MoveRValue(From)); return *this; }; \
-/**<summary>Checks if objects are references on same data objects</summary>*/\
-/**<returns>True if objects are references on same data objects</returns>*/\
-__forceinline bool IsSameAs(const ClassName& other) const { return this->This == other.This; } \
-/**<summary>Destructor</summary>*/ \
+#define RefCountClass(ClassName, This)                                                                                                                                                    \
+/**<summary>Copying constructor</summary><param name = "Orig">Original</param>*/                                                                                                          \
+__forceinline ClassName(const ClassName & Orig) :This(Orig.This) { if(This != nullptr) ++This->RefCount; };                                                                               \
+/**<summary>Moving constructor</summary><param name = "Orig">Original</param>*/                                                                                                           \
+__forceinline ClassName(ClassName && From) : This(From.This) { From.This = nullptr; };                                                                                                    \
+/**<summary>Copying operator</summary><param name = "Orig">Original</param><returns>Reference to the current object</returns>*/                                                           \
+__forceinline ClassName & operator=(const ClassName & Orig){this->~ClassName(); this->ClassName::ClassName(Orig); return *this; };                                                        \
+/**<summary>Moving operator</summary><param name = "Orig">Original</param><returns>Reference to the current object</returns>*/                                                            \
+__forceinline ClassName & operator=(ClassName && From){if(this == &From) return *this; this->~ClassName(); this->ClassName::ClassName(Cardinal::Core::MoveRValue(From)); return *this; }; \
+/**<summary>Checks if objects are references on same data objects</summary>*/                                                                                                             \
+/**<returns>True if objects are references on same data objects</returns>*/                                                                                                               \
+__forceinline bool IsSameAs(const ClassName& other) const { return this->This == other.This; }                                                                                            \
+/**<summary>Destructor</summary>*/                                                                                                                                                        \
 __forceinline virtual ~ClassName(){if (This != nullptr) {if (This->RefCount.DecrementAndCheckIsZero()) { this->Dispose(); delete This; } This = nullptr;}}

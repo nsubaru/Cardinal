@@ -5,6 +5,6 @@
 
 #pragma comment(lib, "ntdll.lib")
 
-#include "ntapi.h"
+#include "Cardinal.NTAPI.h"
 
 #define _RTTI_RELATIVE_TYPEINFO 1
