@@ -12,10 +12,6 @@
 
 #pragma once
 
-#ifndef REM_RT_ALLOW_INTERNAL_NT_API
-#error "Internal NT API not allowed"
-#endif // !REM_RT_ALLOW_INTERNAL_NT_API
-
 #if !defined(_M_IX86) && !defined(_M_X64)
 #error This header is specific to X86 and X64 targets
 #endif

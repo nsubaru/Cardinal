@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -12,5 +12,56 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.BitOperations.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Bytes.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Character.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Character.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Comparing.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Concepts.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Concepts.Comparing.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Concepts.Invockable.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Concepts.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Concepts.Types.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.CStr.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.EnumFlags.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.IClonable.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.IDisposable.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Interlocked.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Internals.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Internals.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Math.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.RefCountT.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Swap.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeName.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Types.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.Comparing.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.CVModificators.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.Decay.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.Function.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.Invockable.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.Lambda.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.LogicOperations.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.NumericConverter.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.Pack.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.Pointer.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.Reference.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.TypeClasification.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.TypeConvertions.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.TypeTraits.Utils.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.Utils.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Core.UUID.ixx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Core.Definitions.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Core.NTAPI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Core.RefCountT.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Core.UUID.natvis" />
   </ItemGroup>
 </Project>

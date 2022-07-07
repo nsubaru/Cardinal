@@ -1,0 +1,21 @@
+export module Cardinal.Core;
+
+export import :Types;
+export import :Math;
+export import :BitOperations;
+export import :Bytes;
+export import :Comparing;
+export import :Character;
+export import :CStr;
+export import :UUID;
+export import :TypeTraits;
+export import :Concepts;
+export import :Swap;
+export import :UUID;
+export import :Utils;
+export import :Interlocked;
+export import :IDisposable;
+export import :IClonable;
+export import :EnumFlags;
+export import :RefCountT;
+export import :TypeName;

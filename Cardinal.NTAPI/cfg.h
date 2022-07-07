@@ -21,9 +21,6 @@ Revision History:
 #if _MSC_VER > 1000
 #pragma once
 #endif
-#ifndef REM_RT_ALLOW_INTERNAL_NT_API
-#error "Internal NT API not allowed"
-#endif // !REM_RT_ALLOW_INTERNAL_NT_API
 #include "winapifamily.h"
 
 #ifdef _MSC_VER
