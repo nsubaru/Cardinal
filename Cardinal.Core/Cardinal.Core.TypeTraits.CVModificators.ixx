@@ -3,7 +3,7 @@ export module Cardinal.Core:TypeTraits.CVModificators;
 import :TypeTraits.Base;
 import :TypeTraits.Reference;
 
-export namespace Cardinal::Core::TypeTraits
+export namespace Cardinal::TypeTraits
 {
 #pragma region Remove CV
     /// <summary>

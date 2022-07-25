@@ -42,64 +42,64 @@ void Cardinal::KMS::Keyboard::Keyboard::UpdateControlKeys(VkCodes code, bool isP
 	case VkCodes::LSHIFT:
 	case VkCodes::RSHIFT:
 		if (isPressed) {
-			Core::Bits::BitSet(This->Modificators, (Core::SizeT)EModificators::SHIFT);
+			Bits::BitSet(This->Modificators, (SizeT)EModificators::SHIFT);
 		}
 		else {
-			Core::Bits::BitReset(This->Modificators, (Core::SizeT)EModificators::SHIFT);
+			Bits::BitReset(This->Modificators, (SizeT)EModificators::SHIFT);
 		}
 		break;
 
 	case VkCodes::CONTROL:
 		if (isPressed) {
-			Core::Bits::BitSet(This->Modificators, (Core::SizeT)EModificators::CTRL);
+			Bits::BitSet(This->Modificators, (SizeT)EModificators::CTRL);
 		}
 		else {
-			Core::Bits::BitReset(This->Modificators, (Core::SizeT)EModificators::CTRL);
+			Bits::BitReset(This->Modificators, (SizeT)EModificators::CTRL);
 		}
 		break;
 
 	case VkCodes::RCONTROL:
 		if (isPressed) {
-			Core::Bits::BitSet(This->Modificators, (Core::SizeT)EModificators::RCTRL);
+			Bits::BitSet(This->Modificators, (SizeT)EModificators::RCTRL);
 		}
 		else {
-			Core::Bits::BitReset(This->Modificators, (Core::SizeT)EModificators::RCTRL);
+			Bits::BitReset(This->Modificators, (SizeT)EModificators::RCTRL);
 		}
 		break;
 
 	case VkCodes::LMENU:
 		if (isPressed) {
-			Core::Bits::BitSet(This->Modificators, (Core::SizeT)EModificators::LALT);
+			Bits::BitSet(This->Modificators, (SizeT)EModificators::LALT);
 		}
 		else {
-			Core::Bits::BitReset(This->Modificators, (Core::SizeT)EModificators::LALT);
+			Bits::BitReset(This->Modificators, (SizeT)EModificators::LALT);
 		}
 		break;
 
 	case VkCodes::RMENU:
 		if (isPressed) {
-			Core::Bits::BitSet(This->Modificators, (Core::SizeT)EModificators::RALT);
+			Bits::BitSet(This->Modificators, (SizeT)EModificators::RALT);
 		}
 		else {
-			Core::Bits::BitReset(This->Modificators, (Core::SizeT)EModificators::RALT);
+			Bits::BitReset(This->Modificators, (SizeT)EModificators::RALT);
 		}
 		break;
 
 	case VkCodes::CAPITAL:
 		if (isPressed) {
-			Core::Bits::FlipBit(This->States, (Core::SizeT)EStateCodes::CAPSLOCK);
+			Bits::FlipBit(This->States, (SizeT)EStateCodes::CAPSLOCK);
 		}
 		break;
 
 	case VkCodes::NUMLOCK:
 		if (isPressed) {
-			Core::Bits::FlipBit(This->States, (Core::SizeT)EStateCodes::NUMLOCK);
+			Bits::FlipBit(This->States, (SizeT)EStateCodes::NUMLOCK);
 		}
 		break;
 
 	case VkCodes::SCROLL:
 		if (isPressed) {
-			Core::Bits::FlipBit(This->States, (Core::SizeT)EStateCodes::SCROLLOCK);
+			Bits::FlipBit(This->States, (SizeT)EStateCodes::SCROLLOCK);
 		}
 		break;
 
@@ -151,7 +151,7 @@ Cardinal::KMS::Keyboard::VkCodes Cardinal::KMS::Keyboard::Keyboard::GetVkCode(bo
 	PKEYBOARD_INPUT_DATA InputData = (PKEYBOARD_INPUT_DATA)pInputData;
 
 	if (!(isEnchancedState)) {
-		if (Core::Bits::BitCheck(This->States, (int)EStateCodes::NUMLOCK) &&
+		if (Bits::BitCheck(This->States, (int)EStateCodes::NUMLOCK) &&
 			KeyTableNumlock[InputData->MakeCode & 0x7f]) {
 			return (VkCodes)KeyTableNumlock[InputData->MakeCode & 0x7f];
 		}
@@ -163,8 +163,8 @@ Cardinal::KMS::Keyboard::VkCodes Cardinal::KMS::Keyboard::Keyboard::GetVkCode(bo
 void Cardinal::KMS::Keyboard::Keyboard::RefreshLayout(VkCodes code)
 {
 	if (
-		Core::Bits::BitCheck(This->Modificators, (Core::SizeT)EModificators::SHIFT) &&
-		Core::Bits::BitCheck(This->Modificators, (Core::SizeT)EModificators::LALT)
+		Bits::BitCheck(This->Modificators, (SizeT)EModificators::SHIFT) &&
+		Bits::BitCheck(This->Modificators, (SizeT)EModificators::LALT)
 		) {
 		if (code == VkCodes::LMENU || code == VkCodes::SHIFT || code == VkCodes::LSHIFT || code == VkCodes::RSHIFT) {
 			This->layoutI++;
@@ -199,14 +199,14 @@ Cardinal::KMS::Keyboard::Keyboard::Keyboard() : This(new Data())
 	NtSetEvent(This->hPressAnyKeyEvent, NULL);
 }
 
-Cardinal::Core::Char Cardinal::KMS::Keyboard::Keyboard::ConvertCodeCharacter(Code& code)
+Cardinal::Char Cardinal::KMS::Keyboard::Keyboard::ConvertCodeCharacter(Code& code)
 {
 	bool isHigh = false;
-	if (Core::Bits::BitCheck(code.State, (int)EStateCodes::CAPSLOCK)) {
+	if (Bits::BitCheck(code.State, (int)EStateCodes::CAPSLOCK)) {
 		isHigh = !isHigh;
 	}
 
-	if (Core::Bits::BitCheck(code.Modificator, (int)EModificators::SHIFT)) {
+	if (Bits::BitCheck(code.Modificator, (int)EModificators::SHIFT)) {
 		isHigh = !isHigh;
 	}
 

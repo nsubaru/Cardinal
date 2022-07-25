@@ -2,7 +2,7 @@ export module Cardinal.Core:TypeTraits.Function;
 
 import :TypeTraits.Base;
 
-export namespace Cardinal::Core::TypeTraits 
+export namespace Cardinal::TypeTraits 
 {
     /// <summary>
     /// Compile-time check if this type is a function

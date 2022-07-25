@@ -4,7 +4,7 @@ import :TypeTraits.Base;
 import :TypeTraits.Pack;
 import :TypeTraits.LogicOperations;
 
-namespace Cardinal::Core::TypeTraits::DetailsLambda
+namespace Cardinal::TypeTraits::DetailsLambda
 {
     /// <summary>
     /// Defining lambda types
@@ -71,7 +71,7 @@ namespace Cardinal::Core::TypeTraits::DetailsLambda
     };
 }
 
-export namespace Cardinal::Core::TypeTraits
+export namespace Cardinal::TypeTraits
 {
     /// <summary>
     /// Defining lambda types

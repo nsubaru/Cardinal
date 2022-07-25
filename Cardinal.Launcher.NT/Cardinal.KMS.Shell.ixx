@@ -31,31 +31,31 @@ export namespace Cardinal::KMS
 		/// <summary>
 		/// Generic IO named pipe name
 		/// </summary>
-		static constexpr Core::Char GenericIoPipeName[] =  L"\\Device\\NamedPipe\\" __TOSTRING(CARDINAL_NT_LAUNCHER_DEFAULT_PIPE_NAME);
+		static constexpr Char GenericIoPipeName[] =  L"\\Device\\NamedPipe\\" __TOSTRING(CARDINAL_NT_LAUNCHER_DEFAULT_PIPE_NAME);
 
 		/// <summary>
 		/// Calculation time in seconds
 		/// </summary>
-		static constexpr Core::Int64 SecondIntNtTime = 1000LL * 10000LL;
+		static constexpr Int64 SecondIntNtTime = 1000LL * 10000LL;
 
 	private:
 		struct IO {
-			Core::Handle hGenericIoPipe;
-			Core::Handle hGenericIoPipeEventWrite;
-			Core::Handle hGenericIoPipeEventRead;
+			Handle hGenericIoPipe;
+			Handle hGenericIoPipeEventWrite;
+			Handle hGenericIoPipeEventRead;
 		};
 
 		struct Data {
 			IO io;
-			Core::Handle hKernel;
-			Core::Int32 status;
+			Handle hKernel;
+			Int32 status;
 
 			volatile API::ECommandType commandType;
 			volatile API::EDatagramType datagramType;
 			volatile API::ELogLevel logLevel;
 			volatile API::EMessageType messageType;
 
-			Core::RefCountT RefCount;
+			RefCountT RefCount;
 
 			Data() :
 				io({ nullptr, nullptr }),
@@ -78,7 +78,7 @@ export namespace Cardinal::KMS
 	private:
 		IO CreateIoPipe();
 
-		void Sleep(Core::Int64 seconds);
+		void Sleep(Int64 seconds);
 
 		void ProccesNewMessageType(API::MessageHeader& dest);
 
@@ -94,7 +94,7 @@ export namespace Cardinal::KMS
 		/// Waiting for connection constructor
 		/// </summary>
 		/// <param name="timeoutInMiliseconds">Timeout in milliseconds</param>
-		bool WaitForConnection(Core::Int64 timeoutInMiliseconds);
+		bool WaitForConnection(Int64 timeoutInMiliseconds);
 
 		/// <summary>
 		/// Reading constructor
@@ -127,30 +127,30 @@ export namespace Cardinal::KMS
 		/// Returns last stored command type
 		/// </summary>
 		/// <returns>Last stored command type</returns>
-		API::ECommandType GetLastCommandType() { return Core::Interlocked::Load(This->commandType); }
+		API::ECommandType GetLastCommandType() { return Interlocked::Load(This->commandType); }
 
 		/// <summary>
 		/// Returns last stored datagram type
 		/// </summary>
 		/// <returns>Last stored datagram type</returns>
-		API::EDatagramType GetLastDatagramType() { return Core::Interlocked::Load(This->datagramType); }
+		API::EDatagramType GetLastDatagramType() { return Interlocked::Load(This->datagramType); }
 
 		/// <summary>
 		/// Returns last stored log level
 		/// </summary>
 		/// <returns>Last stored log level</returns>
-		API::ELogLevel GetLastLogLevel() { return Core::Interlocked::Load(This->logLevel); }
+		API::ELogLevel GetLastLogLevel() { return Interlocked::Load(This->logLevel); }
 
 		/// <summary>
 		/// Returns last stored message type
 		/// </summary>
 		/// <returns>Last stored message type</returns>
-		API::EMessageType GetLastMessageType() { return (API::EMessageType)Core::Interlocked::Load(This->messageType); }
+		API::EMessageType GetLastMessageType() { return (API::EMessageType)Interlocked::Load(This->messageType); }
 
 		/// <summary>
 		/// Operation status getting constructor
 		/// </summary>
-		Core::Int32 GetStatus() const { return This->status; }
+		Int32 GetStatus() const { return This->status; }
 
 	public:
 		RefCountClass(Shell, This);

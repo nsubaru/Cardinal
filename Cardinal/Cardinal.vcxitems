@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -12,5 +12,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Memory.DataSizeT.ixx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.h" />
   </ItemGroup>
 </Project>

@@ -2,7 +2,7 @@ export module Cardinal.Core:TypeTraits.NumericConverter;
 
 import :TypeTraits.Base;
 
-export namespace Cardinal::Core::TypeTraits
+export namespace Cardinal::TypeTraits
 {
 #pragma region Signed type converter helpers
     // Returns signed analog of type "number"

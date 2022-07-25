@@ -3,7 +3,7 @@ export module Cardinal.Core:Concepts.Base;
 export import :Types;
 export import :TypeTraits;
 
-export namespace Cardinal::Core::Concepts
+export namespace Cardinal::Concepts
 {
 	/// <summary>
 	/// Checking if "U" type inherits by "T" type

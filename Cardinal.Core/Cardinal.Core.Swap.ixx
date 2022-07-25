@@ -3,7 +3,7 @@ export module Cardinal.Core:Swap;
 import :Types;
 import :TypeTraits;
 
-export namespace Cardinal::Core
+export namespace Cardinal
 {
 	/// <summary>
 	/// Variables values swapping

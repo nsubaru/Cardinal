@@ -3,7 +3,7 @@ export module Cardinal.Core:TypeTraits.Utils;
 import :TypeTraits.Base;
 import :TypeTraits.Reference;
 
-export namespace Cardinal::Core::TypeTraits
+export namespace Cardinal::TypeTraits
 {
 	/// <summary>
 	/// Creating virtual variable (is needed for pattern matching by types)
@@ -12,7 +12,7 @@ export namespace Cardinal::Core::TypeTraits
 	AddRvalueReferenceV<TTy> Declval() noexcept { return {}; }
 }
 
-export namespace Cardinal::Core
+export namespace Cardinal
 {
 	/// <summary>
 	/// Object moving function (rvalue transitioning)

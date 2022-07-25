@@ -4,7 +4,7 @@ import :TypeTraits.Base;
 import :TypeTraits.NumericConverter;
 import :TypeTraits.LogicOperations;
 
-export namespace Cardinal::Core::TypeTraits
+export namespace Cardinal::TypeTraits
 {
     /// <summary>
     /// Returns "true" if type is "POD"

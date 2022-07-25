@@ -8,7 +8,7 @@ export namespace Cardinal::KMS::Keyboard
 	/// <summary>
 	/// Invalid character code
 	/// </summary>
-	constexpr Core::Char INV = Core::Math::Max<Core::Char>();
+	constexpr Char INV = Math::Max<Char>();
 
 	/// <summary>
 	/// Possible key modificators
@@ -34,11 +34,11 @@ export namespace Cardinal::KMS::Keyboard
 	/// Keyboard key information
 	/// </summary>
 	struct Code {
-		Core::SizeT KbdCode;
-		Core::SizeT KbdFlags;
+		SizeT KbdCode;
+		SizeT KbdFlags;
 		VkCodes VkCode;
-		Core::SizeT Modificator;
-		Core::SizeT State;
+		SizeT Modificator;
+		SizeT State;
 		bool isPressed;
 	};
 
@@ -47,9 +47,9 @@ export namespace Cardinal::KMS::Keyboard
 	/// </summary>
 	struct KeyboardLayout {
 		VkCodes code;
-		Core::Char engLow;
-		Core::Char engHigh;
-		Core::Char ukrLow;
-		Core::Char ukrHigh;
+		Char engLow;
+		Char engHigh;
+		Char ukrLow;
+		Char ukrHigh;
 	};
 }

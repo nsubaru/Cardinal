@@ -4,13 +4,13 @@ import Cardinal.Core;
 
 namespace Cardinal::Internals
 {
-	void PrintLineWithHexImpl(const wchar_t* msg, Core::Int64 code, int mode);
+	void PrintLineWithHexImpl(const wchar_t* msg, Int64 code, int mode);
 }
 
 namespace Cardinal
 {
-	template<Core::SizeT N>
-	void DebugPrint(Core::StaticTextRef<N> msg, Core::Int64 ntStatusCode) {
+	template<SizeT N>
+	void DebugPrint(StaticTextRef<N> msg, Int64 ntStatusCode) {
 		Internals::PrintLineWithHexImpl(msg, ntStatusCode, 16);
 	}
 }

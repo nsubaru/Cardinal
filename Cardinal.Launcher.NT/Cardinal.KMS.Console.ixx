@@ -15,32 +15,32 @@ export namespace Cardinal::KMS
 		/// <summary>
 		/// Full message size
 		/// </summary>
-		static constexpr Core::SizeT MessageSize = 64 * 1024;
+		static constexpr SizeT MessageSize = 64 * 1024;
 
 		/// <summary>
 		/// Text buffer size
 		/// </summary>
-		static constexpr Core::SizeT BufferSize = API::TextMessageSize<MessageSize>;
+		static constexpr SizeT BufferSize = API::TextMessageSize<MessageSize>;
 
 		/// <summary>
 		/// New line transition
 		/// </summary>
-		static constexpr Core::Char NextLine[] = L"\r\n";
+		static constexpr Char NextLine[] = L"\r\n";
 
 		/// <summary>
 		/// List size of last used saved commands
 		/// </summary>
-		static constexpr Core::SizeT CmdHistoryLen = 20;
+		static constexpr SizeT CmdHistoryLen = 20;
 
 		/// <summary>
 		/// Message text buffer type
 		/// </summary>
-		using LineBufferT = Core::Char[MessageSize / sizeof(Core::Char)];
+		using LineBufferT = Char[MessageSize / sizeof(Char)];
 
 	private:
 		struct CmdHistoryEntity {
 			LineBufferT cmd;
-			Core::SizeT len;
+			SizeT len;
 		};
 
 		struct Data {
@@ -52,28 +52,28 @@ export namespace Cardinal::KMS
 
 			LineBufferT currentLine;
 			LineBufferT backspaces;
-			Core::SizeT cmdEntityIndex = 0;
-			Core::SizeT cmdEntitiesCount = 0;
+			SizeT cmdEntityIndex = 0;
+			SizeT cmdEntitiesCount = 0;
 
-			Core::Threading::SRWLock kbdReadLock;
-			Core::Threading::SRWLock kbdReadPrintLock;
+			Threading::SRWLock kbdReadLock;
+			Threading::SRWLock kbdReadPrintLock;
 			volatile LineBufferT* currentBuffer;
-			volatile Core::SizeT currentBufferSize;
+			volatile SizeT currentBufferSize;
 
 			volatile API::ECommandType	commandType;
 			volatile API::EDatagramType datagramType;
 			volatile API::ELogLevel		logLevel;
 			volatile API::EMessageType	messageType;
 
-			Core::SizeT linesCount;
+			SizeT linesCount;
 
-			Core::RefCountT RefCount;
+			RefCountT RefCount;
 
 			Data(const Keyboard::Keyboard& keyboard) :
 				Data(Keyboard::Keyboard(keyboard)) {}
 
 			Data(Keyboard::Keyboard&& keyboard) :
-				keyboard(Core::MoveRValue(keyboard)),
+				keyboard(MoveRValue(keyboard)),
 				currentEntity{ 0 },
 				CmdHistoryEntities{ 0 },
 				cmdEntitiesCount{ 0 },
@@ -85,7 +85,7 @@ export namespace Cardinal::KMS
 				RefCount(1)
 			{
 #pragma loop(hint_parallel(16))
-				for (Core::SizeT i = 0; i < MessageSize / sizeof(Core::Char); i++)
+				for (SizeT i = 0; i < MessageSize / sizeof(Char); i++)
 				{
 					backspaces[i] = L'\b';
 					currentLine[i] = L'\0';
@@ -98,7 +98,7 @@ export namespace Cardinal::KMS
 
 	private:
 		void Copy(LineBufferT& source, LineBufferT& dest) {
-			for (Core::SizeT i = 0; i < MessageSize / sizeof(wchar_t); i++)
+			for (SizeT i = 0; i < MessageSize / sizeof(wchar_t); i++)
 			{
 				dest[i] = source[i];
 			}
@@ -123,7 +123,7 @@ export namespace Cardinal::KMS
 		/// Keyboard object moving constructor
 		/// </summary>
 		/// <param name="keyboard">Keyboard object</param>
-		Console(Keyboard::Keyboard&& keyboard) : This(new Data(Core::MoveRValue(keyboard))) {}
+		Console(Keyboard::Keyboard&& keyboard) : This(new Data(MoveRValue(keyboard))) {}
 
 	public:
 		/// <summary>
@@ -149,7 +149,7 @@ export namespace Cardinal::KMS
 		/// </summary>
 		/// <param name="buffer">Data buffer</param>
 		/// <param name="len">Number of symbols</param>
-		void StoreComand(LineBufferT& buffer, Core::SizeT cmdLen);
+		void StoreComand(LineBufferT& buffer, SizeT cmdLen);
 
 		/// <summary>
 		/// Returns last command in list
@@ -157,7 +157,7 @@ export namespace Cardinal::KMS
 		/// <param name="buffer">Data buffer</param>
 		/// <param name="offset">Command index</param>
 		/// <param name="cmdLen">Number of symbols in command</param>
-		void GetPreviousCommand(LineBufferT& buffer, Core::SizeT& offset, volatile Core::SizeT& cmdLen);
+		void GetPreviousCommand(LineBufferT& buffer, SizeT& offset, volatile SizeT& cmdLen);
 
 		/// <summary>
 		/// Returns next command in list
@@ -165,13 +165,13 @@ export namespace Cardinal::KMS
 		/// <param name="buffer">Data buffer</param>
 		/// <param name="offset">Command index</param>
 		/// <param name="cmdLen">Number of symbols in command</param>
-		void GetNextCommand(LineBufferT& buffer, Core::SizeT& offset, volatile Core::SizeT& cmdLen);
+		void GetNextCommand(LineBufferT& buffer, SizeT& offset, volatile SizeT& cmdLen);
 
 		/// <summary>
 		/// Displays text on loading screen
 		/// </summary>
 		/// <param name="buffer">Displayed text</param>
-		void DisplayToBootScreen(const Core::Char* buffer);
+		void DisplayToBootScreen(const Char* buffer);
 
 		/// <summary>
 		/// Waiting for pressing any key
@@ -186,7 +186,7 @@ export namespace Cardinal::KMS
 		/// </summary>
 		/// <param name="newData">New state</param>
 		void SetLastCommandType(API::ECommandType newData) {
-			Core::Interlocked::Store(This->commandType, newData);
+			Interlocked::Store(This->commandType, newData);
 		};
 
 		/// <summary>
@@ -194,7 +194,7 @@ export namespace Cardinal::KMS
 		/// </summary>
 		/// <param name="newData">New state</param>
 		void SetLastDatagramType(API::EDatagramType newData) {
-			Core::Interlocked::Store(This->datagramType, newData);
+			Interlocked::Store(This->datagramType, newData);
 		};
 
 		/// <summary>
@@ -202,7 +202,7 @@ export namespace Cardinal::KMS
 		/// </summary>
 		/// <param name="newData">New state</param>
 		void SetLastLogLevel(API::ELogLevel newData) {
-			Core::Interlocked::Store(This->logLevel, newData);
+			Interlocked::Store(This->logLevel, newData);
 		};
 
 		/// <summary>
@@ -210,32 +210,32 @@ export namespace Cardinal::KMS
 		/// </summary>
 		/// <param name="newData">New state</param>
 		void SetLastMessageType(API::EMessageType newData) {
-			Core::Interlocked::Store(This->messageType, newData);
+			Interlocked::Store(This->messageType, newData);
 		};
 
 		/// <summary>
 		/// Returns last stored command type
 		/// </summary>
 		/// <returns>Last stored command type</returns>
-		API::ECommandType GetLastCommandType() { return Core::Interlocked::Load(This->commandType); }
+		API::ECommandType GetLastCommandType() { return Interlocked::Load(This->commandType); }
 
 		/// <summary>
 		/// Returns last stored datagram type
 		/// </summary>
 		/// <returns>Last stored datagram type</returns>
-		API::EDatagramType GetLastDatagramType() { return Core::Interlocked::Load(This->datagramType); }
+		API::EDatagramType GetLastDatagramType() { return Interlocked::Load(This->datagramType); }
 
 		/// <summary>
 		/// Returns last stored log level
 		/// </summary>
 		/// <returns>Last stored log level</returns>
-		API::ELogLevel GetLastLogLevel() { return Core::Interlocked::Load(This->logLevel); }
+		API::ELogLevel GetLastLogLevel() { return Interlocked::Load(This->logLevel); }
 
 		/// <summary>
 		/// Returns last stored message type
 		/// </summary>
 		/// <returns>Last stored message type</returns>
-		API::EMessageType GetLastMessageType() { return (API::EMessageType)Core::Interlocked::Load(This->messageType); }
+		API::EMessageType GetLastMessageType() { return (API::EMessageType)Interlocked::Load(This->messageType); }
 
 	public:
 		RefCountClass(Console, This)

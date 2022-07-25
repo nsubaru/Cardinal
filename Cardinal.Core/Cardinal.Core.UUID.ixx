@@ -8,7 +8,7 @@ import :Types;
 import :Math;
 import :Comparing;
 
-export namespace Cardinal::Core
+export namespace Cardinal
 {
 	/// <summary>
 	/// A unique identifier class "UUID" compatible with "GUID" which is used in Windows kernel

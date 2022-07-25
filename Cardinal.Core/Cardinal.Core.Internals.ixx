@@ -8,7 +8,7 @@ import :UUID;
 #pragma warning(push)
 #pragma warning(disable: 4996)
 
-namespace Cardinal::Core::Internals
+namespace Cardinal::Internals
 {
 	InternalApiCall void UppercaseCharStrImpl(CharStr from, CharStr to);
 	InternalApiCall bool ConvertCharStrToUuid(CharStr str, UUID& uuid);

@@ -7,7 +7,7 @@ import :Internal;
 // This internal implementation file which can use internal API functions
 #pragma warning(disable: 4996)
 
-export namespace Cardinal::Core::Threading
+export namespace Cardinal::Threading
 {
 	/// <summary>
 	/// Synchronization primitive, which allows simultaneous reading and exclusive write

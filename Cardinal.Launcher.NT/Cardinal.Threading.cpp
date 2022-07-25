@@ -5,35 +5,35 @@ module;
 
 module Cardinal.Threading;
 
-using namespace Cardinal::Core;
+using namespace Cardinal;
 
-void Cardinal::Core::Threading::Internals::InitSRWLock(void* PSRWLock) {
+void Cardinal::Threading::Internals::InitSRWLock(void* PSRWLock) {
 	RtlInitializeSRWLock(reinterpret_cast<PRTL_SRWLOCK>(PSRWLock));
 }
 
-void Cardinal::Core::Threading::Internals::InitCondVal(void* handle) {
+void Cardinal::Threading::Internals::InitCondVal(void* handle) {
 	RtlInitializeConditionVariable((PRTL_CONDITION_VARIABLE)handle);
 }
 
-void Cardinal::Core::Threading::Internals::AcquireLockExclusiveSRWLock(void* PSRWLock)
+void Cardinal::Threading::Internals::AcquireLockExclusiveSRWLock(void* PSRWLock)
 {
 	RtlAcquireSRWLockExclusive(reinterpret_cast<PRTL_SRWLOCK>(PSRWLock));
 }
 
-void Cardinal::Core::Threading::Internals::ReleaseLockExclusiveSRWLock(void* PSRWLock) {
+void Cardinal::Threading::Internals::ReleaseLockExclusiveSRWLock(void* PSRWLock) {
 	RtlReleaseSRWLockExclusive(reinterpret_cast<PRTL_SRWLOCK>(PSRWLock));
 }
 
-void Cardinal::Core::Threading::Internals::AcquireLockSharedSRWLock(void* PSRWLock) {
+void Cardinal::Threading::Internals::AcquireLockSharedSRWLock(void* PSRWLock) {
 	RtlAcquireSRWLockShared(reinterpret_cast<PRTL_SRWLOCK>(PSRWLock));
 }
 
-void Cardinal::Core::Threading::Internals::ReleaseLockSharedSRWLock(void* PSRWLock) {
+void Cardinal::Threading::Internals::ReleaseLockSharedSRWLock(void* PSRWLock) {
 	RtlReleaseSRWLockShared(reinterpret_cast<PRTL_SRWLOCK>(PSRWLock));
 	_ReadWriteBarrier();
 }
 
-bool Cardinal::Core::Threading::Internals::TryAcquireLockSharedSRWLock(void* PSRWLock) {
+bool Cardinal::Threading::Internals::TryAcquireLockSharedSRWLock(void* PSRWLock) {
 	return RtlTryAcquireSRWLockShared(reinterpret_cast<PRTL_SRWLOCK>(PSRWLock)) == 1;
 }
 
@@ -50,7 +50,7 @@ NTSTATUS NTAPI nativeEntryPoint(
 	return STATUS_SUCCESS;
 }
 
-Cardinal::Core::Handle Cardinal::Core::Threading::StartThread(void(*threadEntryPoint)(void*), void* arg)
+Cardinal::Handle Cardinal::Threading::StartThread(void(*threadEntryPoint)(void*), void* arg)
 {
 	ThreadArgs* args = new ThreadArgs{ threadEntryPoint, arg };
 	HANDLE hThread;

@@ -7,11 +7,11 @@ module Cardinal.Debug;
 import Cardinal.KMS;
 
 using namespace Cardinal;
-using namespace Cardinal::Core;
+using namespace Cardinal;
 
 static Cardinal::KMS::Console::LineBufferT printBuffer;
 
-void Cardinal::Internals::PrintLineWithHexImpl(const wchar_t* msg, Cardinal::Core::Int64 code, int mode) {
+void Cardinal::Internals::PrintLineWithHexImpl(const wchar_t* msg, Cardinal::Int64 code, int mode) {
 	UNICODE_STRING str;
 	RtlInitUnicodeString(&str, (wchar_t*)msg);
 	NtDisplayString(&str);

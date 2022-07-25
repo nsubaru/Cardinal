@@ -4,7 +4,7 @@ import :TypeTraits.Base;
 import :TypeTraits.Reference;
 import :TypeTraits.Function;
 
-export namespace Cardinal::Core::TypeTraits
+export namespace Cardinal::TypeTraits
 {
     /// <summary>
     /// Returns "true" if type is a pointer

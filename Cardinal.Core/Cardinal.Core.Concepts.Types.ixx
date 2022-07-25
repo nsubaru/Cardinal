@@ -2,7 +2,7 @@ export module Cardinal.Core:Concepts.Types;
 
 import :Concepts.Base;
 
-export namespace Cardinal::Core::Concepts
+export namespace Cardinal::Concepts
 {
 	/// <summary>
 	/// Checking if "T" is plain odd data

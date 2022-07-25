@@ -11,7 +11,7 @@ import :Concepts;
 
 #undef InterlockedAdd
 
-export namespace Cardinal::Core
+export namespace Cardinal
 {
 #ifndef _M_AMD64
 #error Interlocked work only with AMD64 arch

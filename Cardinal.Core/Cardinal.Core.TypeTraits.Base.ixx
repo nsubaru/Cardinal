@@ -5,7 +5,7 @@ export import :Types;
 /// <summary>
 /// Compile-time verifications namespace
 /// </summary>
-export namespace Cardinal::Core::TypeTraits 
+export namespace Cardinal::TypeTraits 
 {
     /// <summary>
     /// Void abstract type

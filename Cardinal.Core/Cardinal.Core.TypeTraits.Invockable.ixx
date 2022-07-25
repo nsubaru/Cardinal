@@ -6,7 +6,7 @@ import :TypeTraits.CVModificators;
 import :TypeTraits.Function;
 import :TypeTraits.TypeConvertions;
 
-namespace Cardinal::Core::TypeTraits::Details
+namespace Cardinal::TypeTraits::Details
 {
     template <class TF, class... TArgs>
     inline auto Invoke(TF&& f, TArgs&& ... args) ->
@@ -51,7 +51,7 @@ namespace Cardinal::Core::TypeTraits::Details
     };
 }
 
-export namespace Cardinal::Core::TypeTraits
+export namespace Cardinal::TypeTraits
 {
     /// <summary>
     /// Additional structure which indicates if this type is a class method or if method with this name exists in class

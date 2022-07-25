@@ -4,7 +4,7 @@ module;
 
 module Cardinal.Core;
 
-Cardinal::Core::StrongOrdering Cardinal::Core::Characters::CaseInsesitiveCompare(Cardinal::Core::AChar left, Cardinal::Core::AChar right) {
+Cardinal::StrongOrdering Cardinal::Characters::CaseInsesitiveCompare(Cardinal::AChar left, Cardinal::AChar right) {
 	AChar s1b[2] = { 0 }, s2b[2] = { 0 };
 	s1b[0] = left; s2b[0] = right;
 
@@ -23,7 +23,7 @@ Cardinal::Core::StrongOrdering Cardinal::Core::Characters::CaseInsesitiveCompare
 		return StrongOrdering::less;
 }
 
-Cardinal::Core::StrongOrdering Cardinal::Core::Characters::CaseInsesitiveCompare(Cardinal::Core::UChar left, Cardinal::Core::UChar right) {
+Cardinal::StrongOrdering Cardinal::Characters::CaseInsesitiveCompare(Cardinal::UChar left, Cardinal::UChar right) {
 	UChar s1b[2] = { 0 }, s2b[2] = { 0 };
 	s1b[0] = left; s2b[0] = right;
 

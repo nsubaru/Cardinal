@@ -6,7 +6,7 @@ module;
 module Cardinal.KMS;
 
 using namespace Cardinal;
-using namespace Cardinal::Core;
+using namespace Cardinal;
 
 extern void PrintLineWithHex(const wchar_t* msg, LONG code, int mode);
 
@@ -37,7 +37,7 @@ void Cardinal::KMS::Console::ReadDataLine(Console::LineBufferT &buffer, bool hid
 		RtlZeroMemory(buffer, Console::MessageSize);
 
 		This->currentBufferSize = 0;
-		Cardinal::Core::SizeT cmdListOffset = 0;
+		Cardinal::SizeT cmdListOffset = 0;
 		bool isContinue = true;
 		do {
 			auto code = This->keyboard.ReadCode();
@@ -205,7 +205,7 @@ void Cardinal::KMS::Console::WriteMultiLineMessage(const LineBufferT& message)
 		SizeT i = 0;
 		SizeT startPos = 0;
 
-		while (buffer[i] != '\0' && i < MessageSize / sizeof(Core::Char)) 
+		while (buffer[i] != '\0' && i < MessageSize / sizeof(Char)) 
 		{
 			if (buffer[i + 1] !=  L'\0' && buffer[i] == '\r' && buffer[i + 1] == '\n') 
 			{
@@ -235,7 +235,7 @@ void Cardinal::KMS::Console::WriteMultiLineMessage(const LineBufferT& message)
 	});
 }
 
-void Cardinal::KMS::Console::StoreComand(Console::LineBufferT &buffer, Cardinal::Core::SizeT len)
+void Cardinal::KMS::Console::StoreComand(Console::LineBufferT &buffer, Cardinal::SizeT len)
 {
 	Copy(buffer, This->CmdHistoryEntities[This->cmdEntityIndex].cmd);
 	This->CmdHistoryEntities[This->cmdEntityIndex].len = len;
@@ -249,7 +249,7 @@ void Cardinal::KMS::Console::StoreComand(Console::LineBufferT &buffer, Cardinal:
 	}
 }
 
-void Cardinal::KMS::Console::GetPreviousCommand(LineBufferT& buffer, Cardinal::Core::SizeT& offset, volatile Cardinal::Core::SizeT& cmdLen)
+void Cardinal::KMS::Console::GetPreviousCommand(LineBufferT& buffer, Cardinal::SizeT& offset, volatile Cardinal::SizeT& cmdLen)
 {
 	if (offset == CmdHistoryLen || (offset == This->cmdEntitiesCount)) {
 		return;
@@ -265,7 +265,7 @@ void Cardinal::KMS::Console::GetPreviousCommand(LineBufferT& buffer, Cardinal::C
 	cmdLen = This->CmdHistoryEntities[cmdEntityLocalIndex].len;
 }
 
-void Cardinal::KMS::Console::GetNextCommand(LineBufferT& buffer, Cardinal::Core::SizeT& offset, volatile Cardinal::Core::SizeT& cmdLen)
+void Cardinal::KMS::Console::GetNextCommand(LineBufferT& buffer, Cardinal::SizeT& offset, volatile Cardinal::SizeT& cmdLen)
 {
 	if (offset == 0)
 		return;
@@ -281,9 +281,9 @@ void Cardinal::KMS::Console::GetNextCommand(LineBufferT& buffer, Cardinal::Core:
 	}
 }
 
-void Cardinal::KMS::Console::DisplayToBootScreen(const Cardinal::Core::Char* buffer)
+void Cardinal::KMS::Console::DisplayToBootScreen(const Cardinal::Char* buffer)
 {
 	UNICODE_STRING str;
-	RtlInitUnicodeString(&str, (Cardinal::Core::Char*)buffer);
+	RtlInitUnicodeString(&str, (Cardinal::Char*)buffer);
 	NtDrawText(&str);
 }

@@ -5,7 +5,7 @@ module;
 
 module Cardinal.Memory;
 
-using namespace Cardinal::Core;
+using namespace Cardinal;
 
 void PrintToBoot(wchar_t* text)
 {

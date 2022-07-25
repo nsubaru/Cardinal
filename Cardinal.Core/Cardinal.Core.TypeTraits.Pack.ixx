@@ -4,7 +4,7 @@ import :TypeTraits.Base;
 import :TypeTraits.LogicOperations;
 import :TypeTraits.TypeConvertions;
 
-export namespace Cardinal::Core::TypeTraits
+export namespace Cardinal::TypeTraits
 {
     /// <summary>
     /// A types pack (special construction for parameters packets enumeration)

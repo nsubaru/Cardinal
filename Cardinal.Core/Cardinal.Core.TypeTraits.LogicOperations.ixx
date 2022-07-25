@@ -2,7 +2,7 @@ export module Cardinal.Core:TypeTraits.LogicOperations;
 
 import :TypeTraits.Base;
 
-export namespace Cardinal::Core::TypeTraits {
+export namespace Cardinal::TypeTraits {
 #pragma region Conditional
     /// <summary>
     /// Compile-time - logic statement: if "Cond == True", returns "IfTrue" type, else "IfFalse"

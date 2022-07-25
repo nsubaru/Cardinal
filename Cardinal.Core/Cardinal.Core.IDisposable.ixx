@@ -7,7 +7,7 @@ import :Types;
 import :TypeTraits;
 import :Concepts;
 
-export namespace Cardinal::Core
+export namespace Cardinal
 {
     /// <summary>
     /// Class resources disposing interface with reference count

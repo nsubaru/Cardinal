@@ -12,17 +12,17 @@ export namespace Cardinal::KMS::Keyboard
 	class Keyboard {
 	private:
 		struct Data {
-			Core::Handle hKbd;
-			Core::Handle hEvent;
-			Core::Handle hPressAnyKeyEvent;
-			Core::RawMemBlk kbdIoBlk[2];
+			Handle hKbd;
+			Handle hEvent;
+			Handle hPressAnyKeyEvent;
+			RawMemBlk kbdIoBlk[2];
 
-			Core::SizeT layoutI;
+			SizeT layoutI;
 
-			Core::SizeT Modificators;
-			Core::SizeT States;
+			SizeT Modificators;
+			SizeT States;
 
-			Core::RefCountT RefCount;
+			RefCountT RefCount;
 
 			Data() :
 				hKbd(nullptr),
@@ -78,7 +78,7 @@ export namespace Cardinal::KMS::Keyboard
 		/// </summary>
 		/// <param name="code">Key code</param>
 		/// <returns>Corresponding value from table</returns>
-		Core::Char ConvertCodeCharacter(Code& code);
+		Char ConvertCodeCharacter(Code& code);
 
 		/// <summary>
 		/// Reads information about pressed key

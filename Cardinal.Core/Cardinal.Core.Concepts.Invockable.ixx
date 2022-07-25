@@ -2,7 +2,7 @@ export module Cardinal.Core:Concepts.Invockable;
 
 import :Concepts.Base;
 
-export namespace Cardinal::Core::Concepts
+export namespace Cardinal::Concepts
 {
 	/// <summary>
 	/// Checking if "TCallable" type can be called with "TArgs" list of arguments
@@ -16,7 +16,7 @@ export namespace Cardinal::Core::Concepts
 	/// </summary>
 	template<typename TLambda, typename TTemplate, typename ... TArgs>
 	concept IsInvockableTemplateLambda = requires(TLambda && lambda, TArgs&&... args) {
-		{ lambda.template operator()<TTemplate>(Core::ForwardReference<TArgs>(args)...) };
+		{ lambda.template operator()<TTemplate>(ForwardReference<TArgs>(args)...) };
 	};
 
 	/// <summary>
@@ -25,7 +25,7 @@ export namespace Cardinal::Core::Concepts
 	/// </summary>
 	template<typename TLambda, typename TTemplate, SizeT TIdx, typename ... TArgs>
 	concept IsInvockableTemplateLambdaWithTemplateIndex = requires(TLambda && lambda, TArgs&&... args) {
-		{ lambda.template operator()<TTemplate, TIdx>(Core::ForwardReference<TArgs>(args)...) };
+		{ lambda.template operator()<TTemplate, TIdx>(ForwardReference<TArgs>(args)...) };
 	};
 
 	/// <summary>

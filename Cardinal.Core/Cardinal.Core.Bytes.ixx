@@ -2,7 +2,7 @@ export module Cardinal.Core:Bytes;
 
 import :Types;
 
-export namespace Cardinal::Core
+export namespace Cardinal
 {
 	/// <summary>
 	/// General functions for working with bytes ordering

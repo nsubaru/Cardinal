@@ -2,7 +2,7 @@ export module Cardinal.Threading:Internal;
 
 import :Base;
 
-namespace Cardinal::Core::Threading::Internals
+namespace Cardinal::Threading::Internals
 {
 	void InitSRWLock(void* PSRWLock);
 

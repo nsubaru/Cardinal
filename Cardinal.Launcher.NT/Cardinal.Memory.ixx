@@ -8,7 +8,7 @@ export namespace Cardinal::Memory
 	void DestroyHeap();
 }
 
-using namespace Cardinal::Core;
+using namespace Cardinal;
 
 namespace Cardinal::Memory 
 {

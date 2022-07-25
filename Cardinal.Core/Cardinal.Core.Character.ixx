@@ -3,7 +3,7 @@ export module Cardinal.Core:Character;
 import :Types;
 import :Comparing;
 
-namespace Cardinal::Core
+namespace Cardinal
 {
 	/// <summary>
 	/// General functions for working with characters

@@ -6,7 +6,7 @@ import :Math;
 import :TypeTraits;
 import :Concepts;
 
-namespace Cardinal::Core
+namespace Cardinal
 {
 	/// <summary>
 	/// A bit fields class based on enumerations

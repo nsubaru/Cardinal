@@ -14,7 +14,7 @@ import :Concepts;
 #pragma warning(disable: 4996)
 #pragma warning(disable: 4595)
 
-namespace Cardinal::Core::Details
+namespace Cardinal::Details
 {
     template<typename T, SizeT Size>
     class ConstexprArray;
@@ -660,7 +660,7 @@ namespace Cardinal::Core::Details
     };
 }
 
-namespace Cardinal::Core::Details::Details
+namespace Cardinal::Details::Details
 {
     /// <summary>
     /// Get type name as compile-time string view
@@ -730,7 +730,7 @@ namespace Cardinal::Core::Details::Details
     }
 }
 
-namespace Cardinal::Core::Details
+namespace Cardinal::Details
 {
     /// <summary>
     /// Generate type name for type T as compile-time array without trailing zero
@@ -898,8 +898,8 @@ namespace Cardinal::Core::Details
     /// <summary>
     /// Compile-time string type
     /// </summary>
-    template <Cardinal::Core::SizeT N>
-    using CompileTimeString = Cardinal::Core::Details::ConstexprArray<Char, N>;
+    template <Cardinal::SizeT N>
+    using CompileTimeString = Cardinal::Details::ConstexprArray<Char, N>;
 
     /// <summary>
     /// Create compile-time string from characters
@@ -907,9 +907,9 @@ namespace Cardinal::Core::Details
     /// <param name="str">Characters array</param>
     /// <param name="...Is">Indexes create by indexator</param>
     /// <returns>Compile-time string with characters</returns>
-    template <Cardinal::Core::SizeT N, Cardinal::Core::SizeT ... Is>
+    template <Cardinal::SizeT N, Cardinal::SizeT ... Is>
     consteval CompileTimeString<sizeof...(Is)> MfSh(Char const (&str)[N],
-        Cardinal::Core::TypeTraits::Indexator<Is...> const&)
+        Cardinal::TypeTraits::Indexator<Is...> const&)
     {
         return { str[Is]... };
     }
@@ -919,10 +919,10 @@ namespace Cardinal::Core::Details
     /// </summary>
     /// <param name="str">Characters array</param>
     /// <returns>Compile-time string with characters</returns>
-    template <Cardinal::Core::SizeT N>
+    template <Cardinal::SizeT N>
     consteval auto CreateTypeStr(Char const (&str)[N])
     {
-        return MfSh(str, typename Cardinal::Core::TypeTraits::Indexer<N - 1>::template Type{}).Reverse();
+        return MfSh(str, typename Cardinal::TypeTraits::Indexer<N - 1>::template Type{}).Reverse();
     }
 
     static_assert(CreateTypeStr(L"-12345") == ToCharStrEx<-12345>());
@@ -945,14 +945,14 @@ namespace Cardinal::Core::Details
     }
 }
 
-export namespace Cardinal::Core::TypeTraits
+export namespace Cardinal::TypeTraits
 {
     /// <summary>
     /// Build compile time string type whitch containe charaters in type defintion
     /// </summary>
     template<SizeT N>
     consteval auto CreateTypeStr(Char const (&str)[N]) {
-        return Core::Details::CreateTypeStr<N>(str);
+        return Cardinal::Details::CreateTypeStr<N>(str);
     }
 
     /// <summary>
@@ -965,7 +965,7 @@ export namespace Cardinal::Core::TypeTraits
     /// Checking if type "T" is compile time array
     /// </summary>
     template<typename T, SizeT TN>
-    struct IsConstexprArrayT<Core::Details::ConstexprArray<T, TN>> : LogicTrue {
+    struct IsConstexprArrayT<Cardinal::Details::ConstexprArray<T, TN>> : LogicTrue {
         using ItemType = T;
         constexpr static SizeT N = TN;
     };
@@ -980,7 +980,7 @@ export namespace Cardinal::Core::TypeTraits
     /// Define compile time array
     /// </summary>
     template<typename T, SizeT TN>
-    using ConstexprArray = Core::Details::ConstexprArray<T, TN>;
+    using ConstexprArray = Cardinal::Details::ConstexprArray<T, TN>;
 
     /// <summary>
     /// Convert integer to compile time character string
@@ -989,11 +989,11 @@ export namespace Cardinal::Core::TypeTraits
     template<Concepts::Integer T, T I>
     constexpr auto ToCharStrEx() {
         if constexpr (Concepts::SignedInteger<T>) {
-            return Core::Details::ToCharStrExImpl<Int64, static_cast<Int64>(I)>();
+            return Cardinal::Details::ToCharStrExImpl<Int64, static_cast<Int64>(I)>();
         }
         else
         {
-            return Core::Details::ToCharStrExImpl<UInt64, static_cast<UInt64>(I)>();
+            return Cardinal::Details::ToCharStrExImpl<UInt64, static_cast<UInt64>(I)>();
         }
     }
 
@@ -1003,7 +1003,7 @@ export namespace Cardinal::Core::TypeTraits
     /// <returns>ConstexprArray with all characters but without trailing zero</returns>
     template<SizeT I>
     constexpr auto ToCharStr() {
-        return Core::Details::ToCharStr<I>();
+        return Cardinal::Details::ToCharStr<I>();
     }
 
     /// <summary>
@@ -1013,14 +1013,14 @@ export namespace Cardinal::Core::TypeTraits
     /// <returns>ConstexprArray with all characters but without trailing zero</returns>
     template<bool V>
     consteval auto BoolToCharStr() {
-        return Core::Details::BoolToCharStr<V>();
+        return Cardinal::Details::BoolToCharStr<V>();
     }
 
     /// <summary>
     /// Trait for checking is type is template type
     /// </summary>
     template<typename T>
-    struct IsTemplateTypeT : LogicConst<(!IsPointerV<T> && !IsCArrayV<T> && !IsReferenceV<T>) && (Core::Details::TypeName<T>().Find('<') != -1)> {};
+    struct IsTemplateTypeT : LogicConst<(!IsPointerV<T> && !IsCArrayV<T> && !IsReferenceV<T>) && (Cardinal::Details::TypeName<T>().Find('<') != -1)> {};
 
     /// <summary>
     /// Trait for checking is type is template type
@@ -1029,7 +1029,7 @@ export namespace Cardinal::Core::TypeTraits
     constexpr bool IsTemplateTypeV = IsTemplateTypeT<T>::State;
 }
 
-export namespace Cardinal::Core::Concepts
+export namespace Cardinal::Concepts
 {
     /// <summary>
     /// Checking if type "T" is compile time array

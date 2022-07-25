@@ -6,7 +6,7 @@ import :TypeTraits.CVModificators;
 import :TypeTraits.LogicOperations;
 import :TypeTraits.Function;
 
-export namespace Cardinal::Core::TypeTraits
+export namespace Cardinal::TypeTraits
 {
     /// <summary>
     /// "Aggressive" modifiers decay from types

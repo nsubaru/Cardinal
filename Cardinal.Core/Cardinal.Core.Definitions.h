@@ -306,7 +306,7 @@ extern int __cdecl __RegisterStaticDtors(PF pf);
 /// <summary>
 /// Exception localization macros
 /// </summary>
-#define SourcePosition {_L(__FILE__), (Rem::Core::SizeT) __LINE__}
+#define SourcePosition {_L(__FILE__), (Cardinal::SizeT) __LINE__}
 
 /// <summary> 
 /// Use for definition code block in which some warnings are disabled 
@@ -367,7 +367,7 @@ __forceinline ClassName(ClassName && From) : This(From.This) { From.This = nullp
 /**<summary>Copying operator</summary><param name = "Orig">Original</param><returns>Reference to the current object</returns>*/                                                           \
 __forceinline ClassName & operator=(const ClassName & Orig){this->~ClassName(); this->ClassName::ClassName(Orig); return *this; };                                                        \
 /**<summary>Moving operator</summary><param name = "Orig">Original</param><returns>Reference to the current object</returns>*/                                                            \
-__forceinline ClassName & operator=(ClassName && From){if(this == &From) return *this; this->~ClassName(); this->ClassName::ClassName(Cardinal::Core::MoveRValue(From)); return *this; }; \
+__forceinline ClassName & operator=(ClassName && From){if(this == &From) return *this; this->~ClassName(); this->ClassName::ClassName(Cardinal::MoveRValue(From)); return *this; }; \
 /**<summary>Checks if objects are references on same data objects</summary>*/                                                                                                             \
 /**<returns>True if objects are references on same data objects</returns>*/                                                                                                               \
 __forceinline bool IsSameAs(const ClassName& other) const { return this->This == other.This; }                                                                                            \

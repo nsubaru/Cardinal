@@ -10,7 +10,7 @@ export namespace std
 /// </summary>
 export namespace CRT = std;
 
-export namespace Cardinal::Core
+export namespace Cardinal
 {
 	/// <summary>
 	/// 8-bit unsigned numeric variable
@@ -197,9 +197,9 @@ export namespace Cardinal::Core
 /// <param name="text">A pointer on a string constant</param>
 /// <param name="size">Number of elenemts in string array</param>
 /// <returns>CharStr constant</returns>
-__forceinline constexpr Cardinal::Core::CharStr operator "" U(const wchar_t* const text, const Cardinal::Core::SizeT size)
+__forceinline constexpr Cardinal::CharStr operator "" U(const wchar_t* const text, const Cardinal::SizeT size)
 {
-	using namespace Cardinal::Core;
+	using namespace Cardinal;
 	return const_cast<const CharStr>(text);
 }
 
@@ -208,9 +208,9 @@ __forceinline constexpr Cardinal::Core::CharStr operator "" U(const wchar_t* con
 /// </summary>
 /// <param name="size">Integer value</param>
 /// <returns>SizeT value</returns>
-__forceinline constexpr Cardinal::Core::SizeT operator "" Sz(const unsigned long long size) {
-	using namespace Cardinal::Core;
-	return static_cast<Cardinal::Core::SizeT>(size);
+__forceinline constexpr Cardinal::SizeT operator "" Sz(const unsigned long long size) {
+	using namespace Cardinal;
+	return static_cast<Cardinal::SizeT>(size);
 }
 
 #pragma warning(pop)

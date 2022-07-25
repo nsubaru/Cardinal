@@ -14,7 +14,7 @@ import :Internals;
 /// <summary>
 /// Functions namespace for working with C-like string variables
 /// </summary>
-namespace Cardinal::Core::CStr
+namespace Cardinal::CStr
 {
     /// <summary>
     /// "Compile-time" function for calculating the number of symbols in symbolic array

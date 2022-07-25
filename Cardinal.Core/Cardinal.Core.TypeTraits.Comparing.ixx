@@ -5,7 +5,7 @@ import :TypeTraits.Utils;
 import :TypeTraits.LogicOperations;
 import :TypeTraits.TypeConvertions;
 
-export namespace Cardinal::Core::TypeTraits
+export namespace Cardinal::TypeTraits
 {
     template<typename T, typename U, typename = VoidT<>>
     struct HasEqualT

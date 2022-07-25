@@ -2,7 +2,7 @@ export module Cardinal.Core:BitOperations;
 
 import :Types;
 
-export namespace Cardinal::Core
+export namespace Cardinal
 {
 	/// <summary>
 	/// Bit operations

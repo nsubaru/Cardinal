@@ -6,7 +6,7 @@ export module Cardinal.Core:Utils;
 import :Types;
 import :Swap;
 
-export namespace Cardinal::Core
+export namespace Cardinal
 {
     /// <summary>
     /// Changes the order of elements in "Array" array

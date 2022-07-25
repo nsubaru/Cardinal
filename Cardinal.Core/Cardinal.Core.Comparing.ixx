@@ -3,7 +3,7 @@ export module Cardinal.Core:Comparing;
 import :Types;
 import :Math;
 
-export namespace Cardinal::Core::Comparing
+export namespace Cardinal::Comparing
 {
 	/// <summary>
 	/// Comparing result
@@ -43,8 +43,8 @@ export namespace Cardinal::Core::Comparing
 
 export namespace std //-V1061
 {
-	using namespace Cardinal::Core::Comparing;
-	using Cardinal::Core::Boolean;
+	using namespace Cardinal::Comparing;
+	using Cardinal::Boolean;
 
 	class strong_ordering;
 	class partial_ordering;
@@ -858,7 +858,7 @@ export namespace std //-V1061
 #pragma endregion
 }
 
-export namespace Cardinal::Core::Comparing 
+export namespace Cardinal::Comparing 
 {
 	using WeakEquality = std::weak_equality;
 	using StrongOrdering = std::strong_ordering;
@@ -867,7 +867,7 @@ export namespace Cardinal::Core::Comparing
 	using StrongEquality = std::strong_equality;
 }
 
-export namespace Cardinal::Core
+export namespace Cardinal
 {
 	using WeakEquality = std::weak_equality;
 	using StrongOrdering = std::strong_ordering;

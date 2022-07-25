@@ -118,7 +118,7 @@
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <AdditionalIncludeDirectories>$(SolutionDir)Cardinal.NTAPI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CallingConvention>VectorCall</CallingConvention>
-      <ForcedIncludeFiles>$(SolutionDir)Cardinal.Core\Cardinal.Core.Definitions.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles>$(SolutionDir)Cardinal.Core\Cardinal.Core.Definitions.h;$(SolutionDir)Cardinal\Cardinal.Definitions.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <SubSystem>Native</SubSystem>
@@ -138,7 +138,7 @@
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <AdditionalIncludeDirectories>$(SolutionDir)Cardinal.NTAPI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CallingConvention>VectorCall</CallingConvention>
-      <ForcedIncludeFiles>$(SolutionDir)Cardinal.Core\Cardinal.Core.Definitions.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles>$(SolutionDir)Cardinal.Core\Cardinal.Core.Definitions.h;$(SolutionDir)Cardinal\Cardinal.Definitions.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <SubSystem>Native</SubSystem>

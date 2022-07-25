@@ -2,7 +2,7 @@ export module Cardinal.Core:TypeTraits.Reference;
 
 import :TypeTraits.Base;
 
-export namespace Cardinal::Core::TypeTraits
+export namespace Cardinal::TypeTraits
 {
 #pragma region Check Ref modificators
 	/// <summary>

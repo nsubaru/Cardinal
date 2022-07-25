@@ -5,7 +5,7 @@ import :Types;
 /// <summary>
 /// Math functions
 /// </summary>
-export namespace Cardinal::Core::Math
+export namespace Cardinal::Math
 {
 	/// <summary>
 	/// Maximal type value

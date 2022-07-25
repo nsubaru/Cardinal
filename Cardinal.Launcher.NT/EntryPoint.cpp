@@ -10,7 +10,6 @@ module EntryPoint;
 #pragma warning(disable: 6262)
 
 using namespace Cardinal;
-using namespace Cardinal::Core;
 
 constexpr Char IOPipeNameReq[] = L"Please specify IO pipe name";
 constexpr auto ConnectionRetryTimes = 5;
@@ -117,7 +116,7 @@ void WaitThread(void* arg) {
 				Bits::BitCheck(code.Modificator, (SizeT)EModificators::CTRL) &&
 				code.VkCode == VkCodes::M_KEY
 				) {
-				Cardinal::Core::Interlocked::Store(IsManual, true);
+				Cardinal::Interlocked::Store(IsManual, true);
 				NtAlertThread(data->hParentThread);
 				break;
 			}
@@ -131,7 +130,7 @@ void WaitThread(void* arg) {
 
 DECLSPEC_NORETURN void NTAPI NtProcessStartup() {
 	Memory::InitHeap();
-	Cardinal::Core::Interlocked::Store(IsManual, false);
+	Cardinal::Interlocked::Store(IsManual, false);
 
 	__try {
 		KMS::Keyboard::Keyboard* keyboard = new KMS::Keyboard::Keyboard();
@@ -160,7 +159,7 @@ DECLSPEC_NORETURN void NTAPI NtProcessStartup() {
 
 		if (status == STATUS_ALERTED || status == STATUS_SUCCESS)
 		{
-			if (Cardinal::Core::Interlocked::Load(IsManual))
+			if (Cardinal::Interlocked::Load(IsManual))
 			{
 				KMS::Shell::TBuffer pipeGenericName = { 0 };
 
@@ -179,7 +178,7 @@ DECLSPEC_NORETURN void NTAPI NtProcessStartup() {
 			console->DisplayToBootScreen(L"Wait for kernel connecting...");
 
 			for (size_t i = 0; i < ConnectionRetryTimes; i++)
-				if (shell->WaitForConnection(static_cast<Cardinal::Core::Int64>(15) * 1000)) break;
+				if (shell->WaitForConnection(static_cast<Cardinal::Int64>(15) * 1000)) break;
 
 			HANDLE hThread[] = {
 				Threading::StartThread(ReadThread, new ThreadArgs({ *console, *shell })),

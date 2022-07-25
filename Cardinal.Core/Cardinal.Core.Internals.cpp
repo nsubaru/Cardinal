@@ -10,9 +10,9 @@ module Cardinal.Core;
 // This internal implementation file which can use internal API functions
 #pragma warning(disable: 4996)
 
-using namespace Cardinal::Core;
+using namespace Cardinal;
 
-void Cardinal::Core::Internals::UppercaseCharStrImpl(Cardinal::Core::CharStr from, Cardinal::Core::CharStr to) {
+void Cardinal::Internals::UppercaseCharStrImpl(Cardinal::CharStr from, Cardinal::CharStr to) {
 	UNICODE_STRING __from;
 	UNICODE_STRING __to;
 	RtlInitUnicodeString(&__from, from);
@@ -21,7 +21,7 @@ void Cardinal::Core::Internals::UppercaseCharStrImpl(Cardinal::Core::CharStr fro
 	RtlUpcaseUnicodeString(&__to, &__from, 0);
 }
 
-bool Cardinal::Core::Internals::ConvertCharStrToUuid(Cardinal::Core::CharStr str, Cardinal::Core::UUID& uuid) {
+bool Cardinal::Internals::ConvertCharStrToUuid(Cardinal::CharStr str, Cardinal::UUID& uuid) {
 	GUID guid;
 	UNICODE_STRING raw_str;
 	RtlInitUnicodeStringEx(&raw_str, str);
@@ -32,7 +32,7 @@ bool Cardinal::Core::Internals::ConvertCharStrToUuid(Cardinal::Core::CharStr str
 	return true;
 }
 
-void Cardinal::Core::Internals::ConvertUuidToCharStr(const Cardinal::Core::UUID& id, Cardinal::Core::CharStr buffer) {
+void Cardinal::Internals::ConvertUuidToCharStr(const Cardinal::UUID& id, Cardinal::CharStr buffer) {
 	UNICODE_STRING raw_str;
 	GUID rawId = id;
 	RtlStringFromGUID(&rawId, &raw_str);
@@ -40,15 +40,15 @@ void Cardinal::Core::Internals::ConvertUuidToCharStr(const Cardinal::Core::UUID&
 	RtlFreeUnicodeString(&raw_str);
 }
 
-Cardinal::Core::Char Cardinal::Core::Internals::UpcaseCharImp(Cardinal::Core::Char symb) {
+Cardinal::Char Cardinal::Internals::UpcaseCharImp(Cardinal::Char symb) {
 	return RtlUpcaseUnicodeChar(symb);
 }
 
-Cardinal::Core::Char Cardinal::Core::Internals::DowncaseCharImp(Cardinal::Core::Char symb) {
+Cardinal::Char Cardinal::Internals::DowncaseCharImp(Cardinal::Char symb) {
 	return RtlDowncaseUnicodeChar(symb);
 }
 
-void Cardinal::Core::Internals::DowncaseCharStrImpl(Cardinal::Core::CharStr from, Cardinal::Core::CharStr to) {
+void Cardinal::Internals::DowncaseCharStrImpl(Cardinal::CharStr from, Cardinal::CharStr to) {
 	UNICODE_STRING __from;
 	UNICODE_STRING __to;
 	RtlInitUnicodeString(&__from, from);
@@ -57,16 +57,16 @@ void Cardinal::Core::Internals::DowncaseCharStrImpl(Cardinal::Core::CharStr from
 	RtlDowncaseUnicodeString(&__to, &__from, FALSE);
 }
 
-Cardinal::Core::Int32 Cardinal::Core::Internals::CompareString(CharStr left, CharStr right, SizeT leftSize, SizeT rightSize) {
+Cardinal::Int32 Cardinal::Internals::CompareString(CharStr left, CharStr right, SizeT leftSize, SizeT rightSize) {
 	return RtlCompareUnicodeStrings(left, leftSize, right, rightSize, FALSE);
 }
 
 
-Cardinal::Core::Int32 Cardinal::Core::Internals::CompareStringCaseInsesitve(CharStr left, CharStr right, SizeT leftSize, SizeT rightSize) {
+Cardinal::Int32 Cardinal::Internals::CompareStringCaseInsesitve(CharStr left, CharStr right, SizeT leftSize, SizeT rightSize) {
 	return RtlCompareUnicodeStrings(left, leftSize, right, rightSize, TRUE);
 }
 
-InternalApiCall Cardinal::Core::Boolean Cardinal::Core::Internals::IsNameInExpression(Cardinal::Core::CharStr name, Cardinal::Core::CharStr mask)
+InternalApiCall Cardinal::Boolean Cardinal::Internals::IsNameInExpression(Cardinal::CharStr name, Cardinal::CharStr mask)
 {
 	UNICODE_STRING nameUs, maskUs;
 	RtlInitUnicodeStringEx(&nameUs, name);

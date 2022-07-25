@@ -9,7 +9,7 @@ export namespace Cardinal::KMS::API
 	/// <summary>
 	/// Message type
 	/// </summary>
-	enum class EMessageType : Core::UInt8
+	enum class EMessageType : UInt8
 	{
 		Undefined,
 		Command,
@@ -19,7 +19,7 @@ export namespace Cardinal::KMS::API
 	/// <summary>
 	/// Command type
 	/// </summary>
-	enum class ECommandType : Core::UInt8
+	enum class ECommandType : UInt8
 	{
 		Undefined,
 		PasswordRequest,
@@ -32,7 +32,7 @@ export namespace Cardinal::KMS::API
 	/// <summary>
 	/// Datagram type
 	/// </summary>
-	enum class EDatagramType : Core::UInt8
+	enum class EDatagramType : UInt8
 	{
 		Undefined,
 		Info,
@@ -44,7 +44,7 @@ export namespace Cardinal::KMS::API
 	/// <summary>
 	/// Log level
 	/// </summary>
-	enum class ELogLevel : Core::UInt8
+	enum class ELogLevel : UInt8
 	{
 		Undefined,
 		Debug,
@@ -64,28 +64,28 @@ export namespace Cardinal::KMS::API
 	/// <summary>
 	/// Full message size with header from text size
 	/// </summary>
-	template<Cardinal::Core::SizeT Size>
+	template<Cardinal::SizeT Size>
 	constexpr auto FullMessageSize = Size + sizeof(MessageHeader);
 
 	/// <summary>
 	/// Text size from full message size
 	/// </summary>
-	template<Cardinal::Core::SizeT Size>
+	template<Cardinal::SizeT Size>
 	constexpr auto TextMessageSize = Size - sizeof(MessageHeader);
 
 	/// <summary>
 	/// Fixed sized KMS message
 	/// </summary>
-	template<Core::SizeT FullMessageSize>
+	template<SizeT FullMessageSize>
 	struct FixedSizeMessage : MessageHeader {
-		Core::Char Data[TextMessageSize<FullMessageSize> / sizeof(Core::Char)];
+		Char Data[TextMessageSize<FullMessageSize> / sizeof(Char)];
 	};
 
 	/// <summary>
 	/// Dynamic sized KMS message
 	/// </summary>
 	struct DynamicSizeMessage : MessageHeader {
-		Core::Char Data[1];
+		Char Data[1];
 	};
 #pragma pack(pop)
 }

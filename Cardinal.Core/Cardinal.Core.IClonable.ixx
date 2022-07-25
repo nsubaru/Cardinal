@@ -7,7 +7,7 @@ import :Types;
 import :TypeTraits;
 import :Concepts;
 
-export namespace Cardinal::Core
+export namespace Cardinal
 {
     /// <summary>
     /// Cloning interface
@@ -24,7 +24,7 @@ export namespace Cardinal::Core
     };
 }
 
-export namespace Cardinal::Core::Concepts
+export namespace Cardinal::Concepts
 {
     /// <summary>
     /// Checking if type "T" have Clone method which return something convertible to "T"
@@ -47,7 +47,7 @@ export namespace Cardinal::Core::Concepts
     concept IsClonable = IsPod<T> || InheritClone<T> || HasCloneMethod<T>;
 }
 
-export namespace Cardinal::Core
+export namespace Cardinal
 {
     /// <summary>
     /// Cloning the object using "Clone" method

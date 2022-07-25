@@ -6,7 +6,7 @@ module;
 module Cardinal.KMS;
 
 using namespace Cardinal;
-using namespace Cardinal::Core;
+using namespace Cardinal;
 
 void Cardinal::KMS::Shell::Dispose()
 {

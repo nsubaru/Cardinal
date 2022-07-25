@@ -3,7 +3,7 @@ export module Cardinal.Core:TypeTraits.TypeConvertions;
 import :TypeTraits.Base;
 import :TypeTraits.Utils;
 
-export namespace Cardinal::Core::TypeTraits
+export namespace Cardinal::TypeTraits
 {
     /// <summary>
     /// Checks if an object can be constructed with given arguments types

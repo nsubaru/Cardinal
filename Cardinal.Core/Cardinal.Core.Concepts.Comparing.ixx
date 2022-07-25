@@ -2,7 +2,7 @@ export module Cardinal.Core:Concepts.Comparing;
 
 import :Concepts.Base;
 
-export namespace Cardinal::Core::Concepts
+export namespace Cardinal::Concepts
 {
 	/// <summary>
 	/// Checking if "T" can compare with "U"
