@@ -16,10 +16,33 @@
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IArray.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IAssociableCollection.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.ICollection.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IDictionary.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IDynamicQueue.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IDynamicStack.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IFixedArray.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IFixedCollection.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IFixedQueue.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IFixedStack.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IList.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IMap.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IOrderable.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IReadOnlyCollection.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IString.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Memory.DataSizeT.ixx" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory).editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.natvis" />
   </ItemGroup>
 </Project>

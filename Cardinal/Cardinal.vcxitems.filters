@@ -10,6 +10,12 @@
     <Filter Include="Memory">
       <UniqueIdentifier>{334724b5-02dc-4e92-902e-09c635748ae2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Containers">
+      <UniqueIdentifier>{68465f24-ddee-4f37-8e9e-1857789d78e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Containers\LINQ">
+      <UniqueIdentifier>{1d1e19ea-7a53-49b8-814c-a2430d7f9302}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx">
@@ -20,8 +26,65 @@
       <Filter>Memory</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.Base.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.ICollection.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IAssociableCollection.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IFixedCollection.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IReadOnlyCollection.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IOrderable.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IArray.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IDictionary.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IDynamicQueue.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IDynamicStack.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IFixedArray.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IFixedQueue.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IFixedStack.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IList.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IMap.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IString.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.ixx">
+      <Filter>Containers\LINQ</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory).editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.natvis" />
   </ItemGroup>
 </Project>

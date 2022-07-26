@@ -149,6 +149,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.ConstString.cpp">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.ConstString.cppm">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.Containers.LINQ.Base.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.Containers.LINQ.ICollection.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

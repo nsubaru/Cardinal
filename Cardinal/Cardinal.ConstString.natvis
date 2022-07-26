@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="Cardinal::ConsString">
+		<DisplayString>{{Text = {str,su}, Lenght = {size}}}</DisplayString>
+		<StringView>str,su</StringView>
+		<Expand>
+			<Item Name="[Lenght]">size</Item>
+			<ArrayItems>
+				<Size>size</Size>
+				<ValuePointer>str</ValuePointer>
+			</ArrayItems>
+		</Expand>
+	</Type>
+	<Type Name="Cardinal::ConsAString">
+		<DisplayString>{{Text = {str,s}, Lenght = {size}}}</DisplayString>
+		<StringView>str,na</StringView>
+		<Expand>
+			<Item Name="[Lenght]">size</Item>
+			<ArrayItems>
+				<Size>size</Size>
+				<ValuePointer>str</ValuePointer>
+			</ArrayItems>
+		</Expand>
+	</Type>
+</AutoVisualizer>

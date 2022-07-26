@@ -101,4 +101,7 @@
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Core.RefCountT.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Core.UUID.natvis" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory).editorconfig" />
+  </ItemGroup>
 </Project>
