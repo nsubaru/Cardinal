@@ -16,6 +16,39 @@
     <Filter Include="Containers\LINQ">
       <UniqueIdentifier>{1d1e19ea-7a53-49b8-814c-a2430d7f9302}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Containers\NonConcurency">
+      <UniqueIdentifier>{7841f088-26f2-44a5-97a6-bfca18ce8467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{5f8550f4-af83-49a4-a1ff-738f59a17769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTTI">
+      <UniqueIdentifier>{e3d1aa1b-9357-42c8-b56c-d7d3cfaceb30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CTTI">
+      <UniqueIdentifier>{71fa190a-3108-41a2-95f3-7227022e61fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CTTI\Concepts">
+      <UniqueIdentifier>{769a0bb0-cfcf-4aba-91f8-82bc6325d273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CTTI\TypeTraits">
+      <UniqueIdentifier>{71fb87b0-cf0e-4f93-a952-477c3e9a8f02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time">
+      <UniqueIdentifier>{cbd3e7f5-644e-46ae-85a1-de041ce1ccd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CTTI\TypeName">
+      <UniqueIdentifier>{8a9f6363-d990-44df-9a1e-58e7c81a9cdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threading">
+      <UniqueIdentifier>{d5af1758-cf45-412d-89ed-d36367cb03f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logger">
+      <UniqueIdentifier>{06e4801e-48b5-4e5c-bc54-9810437835f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Settings">
+      <UniqueIdentifier>{36cf0b98-a40a-4b06-992b-302b858c5ca4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx">
@@ -77,9 +110,191 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.ixx">
       <Filter>Containers\LINQ</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Memory.Base.ixx">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Memory.Unsafe.ixx">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Memory.Allocators.ixx">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Memory.ixx">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Array.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.TypeTraits.ixx">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.InitilizerList.ixx">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.List.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.TryParsePart.ixx">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.Base.ixx">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Math.Base.ixx">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Math.ixx">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Math.Internal.ixx">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Math.SafeInt.ixx">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Map.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Pair.ixx">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.Convertors.ixx">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.HexPart.ixx">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.LinqApi.ixx">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.Manipulation.ixx">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.CxxTypeInfo.ixx">
+      <Filter>RTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.CxxTypeInfo.cpp">
+      <Filter>RTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Tuple.ixx">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Base.ixx">
+      <Filter>CTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.Base.ixx">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.ixx">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.EType.ixx">
+      <Filter>CTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Concepts.Base.ixx">
+      <Filter>CTTI\Concepts</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Concepts.ixx">
+      <Filter>CTTI\Concepts</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeName.Base.ixx">
+      <Filter>CTTI\TypeName</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeName.ixx">
+      <Filter>CTTI\TypeName</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Base.ixx">
+      <Filter>CTTI\TypeTraits</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.BaseTypes.ixx">
+      <Filter>CTTI\TypeTraits</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Enum.ixx">
+      <Filter>CTTI\TypeTraits</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Pod.ixx">
+      <Filter>CTTI\TypeTraits</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Function.ixx">
+      <Filter>CTTI\TypeTraits</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Struct.ixx">
+      <Filter>CTTI\TypeTraits</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.StructDefintionBuild.ixx">
+      <Filter>CTTI\TypeTraits</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.StructRemoteDefinition.ixx">
+      <Filter>CTTI\TypeTraits</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.ixx">
+      <Filter>CTTI\TypeTraits</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.ixx">
+      <Filter>CTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.ixx">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.SRWLock.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Internal.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Logger.ixx">
+      <Filter>Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Logger.StaticLogger.ixx">
+      <Filter>Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Settings.ConstSettings.ixx">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Settings.Base.ixx">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Settings.SettingsData.ixx">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Settings.Default.ixx">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Settings.CurrentSetting.ixx">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Settings.ixx">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.Internals.ixx">
+      <Filter>Time</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Enum.h">
+      <Filter>CTTI\TypeTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Base.h">
+      <Filter>CTTI\TypeTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.h">
+      <Filter>CTTI\TypeTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Base.h">
+      <Filter>CTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.h">
+      <Filter>CTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.Base.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Struct.h">
+      <Filter>CTTI\TypeTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.StructDefintionBuild.h">
+      <Filter>CTTI\TypeTraits</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory).editorconfig" />

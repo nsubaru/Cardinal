@@ -74,6 +74,12 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>$(SolutionDir)..\NtApi\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>$(SolutionDir)..\NtApi\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -119,6 +125,10 @@
       <AdditionalIncludeDirectories>$(SolutionDir)Cardinal.NTAPI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CallingConvention>VectorCall</CallingConvention>
       <ForcedIncludeFiles>$(SolutionDir)Cardinal.Core\Cardinal.Core.Definitions.h;$(SolutionDir)Cardinal\Cardinal.Definitions.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalOptions>/favor:AMD64  /constexpr:depth4096 /constexpr:backtrace20 /constexpr:steps10000000 /Zc:implicitNoexcept- /FS  /Zo /cgthreads8  /bigobj /Zc:externConstexpr %(AdditionalOptions)</AdditionalOptions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
     </ClCompile>
     <Link>
       <SubSystem>Native</SubSystem>
@@ -139,6 +149,8 @@
       <AdditionalIncludeDirectories>$(SolutionDir)Cardinal.NTAPI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CallingConvention>VectorCall</CallingConvention>
       <ForcedIncludeFiles>$(SolutionDir)Cardinal.Core\Cardinal.Core.Definitions.h;$(SolutionDir)Cardinal\Cardinal.Definitions.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
     </ClCompile>
     <Link>
       <SubSystem>Native</SubSystem>
@@ -155,10 +167,28 @@
     <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.ConstString.cppm">
       <FileType>Document</FileType>
     </ClCompile>
+    <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.Containers.InitilizerList.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
     <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.Containers.LINQ.Base.ixx">
       <FileType>Document</FileType>
     </ClCompile>
     <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.Containers.LINQ.ICollection.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.Containers.NonConcurency.Array.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.Pod.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.StructDefintionBuild.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.CTTI.Minimla.TypeTraits.Pod.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.Logger.ixx">
       <FileType>Document</FileType>
     </ClCompile>
   </ItemGroup>
