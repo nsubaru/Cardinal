@@ -37,8 +37,10 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.List.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Map.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Pair.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.SmartPtr.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Tuple.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.TypeTraits.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniquePtr.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Concepts.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Concepts.ixx" />
@@ -54,6 +56,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Pod.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Struct.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.StructRemoteDefinition.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Logger.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Logger.StaticLogger.ixx" />
