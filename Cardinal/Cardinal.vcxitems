@@ -56,8 +56,17 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Pod.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Struct.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.StructRemoteDefinition.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.API.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.HighLevelStructs.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.Inlines.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.Public.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.SEH.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.Types.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Logger.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Logger.StaticLogger.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Math.Base.ixx" />
@@ -87,6 +96,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.TryParsePart.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Internal.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.SRWLock.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.TLS.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.TLS.Exceptions.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.TLS.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.Internals.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.ixx" />
@@ -103,6 +115,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.StructDefintionBuild.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.Base.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Base.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Throw.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory).editorconfig" />

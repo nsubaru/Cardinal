@@ -49,6 +49,12 @@
     <Filter Include="Settings">
       <UniqueIdentifier>{36cf0b98-a40a-4b06-992b-302b858c5ca4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exceptions\ABI">
+      <UniqueIdentifier>{a70efcf6-ca6f-49a9-acc4-0383d75b1e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threading\TLS">
+      <UniqueIdentifier>{2578ae35-aea8-41ce-a578-7a62ae4d03d2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx">
@@ -278,6 +284,42 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.SmartPtr.ixx">
       <Filter>Containers</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ixx">
+      <Filter>Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.Base.ixx">
+      <Filter>Exceptions\ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.TLS.Base.ixx">
+      <Filter>Threading\TLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.TLS.Exceptions.ixx">
+      <Filter>Threading\TLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.TLS.ixx">
+      <Filter>Threading\TLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.SEH.ixx">
+      <Filter>Exceptions\ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.Types.ixx">
+      <Filter>Exceptions\ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.API.ixx">
+      <Filter>Exceptions\ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.HighLevelStructs.ixx">
+      <Filter>Exceptions\ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.Inlines.ixx">
+      <Filter>Exceptions\ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.Public.ixx">
+      <Filter>Exceptions\ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.ixx">
+      <Filter>Exceptions\ABI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.h" />
@@ -303,6 +345,15 @@
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.StructDefintionBuild.h">
       <Filter>CTTI\TypeTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Base.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Throw.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.h">
+      <Filter>Exceptions</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
