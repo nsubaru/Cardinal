@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="Cardinal::Exception::ExeptionLocation">
+		<DisplayString>{{{SourceLocation.FileName.str, sub}:{SourceLocation.Line} in thread {ThreadID}}}</DisplayString>
+		<Expand>
+			<Item Name="File">SourceLocation.FileName.str, sub</Item>
+			<Item Name="Line">SourceLocation.Line</Item>
+			<Item Name="Thread ID">ThreadID</Item>
+		</Expand>
+	</Type>
+	<Type Name="Cardinal::Exception" Inheritable="true">
+		<DisplayString>{{Exception: {exceptionName.str, sub}}}</DisplayString>
+		<Expand>
+			<Item Name="Name">exceptionName.str, sub</Item>
+			<Synthetic Name="Location">
+				<DisplayString>{location.SourceLocation.FileName.str, sub}:{location.SourceLocation.Line} in thread {location.ThreadID}</DisplayString>
+				<Expand>
+					<ExpandedItem>location</ExpandedItem>
+					<Item Name="StackTrace">stackTrace</Item>
+				</Expand>
+			</Synthetic>
+		</Expand>
+	</Type>
+	<Type Name="Cardinal::Exception::StackTraceRecord">
+		<DisplayString>{{StackTrace}}</DisplayString>
+		<Expand>
+			<Item Name="Count">Count</Item>
+			<ExpandedItem>FunctionAddress,[Count]stackTrace</ExpandedItem>
+		</Expand>
+	</Type>
+</AutoVisualizer>

@@ -117,7 +117,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
@@ -125,15 +125,18 @@
       <AdditionalIncludeDirectories>$(SolutionDir)Cardinal.NTAPI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CallingConvention>VectorCall</CallingConvention>
       <ForcedIncludeFiles>$(SolutionDir)Cardinal.Core\Cardinal.Core.Definitions.h;$(SolutionDir)Cardinal\Cardinal.Definitions.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalOptions>/favor:AMD64  /constexpr:depth4096 /constexpr:backtrace20 /constexpr:steps10000000 /Zc:implicitNoexcept- /FS  /Zo /cgthreads8  /bigobj /Zc:externConstexpr %(AdditionalOptions)</AdditionalOptions>
       <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
     </ClCompile>
     <Link>
       <SubSystem>Native</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <EntryPointSymbol>NativeEntryPoint</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
