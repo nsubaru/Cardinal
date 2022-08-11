@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <Type Name="Cardinal::Containers::BaseFixedStack&lt;*, *, *&gt;">
+    <DisplayString>{{ Lenght={count} }}</DisplayString>
+    <Expand>
+      <Item Name="[Lenght]">count</Item>
+      <Item Name="[Buffer lenght]">$T2</Item>
+      <ArrayItems>
+        <Size>$T2</Size>
+        <ValuePointer>stack</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+</AutoVisualizer>

@@ -457,5 +457,29 @@
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Map.natvis">
       <Filter>Containers\Concurency</Filter>
     </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Array.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicQueue.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicStack.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedArray.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedQueue.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedStack.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.List.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Map.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
   </ItemGroup>
 </Project>
