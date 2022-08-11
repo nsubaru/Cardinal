@@ -433,5 +433,29 @@
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Array.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicQueue.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicStack.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedArray.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedQueue.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedStack.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.List.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Map.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
   </ItemGroup>
 </Project>

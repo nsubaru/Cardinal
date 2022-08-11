@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="Cardinal::Containers::BaseConcurencyMap&lt;*, *, *&gt;">
+		<DisplayString>{{ Lenght={count.count} }}</DisplayString>
+		<Expand>
+			<Item Name="[Lenght]">count.count</Item>
+			<TreeItems>
+				<Size>count.count</Size>
+				<HeadPointer>root</HeadPointer>
+				<LeftPointer>left</LeftPointer>
+				<RightPointer>right</RightPointer>
+				<ValueNode>data</ValueNode>
+			</TreeItems>
+		</Expand>
+	</Type>
+</AutoVisualizer>
