@@ -320,6 +320,27 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.ixx">
       <Filter>Exceptions\ABI</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Dictionary.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicQueue.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Base.ixx">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicStack.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedArray.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedQueue.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedStack.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.h" />

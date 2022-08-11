@@ -16,6 +16,7 @@
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.InitilizerList.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IArray.ixx" />
@@ -34,6 +35,12 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IReadOnlyCollection.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IString.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Dictionary.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicQueue.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicStack.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedArray.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedQueue.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedStack.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.List.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Map.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Pair.ixx" />
