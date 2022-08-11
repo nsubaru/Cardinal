@@ -16,7 +16,9 @@
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.AtomicSmartPtr.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.BitMap.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Array.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Dictionary.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicQueue.ixx" />
@@ -27,6 +29,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.List.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Map.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.InitilizerList.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Lazy.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IArray.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IAssociableCollection.ixx" />
@@ -56,6 +59,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.SmartPtr.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Tuple.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.TypeTraits.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniqueAlignArrayPtr.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniqueAlignPtr.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniqueArrayPtr.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniquePtr.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Concepts.Base.ixx" />
