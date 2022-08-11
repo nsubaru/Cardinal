@@ -55,6 +55,9 @@
     <Filter Include="Threading\TLS">
       <UniqueIdentifier>{2578ae35-aea8-41ce-a578-7a62ae4d03d2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exceptions\GenericExceptions">
+      <UniqueIdentifier>{77d627b5-2bbb-4d88-b982-d5051c31d97e}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Containers\Concurency">
       <UniqueIdentifier>{382d270d-05bd-4532-a8b7-3bea45e44611}</UniqueIdentifier>
     </Filter>
@@ -302,9 +305,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.TLS.ixx">
       <Filter>Threading\TLS</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.SEH.ixx">
-      <Filter>Exceptions\ABI</Filter>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.Types.ixx">
       <Filter>Exceptions\ABI</Filter>
     </ClCompile>
@@ -321,6 +321,27 @@
       <Filter>Exceptions\ABI</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.ixx">
+      <Filter>Exceptions\ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.cpp">
+      <Filter>Exceptions\ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.API.cpp">
+      <Filter>Exceptions\ABI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InteruptException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Logger.StaticLogger.Managed.ixx">
+      <Filter>Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Base.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.Throw.cpp">
       <Filter>Exceptions\ABI</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Dictionary.ixx">
@@ -427,6 +448,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.h">
       <Filter>Exceptions</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.SEH.h">
+      <Filter>Exceptions\ABI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory).editorconfig" />
@@ -495,6 +519,12 @@
     </Natvis>
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Tuple.natvis">
       <Filter>Containers</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InteruptException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.natvis">
+      <Filter>Exceptions</Filter>
     </Natvis>
   </ItemGroup>
 </Project>
