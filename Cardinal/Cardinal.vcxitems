@@ -17,6 +17,15 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Array.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Dictionary.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicQueue.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicStack.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedArray.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedQueue.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedStack.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.List.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Map.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.InitilizerList.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IArray.ixx" />
@@ -101,6 +110,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.LinqApi.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.Manipulation.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.TryParsePart.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.DataFlowControler.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Internal.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.SRWLock.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.TLS.Base.ixx" />

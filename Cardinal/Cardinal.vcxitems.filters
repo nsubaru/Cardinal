@@ -55,6 +55,9 @@
     <Filter Include="Threading\TLS">
       <UniqueIdentifier>{2578ae35-aea8-41ce-a578-7a62ae4d03d2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Containers\Concurency">
+      <UniqueIdentifier>{382d270d-05bd-4532-a8b7-3bea45e44611}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx">
@@ -340,6 +343,36 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedStack.ixx">
       <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Array.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Dictionary.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Map.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.List.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicQueue.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.DataFlowControler.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicStack.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedArray.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedQueue.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedStack.ixx">
+      <Filter>Containers\Concurency</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
