@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="Cardinal::Containers::BaseConcurencyList&lt;*, *&gt;">
+		<DisplayString>{{ Lenght={size} }}</DisplayString>
+		<Expand>
+			<Item Name="[Lenght]">size</Item>
+			<LinkedListItems>
+				<Size>size.count</Size>
+				<HeadPointer>root</HeadPointer>
+				<NextPointer>next</NextPointer>
+				<ValueNode>value</ValueNode>
+			</LinkedListItems>
+		</Expand>
+	</Type>
+</AutoVisualizer>

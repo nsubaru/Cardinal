@@ -58,6 +58,9 @@
     <Filter Include="Exceptions\GenericExceptions">
       <UniqueIdentifier>{77d627b5-2bbb-4d88-b982-d5051c31d97e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Containers\Concurency">
+      <UniqueIdentifier>{382d270d-05bd-4532-a8b7-3bea45e44611}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx">
@@ -341,6 +344,75 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.Throw.cpp">
       <Filter>Exceptions\ABI</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Dictionary.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicQueue.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Base.ixx">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicStack.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedArray.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedQueue.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedStack.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Array.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Dictionary.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Map.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.List.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicQueue.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.DataFlowControler.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicStack.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedArray.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedQueue.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedStack.ixx">
+      <Filter>Containers\Concurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.AtomicSmartPtr.ixx">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.BitMap.ixx">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Lazy.ixx">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniqueAlignArrayPtr.ixx">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniqueAlignPtr.ixx">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniqueArrayPtr.ixx">
+      <Filter>Containers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.h" />
@@ -385,6 +457,69 @@
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Array.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicQueue.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicStack.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedArray.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedQueue.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedStack.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.List.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Map.natvis">
+      <Filter>Containers\Concurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Array.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicQueue.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicStack.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedArray.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedQueue.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedStack.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.List.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Map.natvis">
+      <Filter>Containers\NonConcurency</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.AtomicSmartPtr.natvis">
+      <Filter>Containers</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Lazy.natvis">
+      <Filter>Containers</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Pair.natvis">
+      <Filter>Containers</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.SmartPtr.natvis">
+      <Filter>Containers</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Tuple.natvis">
+      <Filter>Containers</Filter>
+    </Natvis>
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InteruptException.natvis">
       <Filter>Exceptions\GenericExceptions</Filter>
     </Natvis>

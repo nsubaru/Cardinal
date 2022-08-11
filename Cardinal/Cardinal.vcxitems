@@ -16,7 +16,20 @@
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.AtomicSmartPtr.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.BitMap.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Array.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Dictionary.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicQueue.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicStack.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedArray.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedQueue.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedStack.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.List.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Map.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.InitilizerList.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Lazy.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IArray.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IAssociableCollection.ixx" />
@@ -34,12 +47,21 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IReadOnlyCollection.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IString.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Dictionary.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicQueue.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicStack.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedArray.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedQueue.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedStack.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.List.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Map.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Pair.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.SmartPtr.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Tuple.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.TypeTraits.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniqueAlignArrayPtr.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniqueAlignPtr.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniqueArrayPtr.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniquePtr.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Concepts.Base.ixx" />
@@ -99,6 +121,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.Manipulation.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.TryParsePart.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.DataFlowControler.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Internal.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.SRWLock.ixx" />
@@ -131,6 +154,27 @@
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.AtomicSmartPtr.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Array.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicQueue.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicStack.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedArray.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedQueue.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedStack.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.List.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Map.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Lazy.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Array.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicQueue.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicStack.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedArray.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedQueue.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedStack.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.List.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Map.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Pair.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.SmartPtr.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Tuple.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InteruptException.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.natvis" />
   </ItemGroup>
