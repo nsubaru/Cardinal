@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="Cardinal::Containers::Details::V2Leaf&lt;*,*&gt;">
+		<DisplayString>{{Value = {value} Type = {"$T2"}}}</DisplayString>
+		<Expand>
+			<Item Name="Value">value</Item>
+			<Synthetic Name="Type">
+				<DisplayString>{"$T2"}</DisplayString>
+			</Synthetic>
+		</Expand>
+	</Type>
+
+	<!--Zero item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {0}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand/>
+	</Type>
+
+	<!--1 item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;*&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {1}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand>
+			<Item Name="[0]">(*((Cardinal::Containers::Details::V2Leaf&lt;0,$T1&gt;*)&amp;leafs))</Item>
+		</Expand>
+	</Type>
+
+	<!--2 item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;*,*&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {2}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand>
+			<Item Name="[0]">(*((Cardinal::Containers::Details::V2Leaf&lt;0,$T1&gt;*)&amp;leafs))</Item>
+			<Item Name="[1]">(*((Cardinal::Containers::Details::V2Leaf&lt;1,$T2&gt;*)&amp;leafs))</Item>
+		</Expand>
+	</Type>
+
+	<!--3 item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;*,*,*&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {3}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand>
+			<Item Name="[0]">(*((Cardinal::Containers::Details::V2Leaf&lt;0,$T1&gt;*)&amp;leafs))</Item>
+			<Item Name="[1]">(*((Cardinal::Containers::Details::V2Leaf&lt;1,$T2&gt;*)&amp;leafs))</Item>
+			<Item Name="[2]">(*((Cardinal::Containers::Details::V2Leaf&lt;2,$T3&gt;*)&amp;leafs))</Item>
+		</Expand>
+	</Type>
+
+	<!--4 item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;*,*,*,*&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {4}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand>
+			<Item Name="[0]">(*((Cardinal::Containers::Details::V2Leaf&lt;0,$T1&gt;*)&amp;leafs))</Item>
+			<Item Name="[1]">(*((Cardinal::Containers::Details::V2Leaf&lt;1,$T2&gt;*)&amp;leafs))</Item>
+			<Item Name="[2]">(*((Cardinal::Containers::Details::V2Leaf&lt;2,$T3&gt;*)&amp;leafs))</Item>
+			<Item Name="[3]">(*((Cardinal::Containers::Details::V2Leaf&lt;3,$T4&gt;*)&amp;leafs))</Item>
+		</Expand>
+	</Type>
+
+	<!--5 item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;*,*,*,*,*&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {5}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand>
+			<Item Name="[0]">(*((Cardinal::Containers::Details::V2Leaf&lt;0,$T1&gt;*)&amp;leafs))</Item>
+			<Item Name="[1]">(*((Cardinal::Containers::Details::V2Leaf&lt;1,$T2&gt;*)&amp;leafs))</Item>
+			<Item Name="[2]">(*((Cardinal::Containers::Details::V2Leaf&lt;2,$T3&gt;*)&amp;leafs))</Item>
+			<Item Name="[3]">(*((Cardinal::Containers::Details::V2Leaf&lt;3,$T4&gt;*)&amp;leafs))</Item>
+			<Item Name="[4]">(*((Cardinal::Containers::Details::V2Leaf&lt;4,$T5&gt;*)&amp;leafs))</Item>
+		</Expand>
+	</Type>
+
+	<!--6 item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;*,*,*,*,*,*&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {5}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand>
+			<Item Name="[0]">(*((Cardinal::Containers::Details::V2Leaf&lt;0,$T1&gt;*)&amp;leafs))</Item>
+			<Item Name="[1]">(*((Cardinal::Containers::Details::V2Leaf&lt;1,$T2&gt;*)&amp;leafs))</Item>
+			<Item Name="[2]">(*((Cardinal::Containers::Details::V2Leaf&lt;2,$T3&gt;*)&amp;leafs))</Item>
+			<Item Name="[3]">(*((Cardinal::Containers::Details::V2Leaf&lt;3,$T4&gt;*)&amp;leafs))</Item>
+			<Item Name="[4]">(*((Cardinal::Containers::Details::V2Leaf&lt;4,$T5&gt;*)&amp;leafs))</Item>
+
+			<Item Name="[5]">(*((Cardinal::Containers::Details::V2Leaf&lt;5,$T6&gt;*)&amp;leafs))</Item>
+		</Expand>
+	</Type>
+
+	<!--7 item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;*,*,*,*,*,*,*&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {7}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand>
+			<Item Name="[0]">(*((Cardinal::Containers::Details::V2Leaf&lt;0,$T1&gt;*)&amp;leafs))</Item>
+			<Item Name="[1]">(*((Cardinal::Containers::Details::V2Leaf&lt;1,$T2&gt;*)&amp;leafs))</Item>
+			<Item Name="[2]">(*((Cardinal::Containers::Details::V2Leaf&lt;2,$T3&gt;*)&amp;leafs))</Item>
+			<Item Name="[3]">(*((Cardinal::Containers::Details::V2Leaf&lt;3,$T4&gt;*)&amp;leafs))</Item>
+			<Item Name="[4]">(*((Cardinal::Containers::Details::V2Leaf&lt;4,$T5&gt;*)&amp;leafs))</Item>
+
+			<Item Name="[5]">(*((Cardinal::Containers::Details::V2Leaf&lt;5,$T6&gt;*)&amp;leafs))</Item>
+			<Item Name="[6]">(*((Cardinal::Containers::Details::V2Leaf&lt;6,$T7&gt;*)&amp;leafs))</Item>
+		</Expand>
+	</Type>
+
+	<!--8 item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;*,*,*,*,*,*,*,*&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {8}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand>
+			<Item Name="[0]">(*((Cardinal::Containers::Details::V2Leaf&lt;0,$T1&gt;*)&amp;leafs))</Item>
+			<Item Name="[1]">(*((Cardinal::Containers::Details::V2Leaf&lt;1,$T2&gt;*)&amp;leafs))</Item>
+			<Item Name="[2]">(*((Cardinal::Containers::Details::V2Leaf&lt;2,$T3&gt;*)&amp;leafs))</Item>
+			<Item Name="[3]">(*((Cardinal::Containers::Details::V2Leaf&lt;3,$T4&gt;*)&amp;leafs))</Item>
+			<Item Name="[4]">(*((Cardinal::Containers::Details::V2Leaf&lt;4,$T5&gt;*)&amp;leafs))</Item>
+
+			<Item Name="[5]">(*((Cardinal::Containers::Details::V2Leaf&lt;5,$T6&gt;*)&amp;leafs))</Item>
+			<Item Name="[6]">(*((Cardinal::Containers::Details::V2Leaf&lt;6,$T7&gt;*)&amp;leafs))</Item>
+			<Item Name="[7]">(*((Cardinal::Containers::Details::V2Leaf&lt;7,$T8&gt;*)&amp;leafs))</Item>
+		</Expand>
+	</Type>
+
+	<!--9 item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;*,*,*,*,*,*,*,*,*&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {9}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand>
+			<Item Name="[0]">(*((Cardinal::Containers::Details::V2Leaf&lt;0,$T1&gt;*)&amp;leafs))</Item>
+			<Item Name="[1]">(*((Cardinal::Containers::Details::V2Leaf&lt;1,$T2&gt;*)&amp;leafs))</Item>
+			<Item Name="[2]">(*((Cardinal::Containers::Details::V2Leaf&lt;2,$T3&gt;*)&amp;leafs))</Item>
+			<Item Name="[3]">(*((Cardinal::Containers::Details::V2Leaf&lt;3,$T4&gt;*)&amp;leafs))</Item>
+			<Item Name="[4]">(*((Cardinal::Containers::Details::V2Leaf&lt;4,$T5&gt;*)&amp;leafs))</Item>
+
+			<Item Name="[5]">(*((Cardinal::Containers::Details::V2Leaf&lt;5,$T6&gt;*)&amp;leafs))</Item>
+			<Item Name="[6]">(*((Cardinal::Containers::Details::V2Leaf&lt;6,$T7&gt;*)&amp;leafs))</Item>
+			<Item Name="[7]">(*((Cardinal::Containers::Details::V2Leaf&lt;7,$T8&gt;*)&amp;leafs))</Item>
+			<Item Name="[8]">(*((Cardinal::Containers::Details::V2Leaf&lt;8,$T9&gt;*)&amp;leafs))</Item>
+		</Expand>
+	</Type>
+
+	<!--10 item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;*,*,*,*,*,*,*,*,*,*&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {10}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand>
+			<Item Name="[0]">(*((Cardinal::Containers::Details::V2Leaf&lt;0,$T1&gt;*)&amp;leafs))</Item>
+			<Item Name="[1]">(*((Cardinal::Containers::Details::V2Leaf&lt;1,$T2&gt;*)&amp;leafs))</Item>
+			<Item Name="[2]">(*((Cardinal::Containers::Details::V2Leaf&lt;2,$T3&gt;*)&amp;leafs))</Item>
+			<Item Name="[3]">(*((Cardinal::Containers::Details::V2Leaf&lt;3,$T4&gt;*)&amp;leafs))</Item>
+			<Item Name="[4]">(*((Cardinal::Containers::Details::V2Leaf&lt;4,$T5&gt;*)&amp;leafs))</Item>
+
+			<Item Name="[5]">(*((Cardinal::Containers::Details::V2Leaf&lt;5,$T6&gt;*)&amp;leafs))</Item>
+			<Item Name="[6]">(*((Cardinal::Containers::Details::V2Leaf&lt;6,$T7&gt;*)&amp;leafs))</Item>
+			<Item Name="[7]">(*((Cardinal::Containers::Details::V2Leaf&lt;7,$T8&gt;*)&amp;leafs))</Item>
+			<Item Name="[8]">(*((Cardinal::Containers::Details::V2Leaf&lt;8,$T9&gt;*)&amp;leafs))</Item>
+			<Item Name="[9]">(*((Cardinal::Containers::Details::V2Leaf&lt;9,$T10&gt;*)&amp;leafs))</Item>
+		</Expand>
+	</Type>
+
+	<!--11 item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;*,*,*,*,*,*,*,*,*,*,*&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {11}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand>
+			<Item Name="[0]">(*((Cardinal::Containers::Details::V2Leaf&lt;0,$T1&gt;*)&amp;leafs))</Item>
+			<Item Name="[1]">(*((Cardinal::Containers::Details::V2Leaf&lt;1,$T2&gt;*)&amp;leafs))</Item>
+			<Item Name="[2]">(*((Cardinal::Containers::Details::V2Leaf&lt;2,$T3&gt;*)&amp;leafs))</Item>
+			<Item Name="[3]">(*((Cardinal::Containers::Details::V2Leaf&lt;3,$T4&gt;*)&amp;leafs))</Item>
+			<Item Name="[4]">(*((Cardinal::Containers::Details::V2Leaf&lt;4,$T5&gt;*)&amp;leafs))</Item>
+
+			<Item Name="[5]">(*((Cardinal::Containers::Details::V2Leaf&lt;5,$T6&gt;*)&amp;leafs))</Item>
+			<Item Name="[6]">(*((Cardinal::Containers::Details::V2Leaf&lt;6,$T7&gt;*)&amp;leafs))</Item>
+			<Item Name="[7]">(*((Cardinal::Containers::Details::V2Leaf&lt;7,$T8&gt;*)&amp;leafs))</Item>
+			<Item Name="[8]">(*((Cardinal::Containers::Details::V2Leaf&lt;8,$T9&gt;*)&amp;leafs))</Item>
+			<Item Name="[9]">(*((Cardinal::Containers::Details::V2Leaf&lt;9,$T10&gt;*)&amp;leafs))</Item>
+
+			<Item Name="[10]">(*((Cardinal::Containers::Details::V2Leaf&lt;10,$T11&gt;*)&amp;leafs))</Item>
+		</Expand>
+	</Type>
+
+	<!--12 item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;*,*,*,*,*,*,*,*,*,*,*,*&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {12}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand>
+			<Item Name="[0]">(*((Cardinal::Containers::Details::V2Leaf&lt;0,$T1&gt;*)&amp;leafs))</Item>
+			<Item Name="[1]">(*((Cardinal::Containers::Details::V2Leaf&lt;1,$T2&gt;*)&amp;leafs))</Item>
+			<Item Name="[2]">(*((Cardinal::Containers::Details::V2Leaf&lt;2,$T3&gt;*)&amp;leafs))</Item>
+			<Item Name="[3]">(*((Cardinal::Containers::Details::V2Leaf&lt;3,$T4&gt;*)&amp;leafs))</Item>
+			<Item Name="[4]">(*((Cardinal::Containers::Details::V2Leaf&lt;4,$T5&gt;*)&amp;leafs))</Item>
+
+			<Item Name="[5]">(*((Cardinal::Containers::Details::V2Leaf&lt;5,$T6&gt;*)&amp;leafs))</Item>
+			<Item Name="[6]">(*((Cardinal::Containers::Details::V2Leaf&lt;6,$T7&gt;*)&amp;leafs))</Item>
+			<Item Name="[7]">(*((Cardinal::Containers::Details::V2Leaf&lt;7,$T8&gt;*)&amp;leafs))</Item>
+			<Item Name="[8]">(*((Cardinal::Containers::Details::V2Leaf&lt;8,$T9&gt;*)&amp;leafs))</Item>
+			<Item Name="[9]">(*((Cardinal::Containers::Details::V2Leaf&lt;9,$T10&gt;*)&amp;leafs))</Item>
+
+			<Item Name="[10]">(*((Cardinal::Containers::Details::V2Leaf&lt;10,$T11&gt;*)&amp;leafs))</Item>
+			<Item Name="[11]">(*((Cardinal::Containers::Details::V2Leaf&lt;11,$T12&gt;*)&amp;leafs))</Item>
+		</Expand>
+	</Type>
+
+	<!--13 item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;*,*,*,*,*,*,*,*,*,*,*,*,*&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {13}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand>
+			<Item Name="[0]">(*((Cardinal::Containers::Details::V2Leaf&lt;0,$T1&gt;*)&amp;leafs))</Item>
+			<Item Name="[1]">(*((Cardinal::Containers::Details::V2Leaf&lt;1,$T2&gt;*)&amp;leafs))</Item>
+			<Item Name="[2]">(*((Cardinal::Containers::Details::V2Leaf&lt;2,$T3&gt;*)&amp;leafs))</Item>
+			<Item Name="[3]">(*((Cardinal::Containers::Details::V2Leaf&lt;3,$T4&gt;*)&amp;leafs))</Item>
+			<Item Name="[4]">(*((Cardinal::Containers::Details::V2Leaf&lt;4,$T5&gt;*)&amp;leafs))</Item>
+
+			<Item Name="[5]">(*((Cardinal::Containers::Details::V2Leaf&lt;5,$T6&gt;*)&amp;leafs))</Item>
+			<Item Name="[6]">(*((Cardinal::Containers::Details::V2Leaf&lt;6,$T7&gt;*)&amp;leafs))</Item>
+			<Item Name="[7]">(*((Cardinal::Containers::Details::V2Leaf&lt;7,$T8&gt;*)&amp;leafs))</Item>
+			<Item Name="[8]">(*((Cardinal::Containers::Details::V2Leaf&lt;8,$T9&gt;*)&amp;leafs))</Item>
+			<Item Name="[9]">(*((Cardinal::Containers::Details::V2Leaf&lt;9,$T10&gt;*)&amp;leafs))</Item>
+
+			<Item Name="[10]">(*((Cardinal::Containers::Details::V2Leaf&lt;10,$T11&gt;*)&amp;leafs))</Item>
+			<Item Name="[11]">(*((Cardinal::Containers::Details::V2Leaf&lt;11,$T12&gt;*)&amp;leafs))</Item>
+			<Item Name="[12]">(*((Cardinal::Containers::Details::V2Leaf&lt;12,$T13&gt;*)&amp;leafs))</Item>
+		</Expand>
+	</Type>
+
+	<!--14 item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;*,*,*,*,*,*,*,*,*,*,*,*,*,*&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {14}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand>
+			<Item Name="[0]">(*((Cardinal::Containers::Details::V2Leaf&lt;0,$T1&gt;*)&amp;leafs))</Item>
+			<Item Name="[1]">(*((Cardinal::Containers::Details::V2Leaf&lt;1,$T2&gt;*)&amp;leafs))</Item>
+			<Item Name="[2]">(*((Cardinal::Containers::Details::V2Leaf&lt;2,$T3&gt;*)&amp;leafs))</Item>
+			<Item Name="[3]">(*((Cardinal::Containers::Details::V2Leaf&lt;3,$T4&gt;*)&amp;leafs))</Item>
+			<Item Name="[4]">(*((Cardinal::Containers::Details::V2Leaf&lt;4,$T5&gt;*)&amp;leafs))</Item>
+
+			<Item Name="[5]">(*((Cardinal::Containers::Details::V2Leaf&lt;5,$T6&gt;*)&amp;leafs))</Item>
+			<Item Name="[6]">(*((Cardinal::Containers::Details::V2Leaf&lt;6,$T7&gt;*)&amp;leafs))</Item>
+			<Item Name="[7]">(*((Cardinal::Containers::Details::V2Leaf&lt;7,$T8&gt;*)&amp;leafs))</Item>
+			<Item Name="[8]">(*((Cardinal::Containers::Details::V2Leaf&lt;8,$T9&gt;*)&amp;leafs))</Item>
+			<Item Name="[9]">(*((Cardinal::Containers::Details::V2Leaf&lt;9,$T10&gt;*)&amp;leafs))</Item>
+
+			<Item Name="[10]">(*((Cardinal::Containers::Details::V2Leaf&lt;10,$T11&gt;*)&amp;leafs))</Item>
+			<Item Name="[11]">(*((Cardinal::Containers::Details::V2Leaf&lt;11,$T12&gt;*)&amp;leafs))</Item>
+			<Item Name="[12]">(*((Cardinal::Containers::Details::V2Leaf&lt;12,$T13&gt;*)&amp;leafs))</Item>
+			<Item Name="[13]">(*((Cardinal::Containers::Details::V2Leaf&lt;13,$T14&gt;*)&amp;leafs))</Item>
+		</Expand>
+	</Type>
+
+	<!--15 item-->
+	<Type Name="Cardinal::Containers::Tuple&lt;*,*,*,*,*,*,*,*,*,*,*,*,*,*,*&gt;">
+		<DisplayString IncludeView="noparens">{{Count = {15}}}</DisplayString>
+		<DisplayString ExcludeView="noparens">({*this,view(noparens)})</DisplayString>
+		<Expand>
+			<Item Name="[0]">(*((Cardinal::Containers::Details::V2Leaf&lt;0,$T1&gt;*)&amp;leafs))</Item>
+			<Item Name="[1]">(*((Cardinal::Containers::Details::V2Leaf&lt;1,$T2&gt;*)&amp;leafs))</Item>
+			<Item Name="[2]">(*((Cardinal::Containers::Details::V2Leaf&lt;2,$T3&gt;*)&amp;leafs))</Item>
+			<Item Name="[3]">(*((Cardinal::Containers::Details::V2Leaf&lt;3,$T4&gt;*)&amp;leafs))</Item>
+			<Item Name="[4]">(*((Cardinal::Containers::Details::V2Leaf&lt;4,$T5&gt;*)&amp;leafs))</Item>
+
+			<Item Name="[5]">(*((Cardinal::Containers::Details::V2Leaf&lt;5,$T6&gt;*)&amp;leafs))</Item>
+			<Item Name="[6]">(*((Cardinal::Containers::Details::V2Leaf&lt;6,$T7&gt;*)&amp;leafs))</Item>
+			<Item Name="[7]">(*((Cardinal::Containers::Details::V2Leaf&lt;7,$T8&gt;*)&amp;leafs))</Item>
+			<Item Name="[8]">(*((Cardinal::Containers::Details::V2Leaf&lt;8,$T9&gt;*)&amp;leafs))</Item>
+			<Item Name="[9]">(*((Cardinal::Containers::Details::V2Leaf&lt;9,$T10&gt;*)&amp;leafs))</Item>
+
+			<Item Name="[10]">(*((Cardinal::Containers::Details::V2Leaf&lt;10,$T11&gt;*)&amp;leafs))</Item>
+			<Item Name="[11]">(*((Cardinal::Containers::Details::V2Leaf&lt;11,$T12&gt;*)&amp;leafs))</Item>
+			<Item Name="[12]">(*((Cardinal::Containers::Details::V2Leaf&lt;12,$T13&gt;*)&amp;leafs))</Item>
+			<Item Name="[13]">(*((Cardinal::Containers::Details::V2Leaf&lt;13,$T14&gt;*)&amp;leafs))</Item>
+			<Item Name="[14]">(*((Cardinal::Containers::Details::V2Leaf&lt;14,$T15&gt;*)&amp;leafs))</Item>
+		</Expand>
+	</Type>
+
+</AutoVisualizer>

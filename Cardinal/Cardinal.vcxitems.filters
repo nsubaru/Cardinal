@@ -481,5 +481,20 @@
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Map.natvis">
       <Filter>Containers\NonConcurency</Filter>
     </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.AtomicSmartPtr.natvis">
+      <Filter>Containers</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Lazy.natvis">
+      <Filter>Containers</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Pair.natvis">
+      <Filter>Containers</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.SmartPtr.natvis">
+      <Filter>Containers</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Tuple.natvis">
+      <Filter>Containers</Filter>
+    </Natvis>
   </ItemGroup>
 </Project>

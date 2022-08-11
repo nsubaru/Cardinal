@@ -147,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.AtomicSmartPtr.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Array.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicQueue.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.DynamicStack.natvis" />
@@ -155,6 +156,7 @@
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedStack.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.List.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Map.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Lazy.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Array.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicQueue.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.DynamicStack.natvis" />
@@ -163,5 +165,8 @@
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedStack.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.List.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Map.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Pair.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.SmartPtr.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Tuple.natvis" />
   </ItemGroup>
 </Project>

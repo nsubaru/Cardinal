@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="Cardinal::BaseAtomicSmartPtr&lt;*,*&gt;">
+		<DisplayString Condition="This->ptr != 0">{{Value : {*This->ptr}}}</DisplayString>
+		<DisplayString Condition="This->ptr == 0">{{Value not loaded}}</DisplayString>
+		<Expand>
+			<Item Name="Item">This->ptr</Item>
+		</Expand>
+	</Type>
+</AutoVisualizer>
