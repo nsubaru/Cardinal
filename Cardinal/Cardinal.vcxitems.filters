@@ -413,6 +413,78 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniqueArrayPtr.ixx">
       <Filter>Containers</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.AllreadyExistException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.BadCast.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.BadException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.BadPureCall.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.DivideByZero.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.EmptyQueueException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.EmptyStackException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.EndNodeNotDeferencable.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.FullQueueException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.FullStackException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.IndexOutOfRange.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.IntegerOverflowException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InternalError.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InvalidArgumentException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InvalidFormatException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InvalidHandleUsage.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InvalidTypeException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.KeyAllreadyExistException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.NotFoundException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.NotImplementedException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.NtException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.NullPointException.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.OutOfMemory.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.StringToLong.ixx">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.h" />
@@ -525,6 +597,78 @@
     </Natvis>
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.natvis">
       <Filter>Exceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.AllreadyExistException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.BadCast.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.BadException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.BadPureCall.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.DivideByZero.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.EmptyQueueException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.EmptyStackException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.EndNodeNotDeferencable.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.FullQueueException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.FullStackException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.IndexOutOfRange.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.IntegerOverflowException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InternalError.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InvalidArgumentException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InvalidFormatException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InvalidHandleUsage.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InvalidTypeException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.KeyAllreadyExistException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.NotFoundException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.NotImplementedException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.NtException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.NullPointException.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.OutOfMemory.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.StringToLong.natvis">
+      <Filter>Exceptions\GenericExceptions</Filter>
     </Natvis>
   </ItemGroup>
 </Project>

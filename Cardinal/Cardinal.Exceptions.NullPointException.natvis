@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="Cardinal::NullPointException" Inheritable="true">
+		<DisplayString>{{Exception: {exceptionName.str, sub}}}</DisplayString>
+		<Expand>
+			<Item Name="Name">exceptionName.str, sub</Item>
+			<Item Name="Address">Addr, h</Item>
+			<Item Name="Access type">Type</Item>
+			<Synthetic Name="Location">
+				<DisplayString>{location.SourceLocation.FileName.str, sub}:{location.SourceLocation.Line} in thread {location.ThreadID}</DisplayString>
+				<Expand>
+					<ExpandedItem>location</ExpandedItem>
+					<Item Name="StackTrace">stackTrace</Item>
+				</Expand>
+			</Synthetic>
+		</Expand>
+	</Type>
+</AutoVisualizer>
