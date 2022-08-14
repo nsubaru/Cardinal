@@ -26,9 +26,11 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedArray.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedQueue.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.FixedStack.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.List.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.Map.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.InitilizerList.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Lazy.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.LINQ.IArray.ixx" />
@@ -53,6 +55,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedArray.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedQueue.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.FixedStack.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.List.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Map.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Pair.ixx" />
@@ -63,6 +66,14 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniqueAlignPtr.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniqueArrayPtr.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniquePtr.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Crc.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Hash.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Hash.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Hash.SHA256.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.HMAC.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Random.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Concepts.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Concepts.ixx" />
