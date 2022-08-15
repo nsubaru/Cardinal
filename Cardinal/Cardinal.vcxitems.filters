@@ -61,6 +61,9 @@
     <Filter Include="Containers\Concurency">
       <UniqueIdentifier>{382d270d-05bd-4532-a8b7-3bea45e44611}</UniqueIdentifier>
     </Filter>
+    <Filter Include="StringView">
+      <UniqueIdentifier>{d103f34e-1e18-495f-ba7c-36f0e7102e67}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx">
@@ -413,6 +416,18 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniqueArrayPtr.ixx">
       <Filter>Containers</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.StringView.ixx">
+      <Filter>StringView</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.StringView.Convertors.ixx">
+      <Filter>StringView</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.StringView.LINQ.ixx">
+      <Filter>StringView</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.StringView.Base.ixx">
+      <Filter>StringView</Filter>
+    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.AllreadyExistException.ixx">
       <Filter>Exceptions\GenericExceptions</Filter>
     </ClCompile>
@@ -597,6 +612,9 @@
     </Natvis>
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.natvis">
       <Filter>Exceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.StringView.natvis">
+      <Filter>StringView</Filter>
     </Natvis>
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.AllreadyExistException.natvis">
       <Filter>Exceptions\GenericExceptions</Filter>

@@ -144,6 +144,10 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.LinqApi.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.Manipulation.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.TryParsePart.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.StringView.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.StringView.Convertors.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.StringView.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.StringView.LINQ.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.DataFlowControler.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Internal.ixx" />
@@ -219,6 +223,7 @@
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InvalidTypeException.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.KeyAllreadyExistException.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.StringView.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.NotFoundException.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.NotImplementedException.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.NtException.natvis" />
