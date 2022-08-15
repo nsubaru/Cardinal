@@ -116,6 +116,12 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.NullPointException.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.OutOfMemory.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.StringToLong.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.Either.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.Optional.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.Result.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.UnionType.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Logger.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Logger.StaticLogger.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Logger.StaticLogger.Managed.ixx" />
@@ -230,5 +236,6 @@
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.NullPointException.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.OutOfMemory.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.StringToLong.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.Optional.natvis" />
   </ItemGroup>
 </Project>

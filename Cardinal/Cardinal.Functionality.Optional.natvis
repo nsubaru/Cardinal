@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="Cardinal::Functionality::Optional&lt;*&gt;">
+		<DisplayString Condition="isExist == true ">{{Value : {*($T1*) data}}}</DisplayString>
+		<DisplayString Condition="isExist == false">{{Value not available}}</DisplayString>
+		<Expand>
+			<Item Condition="isExist == true" Name="Item">*($T1*) data</Item>
+		</Expand>
+	</Type>
+</AutoVisualizer>
