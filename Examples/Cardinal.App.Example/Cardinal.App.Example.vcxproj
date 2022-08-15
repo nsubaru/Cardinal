@@ -164,6 +164,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Update="C:\Users\Izikiel\source\repos\Cardinal\Cardinal\Cardinal.Exceptions.AllreadyExistException.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="C:\Users\Izikiel\source\repos\Cardinal\Cardinal\Cardinal.Exceptions.KeyAllreadyExistException.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
     <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.ConstString.cpp">
       <FileType>Document</FileType>
     </ClCompile>
@@ -194,6 +200,14 @@
     <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.Logger.ixx">
       <FileType>Document</FileType>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Update="C:\Users\Izikiel\source\repos\Cardinal\Cardinal\Cardinal.Exceptions.AllreadyExistException.natvis">
+      <FileType>Document</FileType>
+    </Natvis>
+    <Natvis Update="C:\Users\Izikiel\source\repos\Cardinal\Cardinal\Cardinal.Exceptions.KeyAllreadyExistException.natvis">
+      <FileType>Document</FileType>
+    </Natvis>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

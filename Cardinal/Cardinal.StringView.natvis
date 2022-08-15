@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="Cardinal::BaseStringView&lt;*&gt;">
+		<DisplayString>{{ Lenght={len == -1 || len + offset > ((refStr->CurrentSize > 0) ? refStr->CurrentSize - 1 : 0) ? (((refStr->CurrentSize > 0) ? refStr->CurrentSize - 1 : 0) - offset) : len} Text = {refStr->str + offset, [len == -1 || len + offset > ((refStr.CurrentSize > 0) ? refStr.CurrentSize - 1 : 0) ? (((refStr->CurrentSize > 0) ? refStr->CurrentSize - 1 : 0) - offset) : len]su} }}</DisplayString>
+		<StringView>refStr->str + offset, [len == -1 || len + offset > ((refStr->CurrentSize > 0) ? refStr->CurrentSize - 1 : 0) ? (((refStr->CurrentSize > 0) ? refStr->CurrentSize - 1 : 0) - offset) : len]su</StringView>
+		<Expand>
+			<Item Name="Offset">offset</Item>
+			<Item Name="Lenght">len == -1 || len + offset > ((refStr->CurrentSize > 0) ? refStr->CurrentSize - 1 : 0) ? (((refStr->CurrentSize > 0) ? refStr->CurrentSize - 1 : 0) - offset) : len</Item>
+			<Item Name="String">refStr</Item>
+		</Expand>
+	</Type>
+</AutoVisualizer>
