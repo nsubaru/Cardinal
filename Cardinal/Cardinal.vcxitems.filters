@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="String">
-      <UniqueIdentifier>{f2b8f2b5-2700-44c6-a3b4-4d9196fdde8d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Exceptions">
       <UniqueIdentifier>{ab972210-b7f5-4853-9585-dba1bae2fcfe}</UniqueIdentifier>
     </Filter>
@@ -61,6 +58,9 @@
     <Filter Include="Containers\Concurency">
       <UniqueIdentifier>{382d270d-05bd-4532-a8b7-3bea45e44611}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Functionality">
+      <UniqueIdentifier>{1392223b-e41c-4fff-af5a-1f4f7e8bd2bf}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Crypt">
       <UniqueIdentifier>{8fe47146-158d-4782-851a-6471510fa0bd}</UniqueIdentifier>
     </Filter>
@@ -69,6 +69,9 @@
     </Filter>
     <Filter Include="StringView">
       <UniqueIdentifier>{d103f34e-1e18-495f-ba7c-36f0e7102e67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="String">
+      <UniqueIdentifier>{f2b8f2b5-2700-44c6-a3b4-4d9196fdde8d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -506,6 +509,24 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.StringToLong.ixx">
       <Filter>Exceptions\GenericExceptions</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.Base.ixx">
+      <Filter>Functionality</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.ixx">
+      <Filter>Functionality</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.Optional.ixx">
+      <Filter>Functionality</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.UnionType.ixx">
+      <Filter>Functionality</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.Result.ixx">
+      <Filter>Functionality</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.Either.ixx">
+      <Filter>Functionality</Filter>
+    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Hash.Base.ixx">
       <Filter>Crypt\Hash</Filter>
     </ClCompile>
@@ -726,6 +747,9 @@
     </Natvis>
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.StringToLong.natvis">
       <Filter>Exceptions\GenericExceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.Optional.natvis">
+      <Filter>Functionality</Filter>
     </Natvis>
   </ItemGroup>
 </Project>
