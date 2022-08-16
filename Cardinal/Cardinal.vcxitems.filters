@@ -61,6 +61,12 @@
     <Filter Include="Functionality">
       <UniqueIdentifier>{1392223b-e41c-4fff-af5a-1f4f7e8bd2bf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Crypt">
+      <UniqueIdentifier>{8fe47146-158d-4782-851a-6471510fa0bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypt\Hash">
+      <UniqueIdentifier>{abd5d7c7-5187-4f22-aaf3-14a89392173b}</UniqueIdentifier>
+    </Filter>
     <Filter Include="StringView">
       <UniqueIdentifier>{d103f34e-1e18-495f-ba7c-36f0e7102e67}</UniqueIdentifier>
     </Filter>
@@ -520,6 +526,39 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.Either.ixx">
       <Filter>Functionality</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Hash.Base.ixx">
+      <Filter>Crypt\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Hash.ixx">
+      <Filter>Crypt\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Hash.SHA256.ixx">
+      <Filter>Crypt\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.HMAC.ixx">
+      <Filter>Crypt\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Base.ixx">
+      <Filter>Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Crc.ixx">
+      <Filter>Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.ixx">
+      <Filter>Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Random.ixx">
+      <Filter>Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.ixx">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.ixx">
+      <Filter>Containers\NonConcurency</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.ixx">
+      <Filter>Containers\Concurency</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
