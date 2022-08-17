@@ -74,6 +74,8 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.HMAC.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Random.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Concepts.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Concepts.ixx" />
@@ -89,6 +91,10 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Pod.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Struct.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.StructRemoteDefinition.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.TypeName.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.TypeTraits.Collections.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.TypeTraits.HeapMetaData.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.TypeTraits.String.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.API.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.API.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.Base.ixx" />

@@ -22,20 +22,8 @@
     <Filter Include="RTTI">
       <UniqueIdentifier>{e3d1aa1b-9357-42c8-b56c-d7d3cfaceb30}</UniqueIdentifier>
     </Filter>
-    <Filter Include="CTTI">
-      <UniqueIdentifier>{71fa190a-3108-41a2-95f3-7227022e61fe}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CTTI\Concepts">
-      <UniqueIdentifier>{769a0bb0-cfcf-4aba-91f8-82bc6325d273}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CTTI\TypeTraits">
-      <UniqueIdentifier>{71fb87b0-cf0e-4f93-a952-477c3e9a8f02}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Time">
       <UniqueIdentifier>{cbd3e7f5-644e-46ae-85a1-de041ce1ccd4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CTTI\TypeName">
-      <UniqueIdentifier>{8a9f6363-d990-44df-9a1e-58e7c81a9cdd}</UniqueIdentifier>
     </Filter>
     <Filter Include="Threading">
       <UniqueIdentifier>{d5af1758-cf45-412d-89ed-d36367cb03f7}</UniqueIdentifier>
@@ -72,6 +60,21 @@
     </Filter>
     <Filter Include="String">
       <UniqueIdentifier>{f2b8f2b5-2700-44c6-a3b4-4d9196fdde8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CTTI.Minimal">
+      <UniqueIdentifier>{71fa190a-3108-41a2-95f3-7227022e61fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CTTI.Minimal\Concepts">
+      <UniqueIdentifier>{769a0bb0-cfcf-4aba-91f8-82bc6325d273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CTTI.Minimal\TypeTraits">
+      <UniqueIdentifier>{71fb87b0-cf0e-4f93-a952-477c3e9a8f02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CTTI.Minimal\TypeName">
+      <UniqueIdentifier>{8a9f6363-d990-44df-9a1e-58e7c81a9cdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CTTI">
+      <UniqueIdentifier>{54615bc2-ef7a-4996-81f2-8cde6841008a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -204,7 +207,7 @@
       <Filter>Containers</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Base.ixx">
-      <Filter>CTTI</Filter>
+      <Filter>CTTI.Minimal</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.Base.ixx">
       <Filter>Time</Filter>
@@ -213,49 +216,49 @@
       <Filter>Time</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.EType.ixx">
-      <Filter>CTTI</Filter>
+      <Filter>CTTI.Minimal</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Concepts.Base.ixx">
-      <Filter>CTTI\Concepts</Filter>
+      <Filter>CTTI.Minimal\Concepts</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Concepts.ixx">
-      <Filter>CTTI\Concepts</Filter>
+      <Filter>CTTI.Minimal\Concepts</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeName.Base.ixx">
-      <Filter>CTTI\TypeName</Filter>
+      <Filter>CTTI.Minimal\TypeName</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeName.ixx">
-      <Filter>CTTI\TypeName</Filter>
+      <Filter>CTTI.Minimal\TypeName</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Base.ixx">
-      <Filter>CTTI\TypeTraits</Filter>
+      <Filter>CTTI.Minimal\TypeTraits</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.BaseTypes.ixx">
-      <Filter>CTTI\TypeTraits</Filter>
+      <Filter>CTTI.Minimal\TypeTraits</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Enum.ixx">
-      <Filter>CTTI\TypeTraits</Filter>
+      <Filter>CTTI.Minimal\TypeTraits</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Pod.ixx">
-      <Filter>CTTI\TypeTraits</Filter>
+      <Filter>CTTI.Minimal\TypeTraits</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Function.ixx">
-      <Filter>CTTI\TypeTraits</Filter>
+      <Filter>CTTI.Minimal\TypeTraits</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Struct.ixx">
-      <Filter>CTTI\TypeTraits</Filter>
+      <Filter>CTTI.Minimal\TypeTraits</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.StructDefintionBuild.ixx">
-      <Filter>CTTI\TypeTraits</Filter>
+      <Filter>CTTI.Minimal\TypeTraits</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.StructRemoteDefinition.ixx">
-      <Filter>CTTI\TypeTraits</Filter>
+      <Filter>CTTI.Minimal\TypeTraits</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.ixx">
-      <Filter>CTTI\TypeTraits</Filter>
+      <Filter>CTTI.Minimal\TypeTraits</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.ixx">
-      <Filter>CTTI</Filter>
+      <Filter>CTTI.Minimal</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.ixx">
       <Filter>String</Filter>
@@ -560,31 +563,49 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Concurency.ixx">
       <Filter>Containers\Concurency</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Base.ixx">
+      <Filter>CTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.TypeName.ixx">
+      <Filter>CTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.TypeTraits.Collections.ixx">
+      <Filter>CTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.TypeTraits.HeapMetaData.ixx">
+      <Filter>CTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.TypeTraits.String.ixx">
+      <Filter>CTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.ixx">
+      <Filter>CTTI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Enum.h">
-      <Filter>CTTI\TypeTraits</Filter>
+      <Filter>CTTI.Minimal\TypeTraits</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Base.h">
-      <Filter>CTTI\TypeTraits</Filter>
+      <Filter>CTTI.Minimal\TypeTraits</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.h">
-      <Filter>CTTI\TypeTraits</Filter>
+      <Filter>CTTI.Minimal\TypeTraits</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.Base.h">
-      <Filter>CTTI</Filter>
+      <Filter>CTTI.Minimal</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.h">
-      <Filter>CTTI</Filter>
+      <Filter>CTTI.Minimal</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.Base.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Struct.h">
-      <Filter>CTTI\TypeTraits</Filter>
+      <Filter>CTTI.Minimal\TypeTraits</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.StructDefintionBuild.h">
-      <Filter>CTTI\TypeTraits</Filter>
+      <Filter>CTTI.Minimal\TypeTraits</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Base.h">
       <Filter>Exceptions</Filter>
