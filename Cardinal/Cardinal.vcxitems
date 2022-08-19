@@ -89,6 +89,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Function.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Pod.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Primitives.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Struct.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.StructRemoteDefinition.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.TypeName.ixx" />
@@ -154,6 +155,18 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.NonConcurency.Array.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.CxxTypeInfo.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.CxxTypeInfo.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Box.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Collection.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Composits.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Core.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.IntegratedTypes.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.MetaData.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Optional.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.PublicAPI.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Struct.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.TypeMetaRecord.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Settings.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Settings.ConstSettings.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Settings.CurrentSetting.ixx" />
@@ -171,6 +184,8 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.StringView.Convertors.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.StringView.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.StringView.LINQ.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Text.Path.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Text.Tokenizer.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.DataFlowControler.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Internal.ixx" />
@@ -202,6 +217,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory).editorconfig" />
+    <None Include="$(MSBuildThisFileDirectory)cpp.hint" />
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.natvis" />
