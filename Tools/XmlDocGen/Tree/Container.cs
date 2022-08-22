@@ -2,7 +2,9 @@
 
 namespace Cardinal.Tools.XmlDocGen.Tree;
 
-//class for containing and managing XML data;
+/// <summary>
+/// A class for containing and managing XML data
+/// </summary>
 public class Container
 {
     //Raw XML data;
@@ -18,14 +20,20 @@ public class Container
         Processing();
     }
 
-    //function for getting and creating Node whish must contain proccesing Member
-    //(If inner scope is missing it creates new scope as namepace)
+    /// <summary>
+    /// A function for getting and creating node, which must contain proccesing member
+    /// (If inner scope is missing it creates new scope as namepace)
+    /// </summary>
+    /// <param name="names">A set of names</param>
+    /// <param name="sNode">A list of nodes</param>
+    /// <returns>A filled list of nodes</returns>
     private List<Models.INode> GetNeededNode(string[] names, List<Models.INode> sNode)
     {
         var fullname = new StringBuilder();
         for (int i = 0; i < names.Length - 1; i++)
         {
             fullname.Insert(fullname.Length, names[i]);
+
             if (!sNode.Exists(x => x.Name == names[i]))
             {
 
@@ -35,20 +43,24 @@ public class Container
             fullname.Insert(fullname.Length, ".");
             sNode = sNode.Find(x => x.Name == names[i]).Child;
         }
+
         return sNode;
     }
 
+    /// <summary>
+    /// A method, which process the data and filling it in a tree of members
+    /// </summary>
     private void Processing()
     {
         foreach (var member in Members)
         {
-            List<Models.INode> Node = Nodes;
+            var node = Nodes;
             string[] sArr = member.Name.Split("("); //in case of function with signature;
             sArr = sArr[0].Split("."); //splitting Name into scopes
 
             if (sArr.Length > 1)
             {
-                Node = GetNeededNode(sArr, Nodes);
+                node = GetNeededNode(sArr, Nodes);
             }
 
             //Adding new Node according to its Type.
@@ -56,61 +68,98 @@ public class Container
             switch (member)
             {
                 case XmlDocGen.Models.Field fld:
-                    Node.Add(new Models.NodeField(sArr[sArr.Length - 1], fld.Description, member.Name.Split("(")[0]));
-                    break;
+                    {
+                        node.Add(new Models.NodeField(sArr[^1], fld.Description, member.Name.Split("(")[0]));
+                        break;
+                    }
                 case XmlDocGen.Models.Method mth:
-                    Node.Add(new Models.NodeMethod(sArr[sArr.Length - 1], mth.Description, mth.Args, mth.Returns, member.Name.Split("(")[0]));
-                    break;
+                    {
+                        node.Add(new Models.NodeMethod(sArr[^1], mth.Description, mth.Args, mth.Returns, member.Name.Split("(")[0]));
+                        break;
+                    }
                 case XmlDocGen.Models.Property prt:
-                    Node.Add(new Models.NodeProperty(sArr[sArr.Length - 1], prt.Description, member.Name.Split("(")[0]));
-                    break;
+                    {
+                        node.Add(new Models.NodeProperty(sArr[^1], prt.Description, member.Name.Split("(")[0]));
+                        break;
+                    }
                 case XmlDocGen.Models.Type tp:
-                    Node.Add(new Models.NodeType(sArr[sArr.Length - 1], tp.Description, member.Name.Split("(")[0]));
-                    break;
+                    {
+                        node.Add(new Models.NodeType(sArr[^1], tp.Description, member.Name.Split("(")[0]));
+                        break;
+                    }
                 default:
-                    Node.Add(new Models.NodeUndef(sArr[sArr.Length - 1]));
-                    break;
+                    {
+                        node.Add(new Models.NodeUndef(sArr[^1]));
+                        break;
+                    }
             }
         }
     }
 
+    /// <summary>
+    /// Save members to markdown files
+    /// </summary>
+    /// <param name="path">Path to a directory</param>
     public void ToMarkdownFiles(string path)
     {
         var statics = new List<Models.INode>();
         var thisPathName = path;
+
         foreach (var child in Nodes)
         {
             switch (child.Type)
             {
                 case Models.EType.Namespace:
-                    NodeParser(child, thisPathName);
-                    break;
+                    {
+                        NodeParser(child, thisPathName);
+                        break;
+                    }
                 case Models.EType.Type:
-                    SaveClass(child as Models.NodeType, thisPathName);
-                    break;
+                    {
+                        SaveClass(child as Models.NodeType, thisPathName);
+                        break;
+                    }
                 case Models.EType.Field:
-                    statics.Add(child);
-                    break;
+                    {
+                        statics.Add(child);
+                        break;
+                    }
                 case Models.EType.Function:
-                    break;
+                    {
+                        break;
+                    }
                 case Models.EType.Property:
-                    statics.Add(child);
-                    break;
+                    {
+                        statics.Add(child);
+                        break;
+                    }
                 case Models.EType.Method:
-                    statics.Add(child);
-                    break;
+                    {
+                        statics.Add(child);
+                        break;
+                    }
                 case Models.EType.Undefined:
-                    break;
+                    {
+                        break;
+                    }
                 default:
-                    break;
+                    {
+                        break;
+                    }
             }
         }
+
         if (statics.Count > 0)
         {
             SaveStatics(statics, thisPathName, path);
         }
     }
 
+    /// <summary>
+    /// Node parsing method
+    /// </summary>
+    /// <param name="node">Node</param>
+    /// <param name="path">Path to file</param>
     private void NodeParser(Models.INode node, string path)
     {
         var statics = new List<Models.INode>();
@@ -120,25 +169,41 @@ public class Container
             switch (child.Type)
             {
                 case Models.EType.Namespace:
-                    NodeParser(child, thisPathName);
-                    break;
+                    {
+                        NodeParser(child, thisPathName);
+                        break;
+                    }
                 case Models.EType.Type:
-                    SaveClass(child as Models.NodeType, thisPathName);
-                    break;
+                    {
+                        SaveClass(child as Models.NodeType, thisPathName);
+                        break;
+                    }
                 case Models.EType.Field:
-                    statics.Add(child);
-                    break;
+                    {
+                        statics.Add(child);
+                        break;
+                    }
                 case Models.EType.Function:
-                    break;
+                    {
+                        break;
+                    }
                 case Models.EType.Property:
-                    break;
+                    {
+                        break;
+                    }
                 case Models.EType.Method:
-                    statics.Add(child);
-                    break;
+                    {
+                        statics.Add(child);
+                        break;
+                    }
                 case Models.EType.Undefined:
-                    break;
+                    {
+                        break;
+                    }
                 default:
-                    break;
+                    {
+                        break;
+                    }
             }
         }
 
@@ -147,7 +212,12 @@ public class Container
             SaveStatics(statics, thisPathName, path);
         }
     }
-
+    
+    /// <summary>
+    /// Saving the class field into a file in markdown style
+    /// </summary>
+    /// <param name="node">Chosen node</param>
+    /// <param name="path">Path to file</param>
     private void SaveClass(Models.NodeType node, string path)
     {
         Directory.CreateDirectory(path);
@@ -166,14 +236,22 @@ public class Container
         markdownFile.Close();
     }
 
+    /// <summary>
+    /// Saving the ctatics into a file in markdown style
+    /// </summary>
+    /// <param name="statics">List of statics</param>
+    /// <param name="path">Path to file</param>
+    /// <param name="namespaceName">Name of namespace</param>
     private void SaveStatics(List<Models.INode> statics, string path, string namespaceName)
     {
         Directory.CreateDirectory(namespaceName);
         var data = new StringBuilder();
+
         foreach (var item in statics)
         {
             data.Append(item.ToMarkdown());
         }
+
         var fileName = Path.Combine(path + ".md");
 
         using var markdownFile = new StreamWriter(fileName);

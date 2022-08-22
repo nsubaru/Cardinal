@@ -2,14 +2,25 @@
 
 namespace Cardinal.Tools.XmlDocGen.Models;
 
+/// <summary>
+/// Property-type object
+/// </summary>
 public class Property : Member
 {
     public string Description { get; }
 
     public Property(string name, string description) : base(name) => Description = description;
 
+    /// <summary>
+    /// The line transformation method into a string line
+    /// </summary>
+    /// <returns>String representation of chosen line</returns>
     public override string ToString() => $"Property: {base.ToString()} - summary: {Description}";
 
+    /// <summary>
+    /// The XML line transformation method into a markdown-style format
+    /// </summary>
+    /// <returns>String representation of transformed XML line</returns>
     public override string ToMarkdown()
     {
         var  result = new StringBuilder();

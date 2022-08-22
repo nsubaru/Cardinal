@@ -2,8 +2,16 @@
 
 namespace Cardinal.Tools.XmlDocGen;
 
+/// <summary>
+/// XDC parser class
+/// </summary>
 public class XdcParser
 {
+    /// <summary>
+    /// General XML parsing method
+    /// </summary>
+    /// <param name="xmlMembers">XML node</param>
+    /// <returns>Parsed members</returns>
     public static List<Models.Member> Parse(XmlNode xmlMembers)
     {
         var members = new List<Models.Member>();
@@ -45,6 +53,12 @@ public class XdcParser
         return members;
     }
 
+    /// <summary>
+    /// Field-type parsing method
+    /// </summary>
+    /// <param name="members">List of members</param>
+    /// <param name="member">XML node</param>
+    /// <param name="memberName">Member name</param>
     private static void ParseField(List<Models.Member> members, XmlNode member, string memberName)
     {
         members.Add(new Models.Field(
@@ -53,6 +67,12 @@ public class XdcParser
         ));
     }
 
+    /// <summary>
+    /// Type parsing method
+    /// </summary>
+    /// <param name="members">List of members</param>
+    /// <param name="member">XML node</param>
+    /// <param name="memberName">Member name</param>
     private static void ParseType(List<Models.Member> members, XmlNode member, string memberName)
     {
         var summary = string.Empty;
@@ -78,6 +98,12 @@ public class XdcParser
         members.Add(new Models.Type(memberName[2..], summary, param));
     }
 
+    /// <summary>
+    /// Property-type parsing method
+    /// </summary>
+    /// <param name="members">List of members</param>
+    /// <param name="member">XML node</param>
+    /// <param name="memberName">Member name</param>
     private static void ParseProperty(List<Models.Member> members, XmlNode member, string memberName)
     {
         members.Add(new Models.Property(
@@ -86,6 +112,12 @@ public class XdcParser
         ));
     }
 
+    /// <summary>
+    /// Method-type parsing method
+    /// </summary>
+    /// <param name="members">List of members</param>
+    /// <param name="member">XML node</param>
+    /// <param name="memberName">Member name</param>
     private static void ParseMethod(List<Models.Member> members, XmlNode member, string memberName)
     {
         var returns = string.Empty;

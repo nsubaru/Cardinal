@@ -4,6 +4,9 @@ using System;
 
 namespace Cardinal.Tools.XmlDocGen.Tree.Models;
 
+/// <summary>
+/// Method-type node
+/// </summary>
 class NodeMethod : INode
 {
     public static Dictionary<string, string> NameReplaceTable = Method.NameReplaceTable;
@@ -19,8 +22,17 @@ class NodeMethod : INode
     public Dictionary<string, string> Args { get; }
 
     public string Returning { get; }
+
     public string FullName { get; }
 
+    /// <summary>
+    /// Method-type node constructor
+    /// </summary>
+    /// <param name="name">Name</param>
+    /// <param name="desc">Description</param>
+    /// <param name="args">Arguments</param>
+    /// <param name="ret">Returning value</param>
+    /// <param name="fn">Full name</param>
     public NodeMethod(string name, string desc, Dictionary<string, string> args, string ret, string fn)
     {
         Name = name;
@@ -30,6 +42,10 @@ class NodeMethod : INode
         FullName = fn;
     }
 
+    /// <summary>
+    /// The XML line transformation method into a markdown-style format
+    /// </summary>
+    /// <returns>String representation of transformed XML line</returns>
     public string ToMarkdown()
     {
         var result = new StringBuilder();
