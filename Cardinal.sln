@@ -35,13 +35,17 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cardinal.Cs.Helper", "Cardi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cardinal.Launcher.NT.Example", "Examples\Cardinal.Launcher.NT.Example\Cardinal.Launcher.NT.Example.vcxproj", "{2C20A024-75F4-4BCA-A1CB-136908419306}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardinal.Objects", "Cardinal.Objects\Cardinal.Objects.csproj", "{B478E30A-D1AB-49ED-812C-82384B024026}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cardinal.Objects", "Cardinal.Objects\Cardinal.Objects.csproj", "{B478E30A-D1AB-49ED-812C-82384B024026}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardinal.CTTI", "Cardinal.CTTI\Cardinal.CTTI.csproj", "{53D3C287-9BA4-475E-911D-706E8BFD0AA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cardinal.CTTI", "Cardinal.CTTI\Cardinal.CTTI.csproj", "{53D3C287-9BA4-475E-911D-706E8BFD0AA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardinal.Serialization.Tests", "Cardinal.Serialization.Tests\Cardinal.Serialization.Tests.csproj", "{F9A59D3A-A920-4689-85BB-57045B5B4599}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cardinal.Serialization.Tests", "Cardinal.Serialization.Tests\Cardinal.Serialization.Tests.csproj", "{F9A59D3A-A920-4689-85BB-57045B5B4599}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardinal.Serialization", "Cardinal.Serialization\Cardinal.Serialization.csproj", "{EA5DCE32-D427-485E-B8FA-ACE4AA99321F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cardinal.Serialization", "Cardinal.Serialization\Cardinal.Serialization.csproj", "{EA5DCE32-D427-485E-B8FA-ACE4AA99321F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{9F118E92-630E-43F1-A836-4CA9F7685DCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlDocGen", "Tools\XmlDocGen\XmlDocGen.csproj", "{BC86EBCE-8C7C-4E87-BA49-145B46776E67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -209,6 +213,18 @@ Global
 		{EA5DCE32-D427-485E-B8FA-ACE4AA99321F}.Release|x64.Build.0 = Release|Any CPU
 		{EA5DCE32-D427-485E-B8FA-ACE4AA99321F}.Release|x86.ActiveCfg = Release|Any CPU
 		{EA5DCE32-D427-485E-B8FA-ACE4AA99321F}.Release|x86.Build.0 = Release|Any CPU
+		{BC86EBCE-8C7C-4E87-BA49-145B46776E67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC86EBCE-8C7C-4E87-BA49-145B46776E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC86EBCE-8C7C-4E87-BA49-145B46776E67}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BC86EBCE-8C7C-4E87-BA49-145B46776E67}.Debug|x64.Build.0 = Debug|Any CPU
+		{BC86EBCE-8C7C-4E87-BA49-145B46776E67}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BC86EBCE-8C7C-4E87-BA49-145B46776E67}.Debug|x86.Build.0 = Debug|Any CPU
+		{BC86EBCE-8C7C-4E87-BA49-145B46776E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC86EBCE-8C7C-4E87-BA49-145B46776E67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC86EBCE-8C7C-4E87-BA49-145B46776E67}.Release|x64.ActiveCfg = Release|Any CPU
+		{BC86EBCE-8C7C-4E87-BA49-145B46776E67}.Release|x64.Build.0 = Release|Any CPU
+		{BC86EBCE-8C7C-4E87-BA49-145B46776E67}.Release|x86.ActiveCfg = Release|Any CPU
+		{BC86EBCE-8C7C-4E87-BA49-145B46776E67}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -220,6 +236,8 @@ Global
 		{7229E5B4-1EFE-415A-8FA0-1657D9B6A7DB} = {FA5BC730-44FE-409E-A228-C605D7C09976}
 		{D19366BA-1AF3-4C6F-B5C9-79153BEF6886} = {FA5BC730-44FE-409E-A228-C605D7C09976}
 		{2C20A024-75F4-4BCA-A1CB-136908419306} = {EC6D17F4-7B03-4C91-9999-E25EA6D357E1}
+		{F9A59D3A-A920-4689-85BB-57045B5B4599} = {FA5BC730-44FE-409E-A228-C605D7C09976}
+		{BC86EBCE-8C7C-4E87-BA49-145B46776E67} = {9F118E92-630E-43F1-A836-4CA9F7685DCA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {97A8DC8D-C622-4F04-A415-4982E83B192E}
