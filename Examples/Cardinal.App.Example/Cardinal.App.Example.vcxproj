@@ -164,6 +164,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Update="C:\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.CustomType.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
     <ClCompile Update="C:\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.Object.Base.ixx">
       <FileType>Document</FileType>
     </ClCompile>
@@ -232,6 +235,11 @@
     <Natvis Update="C:\Users\Izikiel\source\repos\Cardinal\Cardinal\Cardinal.Exceptions.KeyAllreadyExistException.natvis">
       <FileType>Document</FileType>
     </Natvis>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="C:\Cardinal\Cardinal\Cardinal.RTTI.Base.MetaData.ixx">
+      <FileType>Document</FileType>
+    </None>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

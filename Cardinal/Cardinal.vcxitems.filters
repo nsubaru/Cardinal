@@ -88,6 +88,30 @@
     <Filter Include="CTTI.Minimal\TypeTraits\Object">
       <UniqueIdentifier>{273e7bf9-c8f2-4df8-8b6e-5657d899dcbb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="RTTI\Cxx">
+      <UniqueIdentifier>{67efa782-95e5-4cc5-a1ca-444e9db2cbfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTTI\Dynamic">
+      <UniqueIdentifier>{f8745885-c86f-4558-8623-0e71f5a06a7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTTI\Exceptions">
+      <UniqueIdentifier>{6a522229-5609-4fdf-8692-0b1bb5a344c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTTI\MetaData">
+      <UniqueIdentifier>{867945b4-3e2d-456a-a92f-6f08bf5a6b1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTTI\Record">
+      <UniqueIdentifier>{a2503407-3940-43b7-a31b-fa321522b88e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTTI\Section">
+      <UniqueIdentifier>{954b5bb2-f50d-4c2b-bf1e-e73aa299eeeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTTI\Traveler">
+      <UniqueIdentifier>{4c4c3e2f-a71f-45f5-bc8e-44e08a015c61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTTI\Record\Object">
+      <UniqueIdentifier>{3affb155-21ea-4851-a63f-7b5773859421}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx">
@@ -665,6 +689,78 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.ixx">
       <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.CustomType.ixx">
+      <Filter>CTTI.Minimal\TypeTraits</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Base.Exceptions.ixx">
+      <Filter>RTTI\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Base.Record.ixx">
+      <Filter>RTTI\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Base.UniversalTypeIdentificator.ixx">
+      <Filter>RTTI\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Base.Types.ixx">
+      <Filter>RTTI\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Base.RttiInternals.ixx">
+      <Filter>RTTI\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Base.MetaData.ixx">
+      <Filter>RTTI\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Base.ixx">
+      <Filter>RTTI\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Cxx.ExceptionsData.ixx">
+      <Filter>RTTI\Cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Cxx.Internals.ixx">
+      <Filter>RTTI\Cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Cxx.Public.ixx">
+      <Filter>RTTI\Cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.Base.ixx">
+      <Filter>RTTI\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.RttiIterator.ixx">
+      <Filter>RTTI\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.RttiField.ixx">
+      <Filter>RTTI\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.RttiICollection.ixx">
+      <Filter>RTTI\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.RttiTypeRecord.ixx">
+      <Filter>RTTI\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.Object.Base.ixx">
+      <Filter>RTTI\Record\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.Object.Argument.ixx">
+      <Filter>RTTI\Record\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.Object.Constructor.ixx">
+      <Filter>RTTI\Record\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.Object.Interface.ixx">
+      <Filter>RTTI\Record\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.Object.Method.ixx">
+      <Filter>RTTI\Record\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.Object.Property.ixx">
+      <Filter>RTTI\Record\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.Object.ixx">
+      <Filter>RTTI\Record\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.ixx">
+      <Filter>RTTI\Record</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.h" />
@@ -877,6 +973,9 @@
     </Natvis>
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.Optional.natvis">
       <Filter>Functionality</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.RttiTypeRecord.natvis">
+      <Filter>RTTI\Record</Filter>
     </Natvis>
   </ItemGroup>
 </Project>
