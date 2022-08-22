@@ -164,6 +164,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Update="C:\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.Object.Base.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="C:\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.Object.ClassRecord.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="C:\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.Object.Interfaces.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="C:\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.Object.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="C:\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.Object.Method.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="C:\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.Object.Property.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="C:\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.Object.RemoteDefinition.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="C:\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.Object.SpecialMethods.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
     <ClCompile Update="C:\Users\Izikiel\source\repos\Cardinal\Cardinal\Cardinal.Exceptions.AllreadyExistException.ixx">
       <FileType>Document</FileType>
     </ClCompile>

@@ -82,6 +82,12 @@
     <Filter Include="Text">
       <UniqueIdentifier>{97b1f717-ce7a-4a6d-a2b1-7908a0e0714c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="RTTI\Base">
+      <UniqueIdentifier>{0bfe65f9-45e2-4333-acc8-b33f05864763}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CTTI.Minimal\TypeTraits\Object">
+      <UniqueIdentifier>{273e7bf9-c8f2-4df8-8b6e-5657d899dcbb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx">
@@ -632,6 +638,33 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Text.Path.ixx">
       <Filter>Text</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Base.Base.ixx">
+      <Filter>RTTI\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.Base.ixx">
+      <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.Interfaces.ixx">
+      <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.Method.ixx">
+      <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.Property.ixx">
+      <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.SpecialMethods.ixx">
+      <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.ClassRecord.ixx">
+      <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.RemoteDefinition.ixx">
+      <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.ixx">
+      <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.h" />
@@ -669,6 +702,27 @@
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.SEH.h">
       <Filter>Exceptions\ABI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.ClassRecord.h">
+      <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.Base.h">
+      <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.Interfaces.h">
+      <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.Method.h">
+      <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.Property.h">
+      <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.SpecialMethods.h">
+      <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.h">
+      <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
