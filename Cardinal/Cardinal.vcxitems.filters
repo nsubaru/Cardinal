@@ -761,6 +761,18 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.ixx">
       <Filter>RTTI\Record</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Section.Base.ixx">
+      <Filter>RTTI\Section</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Section.Type.ixx">
+      <Filter>RTTI\Section</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Section.Serialization.ixx">
+      <Filter>RTTI\Section</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Section.ixx">
+      <Filter>RTTI\Section</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.h" />

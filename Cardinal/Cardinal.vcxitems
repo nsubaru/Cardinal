@@ -188,6 +188,10 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.RttiICollection.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.RttiIterator.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.RttiTypeRecord.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Section.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Section.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Section.Serialization.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Section.Type.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Box.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Collection.ixx" />
