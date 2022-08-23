@@ -173,8 +173,8 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Cxx.ExceptionsData.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Cxx.Internals.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Cxx.Public.ixx" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.CxxTypeInfo.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.CxxTypeInfo.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Cxx.TypeInfo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Cxx.TypeInfo.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Dynamic.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Dynamic.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Dynamic.Serialization.ixx" />
@@ -294,6 +294,10 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Base.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Throw.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Base.Base.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Base.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Base.MetaData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory).editorconfig" />

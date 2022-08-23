@@ -236,12 +236,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.String.Manipulation.ixx">
       <Filter>String</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.CxxTypeInfo.ixx">
-      <Filter>RTTI</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.CxxTypeInfo.cpp">
-      <Filter>RTTI</Filter>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Tuple.ixx">
       <Filter>Containers</Filter>
     </ClCompile>
@@ -884,6 +878,12 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.ixx">
       <Filter>RTTI</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Cxx.TypeInfo.cpp">
+      <Filter>RTTI\Cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Cxx.TypeInfo.ixx">
+      <Filter>RTTI\Cxx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.h" />
@@ -942,6 +942,18 @@
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.h">
       <Filter>CTTI.Minimal\TypeTraits\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Base.Base.h">
+      <Filter>RTTI\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Base.h">
+      <Filter>RTTI\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.h">
+      <Filter>RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Base.MetaData.h">
+      <Filter>RTTI\Base</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
