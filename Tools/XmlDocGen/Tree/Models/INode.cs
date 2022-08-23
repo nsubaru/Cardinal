@@ -5,12 +5,23 @@
 /// </summary>
 public interface INode
 {
+    /// <summary>
+    /// Child node of tree
+    /// </summary>
     List<INode> Child { get; set; }
 
+    /// <summary>
+    /// Object type
+    /// </summary>
     EType Type { get; }
-
+    /// <summary>
+    /// Node name
+    /// </summary>
     string Name { get; }
 
+    /// <summary>
+    /// Node full name
+    /// </summary>
     string FullName { get; }
 
     /// <summary>

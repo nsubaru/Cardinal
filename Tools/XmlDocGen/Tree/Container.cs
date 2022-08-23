@@ -7,12 +7,20 @@ namespace Cardinal.Tools.XmlDocGen.Tree;
 /// </summary>
 public class Container
 {
-    //Raw XML data;
+    /// <summary>
+    /// Raw XML data
+    /// </summary>
     protected List<XmlDocGen.Models.Member> Members { get; }
 
-    //Tree of sorted data;
+    /// <summary>
+    /// Tree of sorted data
+    /// </summary>
     protected List<Models.INode> Nodes;
 
+    /// <summary>
+    /// Container object constructor
+    /// </summary>
+    /// <param name="members">XML data</param>
     public Container(List<XmlDocGen.Models.Member> members)
     {
         Members = members;

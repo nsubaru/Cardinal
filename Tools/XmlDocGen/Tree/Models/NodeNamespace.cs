@@ -5,12 +5,24 @@
 /// </summary>
 class NodeNamespace : INode
 {
+    /// <summary>
+    /// Namespace child node
+    /// </summary>
     public List<INode> Child { get; set; } = new List<INode>();
 
+    /// <summary>
+    /// Object type
+    /// </summary>
     public EType Type { get => EType.Namespace; }
 
+    /// <summary>
+    /// Node name
+    /// </summary>
     public string Name { get; }
 
+    /// <summary>
+    /// Node full name
+    /// </summary>
     public string FullName { get; }
 
     /// <summary>

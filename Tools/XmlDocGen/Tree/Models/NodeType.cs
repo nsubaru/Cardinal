@@ -7,14 +7,29 @@ namespace Cardinal.Tools.XmlDocGen.Tree.Models;
 /// </summary>
 class NodeType : INode
 {
+    /// <summary>
+    /// Type child node
+    /// </summary>
     public List<INode> Child { get; set; } = new List<INode>();
 
+    /// <summary>
+    /// Object type
+    /// </summary>
     public EType Type { get => EType.Type; }
 
+    /// <summary>
+    /// Node name
+    /// </summary>
     public string Name { get; }
 
+    /// <summary>
+    /// Summary tag data of chosen node
+    /// </summary>
     public string Description { get; }
 
+    /// <summary>
+    /// Node full name
+    /// </summary>
     public string FullName { get; }
 
     /// <summary>

@@ -5,18 +5,39 @@
 /// </summary>
 class NodeFunction : INode
 {
+    /// <summary>
+    /// Function child node
+    /// </summary>
     public List<INode> Child { get; set; } = new List<INode>();
 
+    /// <summary>
+    /// Object type
+    /// </summary>
     public EType Type { get => EType.Function; }
 
+    /// <summary>
+    /// Node name
+    /// </summary>
     public string Name { get; }
 
+    /// <summary>
+    /// Summary tag data of chosen node
+    /// </summary>
     public string Description { get; }
 
+    /// <summary>
+    /// A set of arguments from the "args" tags
+    /// </summary>
     public Dictionary<string, string> Args { get; }
 
+    /// <summary>
+    /// Returns tag data of chosen node
+    /// </summary>
     public string Returning { get; }
 
+    /// <summary>
+    /// Node full name
+    /// </summary>
     public string FullName { get; }
 
     /// <summary>

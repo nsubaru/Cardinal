@@ -7,10 +7,22 @@ namespace Cardinal.Tools.XmlDocGen.Models;
 /// </summary>
 public class Type : Member
 {
+    /// <summary>
+    /// Summary tag data of chosen object
+    /// </summary>
     public string Description { get; }
 
+    /// <summary>
+    /// A set of arguments from the "args" tags
+    /// </summary>
     public Dictionary<string, string> Args { get; }
 
+    /// <summary>
+    /// Type object constructor
+    /// </summary>
+    /// <param name="name">Name</param>
+    /// <param name="description">Description</param>
+    /// <param name="args">Arguments</param>
     public Type(string name, string description, Dictionary<string, string> args) : base(name)
     {
         Description = description;

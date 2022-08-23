@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Text;
 
 namespace Cardinal.Tools.XmlDocGen.Tree.Models;
 
@@ -9,14 +7,29 @@ namespace Cardinal.Tools.XmlDocGen.Tree.Models;
 /// </summary>
 class NodeProperty : INode
 {
+    /// <summary>
+    /// Property child node
+    /// </summary>
     public List<INode> Child { get; set; } = new List<INode>();
 
+    /// <summary>
+    /// Object type
+    /// </summary>
     public EType Type { get => EType.Property; }
 
+    /// <summary>
+    /// Node name
+    /// </summary>
     public string Name { get; }
 
+    /// <summary>
+    /// Summary tag data of chosen node
+    /// </summary>
     public string Description { get; }
 
+    /// <summary>
+    /// Node full name
+    /// </summary>
     public string FullName { get; }
 
     /// <summary>

@@ -7,8 +7,16 @@ namespace Cardinal.Tools.XmlDocGen.Models;
 /// </summary>
 public class Property : Member
 {
+    /// <summary>
+    /// Summary tag data of chosen object
+    /// </summary>
     public string Description { get; }
 
+    /// <summary>
+    /// Property-type object constructor
+    /// </summary>
+    /// <param name="name">Name</param>
+    /// <param name="description">Description</param>
     public Property(string name, string description) : base(name) => Description = description;
 
     /// <summary>

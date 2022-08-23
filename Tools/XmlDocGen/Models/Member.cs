@@ -5,8 +5,15 @@
 /// </summary>
 public abstract class Member
 {
+    /// <summary>
+    /// Object name
+    /// </summary>
     public string Name { get; protected set; }
 
+    /// <summary>
+    /// Member constructor
+    /// </summary>
+    /// <param name="name">Name</param>
     public Member(string name) => Name = name;
 
     /// <summary>

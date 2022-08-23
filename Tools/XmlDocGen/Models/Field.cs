@@ -7,8 +7,16 @@ namespace Cardinal.Tools.XmlDocGen.Models;
 /// </summary>
 public class Field : Member
 {
+    /// <summary>
+    /// Summary tag data of chosen object
+    /// </summary>
     public string Description { get; }
 
+    /// <summary>
+    /// Field-type object constructor
+    /// </summary>
+    /// <param name="name">Name</param>
+    /// <param name="description">Description</param>
     public Field(string name, string description) : base(name)
     {
         Description = description;
