@@ -175,6 +175,38 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Cxx.Public.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.CxxTypeInfo.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.CxxTypeInfo.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Dynamic.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Dynamic.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Dynamic.Serialization.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Dynamic.Type.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Exceptions.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Exceptions.DynamicCallException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Exceptions.DynamicCallInvalidArgumentsCount.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Exceptions.DynamicCallInvalidArgumentType.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Exceptions.DynamicCallInvalidTargetException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Exceptions.DynamicCtorCallException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Exceptions.DynamicCtorCallInvalidArgumentsCount.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Exceptions.DynamicCtorCallInvalidArgumentType.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Exceptions.DynamicInterfaceCastInvalidTargetException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Exceptions.GenericRttiException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Exceptions.InvalidRttiTypeException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Exceptions.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.Box.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.Collection.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.Custom.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.Dynamic.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.Enumeration.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.Object.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.Object.Constructor.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.Object.Interface.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.Object.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.Object.Method.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.Object.Property.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.Primitives.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.Struct.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.MetaData.Tuple.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.Object.Argument.ixx" />
@@ -192,6 +224,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Section.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Section.Serialization.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Section.Type.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Traveler.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Traveler.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Traveler.Type.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Box.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Collection.ixx" />
@@ -235,6 +270,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.Internals.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.StructDefintionBuild.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.ixx" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.h" />

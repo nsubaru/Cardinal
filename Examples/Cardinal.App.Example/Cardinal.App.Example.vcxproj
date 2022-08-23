@@ -191,6 +191,9 @@
     <ClCompile Update="C:\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.Object.SpecialMethods.ixx">
       <FileType>Document</FileType>
     </ClCompile>
+    <ClCompile Update="C:\Cardinal\Cardinal\Cardinal.RTTI.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
     <ClCompile Update="C:\Users\Izikiel\source\repos\Cardinal\Cardinal\Cardinal.Exceptions.AllreadyExistException.ixx">
       <FileType>Document</FileType>
     </ClCompile>
