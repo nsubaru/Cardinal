@@ -76,30 +76,20 @@ public class Container
             switch (member)
             {
                 case XmlDocGen.Models.Field fld:
-                    {
                         node.Add(new Models.NodeField(sArr[^1], fld.Description, member.Name.Split("(")[0]));
                         break;
-                    }
                 case XmlDocGen.Models.Method mth:
-                    {
                         node.Add(new Models.NodeMethod(sArr[^1], mth.Description, mth.Args, mth.Returns, member.Name.Split("(")[0]));
                         break;
-                    }
                 case XmlDocGen.Models.Property prt:
-                    {
                         node.Add(new Models.NodeProperty(sArr[^1], prt.Description, member.Name.Split("(")[0]));
                         break;
-                    }
                 case XmlDocGen.Models.Type tp:
-                    {
                         node.Add(new Models.NodeType(sArr[^1], tp.Description, member.Name.Split("(")[0]));
                         break;
-                    }
                 default:
-                    {
                         node.Add(new Models.NodeUndef(sArr[^1]));
                         break;
-                    }
             }
         }
     }
@@ -117,43 +107,14 @@ public class Container
         {
             switch (child.Type)
             {
-                case Models.EType.Namespace:
-                    {
-                        NodeParser(child, thisPathName);
-                        break;
-                    }
-                case Models.EType.Type:
-                    {
-                        SaveClass(child as Models.NodeType, thisPathName);
-                        break;
-                    }
-                case Models.EType.Field:
-                    {
-                        statics.Add(child);
-                        break;
-                    }
-                case Models.EType.Function:
-                    {
-                        break;
-                    }
-                case Models.EType.Property:
-                    {
-                        statics.Add(child);
-                        break;
-                    }
-                case Models.EType.Method:
-                    {
-                        statics.Add(child);
-                        break;
-                    }
-                case Models.EType.Undefined:
-                    {
-                        break;
-                    }
-                default:
-                    {
-                        break;
-                    }
+                case Models.EType.Namespace:    NodeParser(child, thisPathName);                    break;
+                case Models.EType.Type:         SaveClass(child as Models.NodeType, thisPathName);  break;
+                case Models.EType.Field:        statics.Add(child);                                 break;
+                case Models.EType.Function:     break;
+                case Models.EType.Property:     statics.Add(child);                                 break;
+                case Models.EType.Method:       statics.Add(child);                                 break;
+                case Models.EType.Undefined:    break;
+                default:                        break;
             }
         }
 
@@ -176,42 +137,14 @@ public class Container
         {
             switch (child.Type)
             {
-                case Models.EType.Namespace:
-                    {
-                        NodeParser(child, thisPathName);
-                        break;
-                    }
-                case Models.EType.Type:
-                    {
-                        SaveClass(child as Models.NodeType, thisPathName);
-                        break;
-                    }
-                case Models.EType.Field:
-                    {
-                        statics.Add(child);
-                        break;
-                    }
-                case Models.EType.Function:
-                    {
-                        break;
-                    }
-                case Models.EType.Property:
-                    {
-                        break;
-                    }
-                case Models.EType.Method:
-                    {
-                        statics.Add(child);
-                        break;
-                    }
-                case Models.EType.Undefined:
-                    {
-                        break;
-                    }
-                default:
-                    {
-                        break;
-                    }
+                case Models.EType.Namespace:    NodeParser(child, thisPathName);                    break;
+                case Models.EType.Type:         SaveClass(child as Models.NodeType, thisPathName);  break;
+                case Models.EType.Field:        statics.Add(child);                                 break;
+                case Models.EType.Function:     break;
+                case Models.EType.Property:     break;
+                case Models.EType.Method:       statics.Add(child);                                 break;
+                case Models.EType.Undefined:    break;
+                default:                        break;
             }
         }
 

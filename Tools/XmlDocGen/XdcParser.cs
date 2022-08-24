@@ -22,31 +22,11 @@ public class XdcParser
 
             switch (memberName[0])
             {
-                case 'M':
-                    {
-                        ParseMethod(members, member, memberName);
-                        break;
-                    }
-                case 'P':
-                    {
-                        ParseProperty(members, member, memberName);
-                        break;
-                    }
-                case 'T':
-                    {
-                        ParseType(members, member, memberName);
-                        break;
-                    }
-                case 'F':
-                    {
-                        ParseField(members, member, memberName);
-                        break;
-                    }
-                default:
-                    {
-                        Console.WriteLine($"Invalid type of member: {memberName}");
-                        break;
-                    }
+                case 'M':   ParseMethod(members, member, memberName);                   break;
+                case 'P':   ParseProperty(members, member, memberName);                 break;
+                case 'T':   ParseType(members, member, memberName);                     break;
+                case 'F':   ParseField(members, member, memberName);                    break;
+                default:    Console.WriteLine($"Invalid type of member: {memberName}"); break;
             }
         }
 
