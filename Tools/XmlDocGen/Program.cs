@@ -52,6 +52,7 @@ rootCommand.SetHandler((string xmlPath, string markdownPath) =>
 
         markdownFile.Close();
     }
+
     Console.WriteLine((DateTime.Now - start).Ticks);
 }, xmlPathOption, markdownPathOption);
 

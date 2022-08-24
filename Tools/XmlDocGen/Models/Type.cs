@@ -2,19 +2,43 @@
 
 namespace Cardinal.Tools.XmlDocGen.Models;
 
+/// <summary>
+/// Type object
+/// </summary>
 public class Type : Member
 {
+    /// <summary>
+    /// Summary tag data of chosen object
+    /// </summary>
     public string Description { get; }
+
+    /// <summary>
+    /// A set of arguments from the "args" tags
+    /// </summary>
     public Dictionary<string, string> Args { get; }
 
+    /// <summary>
+    /// Type object constructor
+    /// </summary>
+    /// <param name="name">Name</param>
+    /// <param name="description">Description</param>
+    /// <param name="args">Arguments</param>
     public Type(string name, string description, Dictionary<string, string> args) : base(name)
     {
         Description = description;
         Args = args;
     }
 
+    /// <summary>
+    /// The line transformation method into a string line
+    /// </summary>
+    /// <returns>String representation of chosen line</returns>
     public override string ToString() => $"Type: {base.ToString()} - summary: {Description}";
 
+    /// <summary>
+    /// The XML line transformation method into a markdown-style format
+    /// </summary>
+    /// <returns>String representation of transformed XML line</returns>
     public override string ToMarkdown()
     {
         var result = new StringBuilder();

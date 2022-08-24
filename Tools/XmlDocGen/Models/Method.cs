@@ -4,8 +4,14 @@ using System;
 
 namespace Cardinal.Tools.XmlDocGen.Models;
 
+/// <summary>
+/// Method-type object
+/// </summary>
 public class Method : Member
 {
+    /// <summary>
+    /// The table of name replaces
+    /// </summary>
     public static readonly Dictionary<string, string> NameReplaceTable = new()
     {
         {"op_Subscript", "operator[]" },
@@ -34,10 +40,28 @@ public class Method : Member
         { "System.SByte", "System.Byte"}
     };
 
+    /// <summary>
+    /// Summary tag data of chosen object
+    /// </summary>
     public string Description { get; }
+
+    /// <summary>
+    /// Returns tag data of chosen object
+    /// </summary>
     public string Returns { get; }
+
+    /// <summary>
+    /// A set of arguments from the "args" tags
+    /// </summary>
     public Dictionary<string, string> Args { get; }
 
+    /// <summary>
+    /// Method-type object constructor
+    /// </summary>
+    /// <param name="name">Name</param>
+    /// <param name="description">Description</param>
+    /// <param name="returns">Returns</param>
+    /// <param name="args">Args</param>
     public Method(string name, string description, string returns, Dictionary<string, string> args)
         : base(name)
     {
@@ -48,6 +72,10 @@ public class Method : Member
         Args = args;
     }
 
+    /// <summary>
+    /// The line transformation method into a string line
+    /// </summary>
+    /// <returns>String representation of chosen line</returns>
     public override string ToString()
     {
         var result = new StringBuilder($"Method: {base.ToString()}");
@@ -62,6 +90,9 @@ public class Method : Member
         return result.ToString();
     }
 
+    /// <summary>
+    /// The method-type parsing method according to its arguments
+    /// </summary>
     private void MethodParser()
     {
         foreach (var replaceItem in NameReplaceTable)
@@ -170,6 +201,10 @@ public class Method : Member
         Name = parsedMethodName[..^2] + ")";
     }
 
+    /// <summary>
+    /// The XML line transformation method into a markdown-style format
+    /// </summary>
+    /// <returns>String representation of transformed XML line</returns>
     public override string ToMarkdown()
     {
         var result = new StringBuilder();

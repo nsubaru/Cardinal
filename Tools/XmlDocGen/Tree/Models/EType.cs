@@ -1,5 +1,8 @@
 ﻿namespace Cardinal.Tools.XmlDocGen.Tree.Models;
 
+/// <summary>
+/// Field types enumeration
+/// </summary>
 public enum EType
 {
     Namespace,
