@@ -66,5 +66,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory).editorconfig" />
+    <None Include="$(MSBuildThisFileDirectory)cpp.hint" />
   </ItemGroup>
 </Project>
