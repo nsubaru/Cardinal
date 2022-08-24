@@ -245,9 +245,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.Base.ixx">
       <Filter>Time</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.ixx">
-      <Filter>Time</Filter>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.EType.ixx">
       <Filter>CTTI.Minimal</Filter>
     </ClCompile>
@@ -883,6 +880,9 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Cxx.TypeInfo.ixx">
       <Filter>RTTI\Cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.ixx">
+      <Filter>Time</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

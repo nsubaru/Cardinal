@@ -233,6 +233,12 @@
     <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.StructDefintionBuild.ixx">
       <FileType>Document</FileType>
     </ClCompile>
+    <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.StructRemoteDefinition.Time.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.CTTI.Minimal.TypeTraits.Time.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
     <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.CTTI.Minimla.TypeTraits.Pod.ixx">
       <FileType>Document</FileType>
     </ClCompile>
@@ -240,6 +246,9 @@
       <FileType>Document</FileType>
     </ClCompile>
     <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.RTTI.Cxx.TypeInfo.ixx">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Update="R:\Natsuki Rem\Cardinal\Cardinal\Cardinal\Cardinal.Time.ixx">
       <FileType>Document</FileType>
     </ClCompile>
   </ItemGroup>
