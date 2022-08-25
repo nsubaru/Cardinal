@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="Cardinal::RTTI::Record::BaseRttiTypeRecord&lt;*&gt;">
+		<DisplayString>{{ Type = {record->TypeName.Text,sub} }}</DisplayString>
+		<Expand>
+			<Item Name="Name">record->TypeName.Text,sub</Item>
+			<Item Name="TypeClass">record->TypeClass, en</Item>
+			<Item Name="FullTypeId">record->TypeId.Id</Item>
+			<Item Name="TypeClass">data->TypeClass</Item>
+		</Expand>
+	</Type>
+</AutoVisualizer>
