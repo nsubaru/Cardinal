@@ -21,8 +21,6 @@ public class XdcParser
             var memberName = member.Attributes.GetNamedItem("name").InnerText;
             try
             {
-
-
                 switch (memberName[0])
                 {
                     case 'M': ParseMethod(members, member, memberName); break;
