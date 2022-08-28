@@ -115,6 +115,12 @@
     <Filter Include="RTTI\MetaData\Object">
       <UniqueIdentifier>{a8726a7b-387d-4ef8-80b7-b03baf4f322b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Security">
+      <UniqueIdentifier>{60f367e9-d4fa-4972-9dfa-62ffa448b993}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security\SecurityDescriptor">
+      <UniqueIdentifier>{3ada351e-1235-49b4-b596-a74a7f749d95}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx">
@@ -883,6 +889,27 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.ixx">
       <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.Ace.ixx">
+      <Filter>Security\SecurityDescriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.Base.ixx">
+      <Filter>Security\SecurityDescriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.ixx">
+      <Filter>Security\SecurityDescriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.MandatoryLabel.ixx">
+      <Filter>Security\SecurityDescriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.ProcessRights.ixx">
+      <Filter>Security\SecurityDescriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.Sid.ixx">
+      <Filter>Security\SecurityDescriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.WellKnownSids.ixx">
+      <Filter>Security\SecurityDescriptor</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
