@@ -121,6 +121,12 @@
     <Filter Include="Threading\Async">
       <UniqueIdentifier>{708cd22b-4350-405c-bc08-f56721689344}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Threading\UnifiedThreadPool">
+      <UniqueIdentifier>{f10154b7-40ac-4217-846c-ef3e627408e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threading\Threadables">
+      <UniqueIdentifier>{052a124d-84e4-47cf-bfd1-4301425406e5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx">
@@ -952,6 +958,36 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Async.ixx">
       <Filter>Threading\Async</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.Base.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.Alpc.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.IO.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.Job.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.Pool.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.ScheduledTask.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.PoolBuilder.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.ScheduledTaskBuilder.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.ThreadPoolThreadContext.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

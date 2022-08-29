@@ -286,12 +286,22 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.TLS.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.TLS.Exceptions.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.TLS.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.Alpc.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.IO.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.Job.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.Pool.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.PoolBuilder.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.ScheduledTaskBuilder.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.ThreadPoolThreadContext.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.WithIsolatedContext.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.Internals.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.StructDefintionBuild.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.ScheduledTask.ixx" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.ConstString.h" />
