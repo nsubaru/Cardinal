@@ -127,6 +127,9 @@
     <Filter Include="Threading\Threadables">
       <UniqueIdentifier>{052a124d-84e4-47cf-bfd1-4301425406e5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="CoreLog">
+      <UniqueIdentifier>{0885d506-4000-4dba-96bf-d17ee1a26898}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx">
@@ -988,6 +991,45 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.ixx">
       <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.Base.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CoreLog.ixx">
+      <Filter>CoreLog</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CoreLog.Managed.ixx">
+      <Filter>CoreLog</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.Base.Internal.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableCalback.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableThread.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolAlpcTask.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolAsyncSleep.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolIoTask.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolJob.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolScheduledEvent.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolScheduledTask.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ixx">
+      <Filter>Threading\Threadables</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

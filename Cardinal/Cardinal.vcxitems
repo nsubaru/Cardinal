@@ -67,6 +67,8 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniqueAlignPtr.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniqueArrayPtr.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.UniquePtr.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CoreLog.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CoreLog.Managed.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Crc.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Crypt.Hash.Base.ixx" />
@@ -283,6 +285,17 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.SystemThreadPool.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Task.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Thread.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.Base.Internal.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableCalback.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableThread.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolAlpcTask.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolAsyncSleep.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolIoTask.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolJob.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolScheduledEvent.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolScheduledTask.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.TLS.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.TLS.Exceptions.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.TLS.ixx" />
