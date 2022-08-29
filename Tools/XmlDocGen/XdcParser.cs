@@ -19,14 +19,20 @@ public class XdcParser
         foreach (XmlNode member in xmlMembers.SelectNodes("member"))
         {
             var memberName = member.Attributes.GetNamedItem("name").InnerText;
-
-            switch (memberName[0])
+            try
             {
-                case 'M':   ParseMethod(members, member, memberName);                   break;
-                case 'P':   ParseProperty(members, member, memberName);                 break;
-                case 'T':   ParseType(members, member, memberName);                     break;
-                case 'F':   ParseField(members, member, memberName);                    break;
-                default:    Console.WriteLine($"Invalid type of member: {memberName}"); break;
+                switch (memberName[0])
+                {
+                    case 'M': ParseMethod(members, member, memberName); break;
+                    case 'P': ParseProperty(members, member, memberName); break;
+                    case 'T': ParseType(members, member, memberName); break;
+                    case 'F': ParseField(members, member, memberName); break;
+                    default: Console.WriteLine($"Invalid type of member: {memberName}"); break;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error has occured during processing the record {memberName}. Details: {ex}");
             }
         }
 
@@ -88,7 +94,7 @@ public class XdcParser
     {
         members.Add(new Models.Property(
             memberName[2..],
-            member == null ? string.Empty : member.SelectSingleNode("summary").InnerText
+            member == null ? string.Empty : member.SelectSingleNode("summary")?.InnerText ?? String.Empty
         ));
     }
 
