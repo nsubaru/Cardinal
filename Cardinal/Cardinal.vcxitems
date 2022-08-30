@@ -227,6 +227,13 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Traveler.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Traveler.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Traveler.Type.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.Ace.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.MandatoryLabel.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.ProcessRights.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.Sid.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.WellKnownSids.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Base.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Box.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Serialization.Collection.ixx" />
