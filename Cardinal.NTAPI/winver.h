@@ -14,7 +14,7 @@
 
 #ifndef VER_H
 #define VER_H
-#define REM_RT_ALLOW_INTERNAL_NT_API
+#define CARDINAL_RT_ALLOW_INTERNAL_NT_API
 #include <ntapi.h>
 
 #include <SpecStrings.h>

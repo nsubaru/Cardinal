@@ -1,1 +1,0 @@
-﻿namespace Cardinal.Launcher.API;
