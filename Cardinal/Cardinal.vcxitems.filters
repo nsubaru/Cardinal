@@ -121,6 +121,9 @@
     <Filter Include="Security\SecurityDescriptor">
       <UniqueIdentifier>{3ada351e-1235-49b4-b596-a74a7f749d95}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DependencyInjection">
+      <UniqueIdentifier>{3d7ead4d-d1b6-454d-aa41-33726b2e3b7b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx">
@@ -910,6 +913,21 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.WellKnownSids.ixx">
       <Filter>Security\SecurityDescriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.Base.ixx">
+      <Filter>DependencyInjection</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.ixx">
+      <Filter>DependencyInjection</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.DI.ixx">
+      <Filter>DependencyInjection</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.IDI.ixx">
+      <Filter>DependencyInjection</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.cpp">
+      <Filter>DependencyInjection</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
