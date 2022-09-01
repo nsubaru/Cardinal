@@ -105,6 +105,11 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.SpecialMethods.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.Minimal.TypeTraits.Object.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CTTI.TypeTraits.String.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.DI.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.IDI.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.API.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.API.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.ABI.Base.ixx" />
