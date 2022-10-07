@@ -26,5 +26,5 @@ public enum ETypes : byte
 	Union,
 	Pod,
 	Custom,
-	Undefine = byte.MaxValue
+	Undefined = byte.MaxValue
 }

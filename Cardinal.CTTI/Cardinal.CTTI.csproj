@@ -2,9 +2,11 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+	  <TargetFramework>netstandard2.0</TargetFramework>
+	  <LangVersion>10</LangVersion>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+	  <RuntimeIdentifiers>win10-x64;win-x64</RuntimeIdentifiers>
   </PropertyGroup>
 
 </Project>

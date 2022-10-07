@@ -59,7 +59,7 @@ public unsafe class RttiTypeRecord : IComparable<RttiTypeRecord>
     /// <summary>
     /// Type category
     /// </summary>
-    public ETypes TypeClass => record == null ? ETypes.Undefine : record->TypeClass;
+    public ETypes TypeClass => record == null ? ETypes.Undefined : record->TypeClass;
 
     /// <summary>
     /// Type size in memory

@@ -10,7 +10,7 @@ internal unsafe static class Utils
 	/// <param name="what">Array which will search</param>
 	/// <param name="offset">Search start position</param>
 	/// <returns>First occurs of "what" array</returns>
-	public static SizeT BinnarySearchInBlob(Byte* blob, SizeT len, Byte[] what, SizeT offset)
+	public static SizeT BinarySearchInBlob(Byte* blob, SizeT len, Byte[] what, SizeT offset)
 	{
 		for (SizeT i = offset; i < len - (SizeT)what.Length; i++)
 		{
