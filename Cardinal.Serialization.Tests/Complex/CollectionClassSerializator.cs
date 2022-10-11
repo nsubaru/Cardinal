@@ -1,49 +1,20 @@
-﻿using Cardinal.CTTI.MetaData;
+﻿using Cardinal.Serialization.Tests;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.IO;
+using System.Linq;
+using System.Text;
 using Xunit;
 
 namespace Cardinal.CTTI.Tests.Complex;
 
-public class CollectionClassSerializator
+public class CollectionClassSerializator : BaseTest
 {
-    static SerializationTypeRecord LinkedListSerializationTypeRecord = new SerializationTypeRecord
-    {
-        ClrType = typeof(LinkedList<Int32>),
-        CardinalKernelTypeShema = new TypeMetaDataRecord
-        {
-            NestedTypes = new List<TypeMetaDataRecord>
-            {
-                new CardinalBinnarySerializator().SerializationShema.Where(shema => shema.CardinalKernelTypeName == "Cardinal::Int32").First().CardinalKernelTypeShema
-            },
-            SizeOfSize = sizeof(ulong),
-            Type = ETypes.Collection,
-            TypeName = "Cardinal::Containers::List<Cardinal::Int32>",
-            StaticSize = 0,
-            AdditionalInfo = ""
-        }
-    };
-
-    static SerializationTypeRecord ListSerializationTypeRecord = new SerializationTypeRecord
-    {
-        ClrType = typeof(List<Int32>),
-        CardinalKernelTypeShema = new TypeMetaDataRecord
-        {
-            NestedTypes = new List<TypeMetaDataRecord>
-            {
-                new CardinalBinnarySerializator().SerializationShema.Where(shema => shema.CardinalKernelTypeName == "Cardinal::Int32").First().CardinalKernelTypeShema
-            },
-            SizeOfSize = sizeof(ulong),
-            Type = ETypes.Collection,
-            TypeName = "Cardinal::Containers::Array<Cardinal::Int32>",
-            StaticSize = 0,
-            AdditionalInfo = ""
-        }
-    };
-
     [Fact]
     public void SerializeLinkedListIntsType_SizeCorrect()
     {
-        var serializator = new CardinalBinnarySerializator();
-        serializator.RegisterType(LinkedListSerializationTypeRecord);
+        var serializator = new CardinalBinarySerializator(rttiSection);
 
         var value = new LinkedList<Int32>();
         for (int i = 0; i < 5; i++)
@@ -58,14 +29,13 @@ public class CollectionClassSerializator
         stream.Position = 0;
         serializator.Deserialize(stream);
 
-        Assert.Equal(((sizeof(char) * "Cardinal::Containers::List<Cardinal::Int32>\0".Length) + sizeof(ulong)) + valueSize, stream.Length);
+        Assert.Equal(TestUtils.GetFullSize(valueSize), stream.Length);
     }
 
     [Fact]
     public void SerializeListIntsType_SizeCorrect()
     {
-        var serializator = new CardinalBinnarySerializator();
-        serializator.RegisterType(ListSerializationTypeRecord);
+        var serializator = new CardinalBinarySerializator(rttiSection);
 
         var value = new List<Int32>();
         for (int i = 0; i < 5; i++)
@@ -80,14 +50,13 @@ public class CollectionClassSerializator
         stream.Position = 0;
         serializator.Deserialize(stream);
 
-        Assert.Equal(((sizeof(char) * "Cardinal::Containers::Array<Cardinal::Int32>\0".Length) + sizeof(ulong)) + valueSize, stream.Length);
+        Assert.Equal(TestUtils.GetFullSize(valueSize), stream.Length);
     }
 
     [Fact]
     public void SerializeLinkedListIntsType_ValueCorrect()
     {
-        var serializator = new CardinalBinnarySerializator();
-        serializator.RegisterType(LinkedListSerializationTypeRecord);
+        var serializator = new CardinalBinarySerializator(rttiSection);
 
         var value = new LinkedList<Int32>();
         for (int i = 0; i < 5; i++)
@@ -99,15 +68,15 @@ public class CollectionClassSerializator
 
         serializator.Serialize(stream, value);
         stream.Position = 0;
-        LinkedList<Int32> deserializaedValue = (LinkedList<Int32>)serializator.Deserialize(stream);
-        Assert.Equal(value, deserializaedValue);
+        LinkedList<Int32> deserializedValue = (LinkedList<Int32>)serializator.Deserialize(stream);
+        Assert.Equal(value, deserializedValue);
     }
 
     [Fact]
     public void SerializeListIntsType_ValueCorrect()
     {
-        var serializator = new CardinalBinnarySerializator();
-        serializator.RegisterType(ListSerializationTypeRecord);
+        var serializator = new CardinalBinarySerializator(rttiSection);
+
 
         var value = new List<Int32>();
         for (int i = 0; i < 5; i++)
@@ -119,7 +88,7 @@ public class CollectionClassSerializator
 
         serializator.Serialize(stream, value);
         stream.Position = 0;
-        List<Int32> deserializaedValue = (List<Int32>)serializator.Deserialize(stream);
-        Assert.Equal(value, deserializaedValue);
+        List<Int32> deserializedValue = (List<Int32>)serializator.Deserialize(stream);
+        Assert.Equal(value, deserializedValue);
     }
 }

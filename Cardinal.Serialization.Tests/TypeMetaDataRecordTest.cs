@@ -1,3 +1,4 @@
+﻿using Cardinal.CTTI;
 using Cardinal.CTTI.MetaData;
 using System;
 using System.Collections.Generic;
@@ -361,7 +362,7 @@ public class TypeMetaDataRecordTest
 .Select(c => c.ToString())
 .Aggregate((a, b) => a + b);
 
-        var expected =
+        var expected = 
 @"{Type:Cardinal::Containers::Tuple<Cardinal::Containers::Dictionary<Cardinal::Containers::List<Cardinal::Containers::FixedArray<10,Cardinal::Int16>>>,Cardinal::Containers::PriorityQueue<Cardinal::Int16,Cardinal::String>,Cardinal::Boolean>
 TypeClass:Tuple
 ObjectSize:88
@@ -464,7 +465,7 @@ AdditionalInfo:
         Assert.Equal(
             new string(expected.ToCharArray()
                 .Where(c => !Char.IsWhiteSpace(c))
-                .ToArray()),
+                .ToArray()), 
             new string(record.ToString("C").ToCharArray()
                 .Where(c => !Char.IsWhiteSpace(c))
                 .ToArray())
@@ -581,7 +582,7 @@ AdditionalInfo:
         Assert.Equal(
             new string(typeMetaData.ToCharArray()
                 .Where(c => !Char.IsWhiteSpace(c))
-                .ToArray()),
+                .ToArray()), 
             new string(record.ToString("S").ToCharArray()
                 .Where(c => !Char.IsWhiteSpace(c))
                 .ToArray())
@@ -698,7 +699,7 @@ AdditionalInfo:
         Assert.Equal(
             new string(typeMetaData.ToCharArray()
                 .Where(c => !Char.IsWhiteSpace(c))
-                .ToArray()),
+                .ToArray()), 
             new string(record.ToString("L").ToCharArray()
                 .Where(c => !Char.IsWhiteSpace(c))
                 .ToArray())

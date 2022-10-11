@@ -1,51 +1,27 @@
-﻿using Cardinal.CTTI.MetaData;
+﻿using Cardinal.Serialization.Tests;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
 using Xunit;
 
 namespace Cardinal.CTTI.Tests.Complex;
 
-public class AssociableCollectionClassSerializator
+public class AssociableCollectionClassSerializator : BaseTest
 {
-    static TypeMetaDataRecord PairShema = new TypeMetaDataRecord
-    {
-        NestedTypes = new List<TypeMetaDataRecord>
-            {
-                new CardinalBinnarySerializator().SerializationShema.Where(shema => shema.CardinalKernelTypeName == "Cardinal::Int32").First().CardinalKernelTypeShema,
-                new CardinalBinnarySerializator().SerializationShema.Where(shema => shema.CardinalKernelTypeName == "Cardinal::Int32").First().CardinalKernelTypeShema
-            },
-        SizeOfSize = sizeof(ulong),
-        Type = ETypes.Pair,
-        TypeName = "Cardinal::Containers::Pair<Cardinal::Int32, Cardinal::Int32>",
-        StaticSize = 0,
-        AdditionalInfo = ""
-    };
-
-    static TypeMetaDataRecord MapShema = new TypeMetaDataRecord
-    {
-        NestedTypes = new List<TypeMetaDataRecord>
-        {
-            PairShema
-        },
-        SizeOfSize = sizeof(ulong),
-        Type = ETypes.AssociableCollection,
-        TypeName = "Cardinal::Containers::Map<Cardinal::Int32, Cardinal::Int32>",
-        StaticSize = 0,
-        AdditionalInfo = ""
-    };
-
-    static SerializationTypeRecord DictionarySerializationTypeRecord = new SerializationTypeRecord
-    {
-        ClrType = new CardinalBinnarySerializator().ResolveGenericTypeByTypeMetaData(MapShema),
-        CardinalKernelTypeShema = MapShema
-    };
-
     [Fact]
     public void SerializeMapType_SizeCorrect()
     {
-        var serializator = new CardinalBinnarySerializator();
-        serializator.RegisterType(DictionarySerializationTypeRecord);
+        var serializator = new CardinalBinarySerializator(rttiSection);
 
-        var value = new Dictionary<Int32, Int32> { { 1, 1 }, { 2, 2 }, { 3, 3 }, { 4, 4 }, { 5, 5 } };
-        var valueSize = sizeof(UInt64) + (value.Count * (sizeof(Int32) + sizeof(Int32)));
+        var value = new Dictionary<Int32, string> { { 1, "text" }, { 2, "text" }, { 3, "text" }, { 4, "text" }, { 5, "text" } };
+        var valueSize = sizeof(UInt64) + (value.Count * sizeof(Int32));
+
+        foreach (var item in value)
+        {
+            valueSize += TestUtils.GetCorrectStringSize(item.Value);
+        }
 
         var stream = new MemoryStream();
 
@@ -53,20 +29,19 @@ public class AssociableCollectionClassSerializator
         stream.Position = 0;
         serializator.Deserialize(stream);
 
-        Assert.Equal(((sizeof(char) * $"{MapShema.TypeName}\0".Length) + sizeof(ulong)) + valueSize, stream.Length);
+        Assert.Equal(TestUtils.GetFullSize(valueSize), stream.Length);
     }
 
     [Fact]
     public void SerializeMapType_ValueCorrect()
     {
-        var serializator = new CardinalBinnarySerializator();
-        serializator.RegisterType(DictionarySerializationTypeRecord);
-        var value = new Dictionary<Int32, Int32> { { 1, 1 }, { 2, 2 }, { 3, 3 }, { 4, 4 }, { 5, 5 } };
+        var serializator = new CardinalBinarySerializator(rttiSection);
+        var value = new Dictionary<Int32, string> { { 1, "text" }, { 2, "text" }, { 3, "text" }, { 4, "text" }, { 5, "text" } };
 
         var stream = new MemoryStream();
         serializator.Serialize(stream, value);
         stream.Position = 0;
-        var deserializaedValue = (Dictionary<Int32, Int32>)serializator.Deserialize(stream);
-        Assert.Equal(value.AsEnumerable(), deserializaedValue.AsEnumerable());
+        var deserializedValue = (Dictionary<Int32, string>)serializator.Deserialize(stream);
+        Assert.Equal(value.AsEnumerable(), deserializedValue.AsEnumerable());
     }
 }
