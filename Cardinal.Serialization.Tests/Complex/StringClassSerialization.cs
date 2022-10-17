@@ -1,18 +1,22 @@
-﻿using Xunit;
+﻿using Cardinal.Serialization.Tests;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
+using Xunit;
 
 namespace Cardinal.CTTI.Tests.Complex;
 
-public class StringClassSerialization
+public class StringClassSerialization : BaseTest
 {
     [Fact]
     public void SerializeStringType_SizeCorrect()
     {
-        var serializator = new CardinalBinnarySerializator();
+        var text = "string";
+        var serializator = new CardinalBinarySerializator(rttiSection);
         var stream = new MemoryStream();
-        serializator.Serialize(stream, "string");
-        stream.Position = 0;
-        serializator.Deserialize(stream);
-        Assert.Equal(((sizeof(char) * "Cardinal::String\0".Length) + sizeof(ulong)) + (sizeof(char) * "string\0".Length) + sizeof(ulong), stream.Length);
+        serializator.Serialize(stream, text);
+        Assert.Equal(TestUtils.GetFullSize((text.Length + 1) * sizeof(char) + sizeof(ulong)), stream.Length);
     }
 
     [Theory]
@@ -23,11 +27,11 @@ public class StringClassSerialization
     [InlineData("текст1text")]
     public void SerializeStringType_ValueCorrect(string value)
     {
-        var serializator = new CardinalBinnarySerializator();
+        var serializator = new CardinalBinarySerializator(rttiSection);
         var stream = new MemoryStream();
         serializator.Serialize(stream, value);
         stream.Position = 0;
-        string deserializaedValue = (string)serializator.Deserialize(stream);
-        Assert.Equal(value, deserializaedValue);
+        string deserializedValue = (string)serializator.Deserialize(stream);
+        Assert.Equal(value, deserializedValue);
     }
 }

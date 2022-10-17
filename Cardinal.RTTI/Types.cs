@@ -104,6 +104,33 @@ public unsafe struct UniversalTypeIdentificator
 
 	[FieldOffset(4)]
 	public ID TypeId;
+
+    public override int GetHashCode()
+    {
+        return base.GetHashCode();
+    }
+
+    public override bool Equals(object? obj)
+    {
+        var item = (UniversalTypeIdentificator?)obj;
+
+        return this == item;
+    }
+
+    public override string ToString()
+    {
+        return this.Id.ToString();
+    }
+
+    static public bool operator ==(UniversalTypeIdentificator? item1, UniversalTypeIdentificator? item2)
+    {
+        return item1?.Id == item2?.Id;
+    }
+
+    static public bool operator !=(UniversalTypeIdentificator? item1, UniversalTypeIdentificator? item2)
+    {
+        return item1?.Id == item2?.Id;
+    }
 }
 
 [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode, Pack = 0)]
