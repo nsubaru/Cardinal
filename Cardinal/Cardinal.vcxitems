@@ -278,7 +278,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Internal.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.IThreadable.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.ixx" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.LockPrimitives.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.ScopedLock.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.SRWLock.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.SynchronizeEvent.ixx" />

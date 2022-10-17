@@ -932,9 +932,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Delegate.ixx">
       <Filter>Containers</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.LockPrimitives.ixx">
-      <Filter>Threading</Filter>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.ScopedLock.ixx">
       <Filter>Threading</Filter>
     </ClCompile>
