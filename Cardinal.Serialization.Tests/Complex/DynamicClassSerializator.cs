@@ -1,64 +1,47 @@
-﻿using Cardinal.CTTI.MetaData;
+﻿using Cardinal.Serialization.Tests;
+using System;
+using System.Collections.Generic;
+using System.Dynamic;
+using System.IO;
+using System.Linq;
+using System.Text;
 using Xunit;
 
-namespace Cardinal.CTTI.Tests.Complex;
-
-public class DynamicClassSerializator
+namespace Cardinal.CTTI.Tests.Complex
 {
-    static readonly TypeMetaDataRecord DynamicObjectShema = new TypeMetaDataRecord
+    public class DynamicClassSerializator : BaseTest
     {
-        NestedTypes = new List<TypeMetaDataRecord>(),
-        SizeOfSize = sizeof(ulong),
-        Type = ETypes.Dynamic,
-        TypeName = "Cardinal::Containers::Dynamic",
-        StaticSize = 0,
-        AdditionalInfo = ""
-    };
+        [Fact]
+        public void SerializeArrayIntsType_SizeCorrect()
+        {
+            var serializator = new CardinalBinarySerializator(rttiSection);
 
-    static SerializationTypeRecord DynamicObjectTypeRecord = new SerializationTypeRecord
-    {
-        ClrType = new CardinalBinnarySerializator().ResolveGenericTypeByTypeMetaData(DynamicObjectShema),
-        CardinalKernelTypeShema = DynamicObjectShema
-    };
+            var value = new DynamicObject(10);
 
-    [Fact]
-    public void SerializeArrayIntsType_SizeCorrect()
-    {
-        var serializator = new CardinalBinnarySerializator();
-        serializator.RegisterType(DynamicObjectTypeRecord);
+            var valueSize = TestUtils.GetFullSize(sizeof(Int32));
 
-        var value = new DynamicObject(10);
+            var stream = new MemoryStream();
 
-        var valueSize =
-            ((sizeof(char) *
-                $"{serializator.SerializationShema.First(schema => schema.ClrType == typeof(Int32)).CardinalKernelTypeName}\0".Length)) +
-            sizeof(Int32) +
-            sizeof(UInt64);
+            serializator.Serialize(stream, value);
+            stream.Position = 0;
+            serializator.Deserialize(stream);
 
-        var stream = new MemoryStream();
+            Assert.Equal(TestUtils.GetFullSize(valueSize), stream.Length);
+        }
 
-        serializator.Serialize(stream, value);
-        stream.Position = 0;
-        serializator.Deserialize(stream);
+        [Fact]
+        public void SerializeArrayIntsType_ValueCorrect()
+        {
+            var serializator = new CardinalBinarySerializator(rttiSection);
 
-        Assert.Equal(
-            (sizeof(char) * $"{DynamicObjectTypeRecord.CardinalKernelTypeName}\0".Length) + sizeof(ulong) + valueSize,
-            stream.Length);
-    }
+            var value = new DynamicObject(10);
 
-    [Fact]
-    public void SerializeArrayIntsType_ValueCorrect()
-    {
-        var serializator = new CardinalBinnarySerializator();
-        serializator.RegisterType(DynamicObjectTypeRecord);
+            var stream = new MemoryStream();
 
-        var value = new DynamicObject(10);
-
-        var stream = new MemoryStream();
-
-        serializator.Serialize(stream, value);
-        stream.Position = 0;
-        var deserializaedValue = (DynamicObject)serializator.Deserialize(stream);
-        Assert.Equal(value.Value, deserializaedValue.Value);
+            serializator.Serialize(stream, value);
+            stream.Position = 0;
+            var deserializedValue = (DynamicObject)serializator.Deserialize(stream);
+            Assert.Equal(value.Value, deserializedValue.Value);
+        }
     }
 }

@@ -56,9 +56,9 @@ public unsafe class RTTISection : IDisposable
     {
         var magicNumer = Encoding.ASCII.GetBytes(MagicNumer.ToCharArray());
 
-        var magicNumberOffset = Utils.Utils.BinnarySearchInBlob(rawArrayPtr, rawArrayLen, magicNumer, 0);
+        var magicNumberOffset = Utils.Utils.BinarySearchInBlob(rawArrayPtr, rawArrayLen, magicNumer, 0);
 
-        headerOffset = Utils.Utils.BinnarySearchInBlob(rawArrayPtr, rawArrayLen, magicNumer, magicNumberOffset + 1);
+        headerOffset = Utils.Utils.BinarySearchInBlob(rawArrayPtr, rawArrayLen, magicNumer, magicNumberOffset + 1);
 
         if (magicNumberOffset == SizeT.MaxValue || headerOffset == SizeT.MaxValue)
             throw new InvalidDataException();

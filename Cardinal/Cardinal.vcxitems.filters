@@ -130,6 +130,15 @@
     <Filter Include="CoreLog">
       <UniqueIdentifier>{0885d506-4000-4dba-96bf-d17ee1a26898}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Security">
+      <UniqueIdentifier>{60f367e9-d4fa-4972-9dfa-62ffa448b993}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security\SecurityDescriptor">
+      <UniqueIdentifier>{3ada351e-1235-49b4-b596-a74a7f749d95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DependencyInjection">
+      <UniqueIdentifier>{3d7ead4d-d1b6-454d-aa41-33726b2e3b7b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx">
@@ -1027,6 +1036,42 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ixx">
       <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.Ace.ixx">
+      <Filter>Security\SecurityDescriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.Base.ixx">
+      <Filter>Security\SecurityDescriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.ixx">
+      <Filter>Security\SecurityDescriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.MandatoryLabel.ixx">
+      <Filter>Security\SecurityDescriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.ProcessRights.ixx">
+      <Filter>Security\SecurityDescriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.Sid.ixx">
+      <Filter>Security\SecurityDescriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.WellKnownSids.ixx">
+      <Filter>Security\SecurityDescriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.Base.ixx">
+      <Filter>DependencyInjection</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.ixx">
+      <Filter>DependencyInjection</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.DI.ixx">
+      <Filter>DependencyInjection</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.IDI.ixx">
+      <Filter>DependencyInjection</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.cpp">
+      <Filter>DependencyInjection</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

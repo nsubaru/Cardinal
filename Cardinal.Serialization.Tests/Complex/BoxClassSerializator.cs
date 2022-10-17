@@ -1,34 +1,19 @@
-﻿using Cardinal.CTTI.MetaData;
+﻿using Cardinal.Serialization.Tests;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
 using Xunit;
 
 namespace Cardinal.CTTI.Tests.Complex;
 
-public class BoxClassSerializator
+public class BoxClassSerializator : BaseTest
 {
-    static readonly TypeMetaDataRecord FixedLazyShema = new TypeMetaDataRecord
-    {
-        NestedTypes = new List<TypeMetaDataRecord>
-            {
-                new CardinalBinnarySerializator().SerializationShema.Where(shema => shema.CardinalKernelTypeName == "Cardinal::Int32").First().CardinalKernelTypeShema
-            },
-        SizeOfSize = sizeof(ulong),
-        Type = ETypes.Box,
-        TypeName = "Cardinal::Lazy<Cardinal::Int32>",
-        StaticSize = 0,
-        AdditionalInfo = ""
-    };
-
-    static SerializationTypeRecord LazyTypeRecord = new SerializationTypeRecord
-    {
-        ClrType = new CardinalBinnarySerializator().ResolveGenericTypeByTypeMetaData(FixedLazyShema),
-        CardinalKernelTypeShema = FixedLazyShema
-    };
-
     [Fact]
     public void SerializeArrayIntsType_SizeCorrect()
     {
-        var serializator = new CardinalBinnarySerializator();
-        serializator.RegisterType(LazyTypeRecord);
+        var serializator = new CardinalBinarySerializator(rttiSection);
 
         var value = new Lazy<Int32>(() => 10);
 
@@ -40,14 +25,13 @@ public class BoxClassSerializator
         stream.Position = 0;
         serializator.Deserialize(stream);
 
-        Assert.Equal(((sizeof(char) * $"{LazyTypeRecord.CardinalKernelTypeName}\0".Length) + sizeof(ulong)) + valueSize, stream.Length);
+        Assert.Equal(TestUtils.GetFullSize(valueSize), stream.Length);
     }
 
     [Fact]
     public void SerializeArrayIntsType_ValueCorrect()
     {
-        var serializator = new CardinalBinnarySerializator();
-        serializator.RegisterType(LazyTypeRecord);
+        var serializator = new CardinalBinarySerializator(rttiSection);
 
         var value = new Lazy<Int32>(() => 10);
 
@@ -55,7 +39,7 @@ public class BoxClassSerializator
 
         serializator.Serialize(stream, value);
         stream.Position = 0;
-        var deserializaedValue = (Lazy<Int32>)serializator.Deserialize(stream);
-        Assert.Equal(value.Value, deserializaedValue.Value);
+        var deserializedValue = (Lazy<Int32>)serializator.Deserialize(stream);
+        Assert.Equal(value.Value, deserializedValue.Value);
     }
 }
