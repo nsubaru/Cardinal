@@ -115,6 +115,21 @@
     <Filter Include="RTTI\MetaData\Object">
       <UniqueIdentifier>{a8726a7b-387d-4ef8-80b7-b03baf4f322b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Threading\Exceptions">
+      <UniqueIdentifier>{7321df3b-c3cd-4121-8d67-056ea2aa17e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threading\Async">
+      <UniqueIdentifier>{708cd22b-4350-405c-bc08-f56721689344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threading\UnifiedThreadPool">
+      <UniqueIdentifier>{f10154b7-40ac-4217-846c-ef3e627408e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threading\Threadables">
+      <UniqueIdentifier>{052a124d-84e4-47cf-bfd1-4301425406e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLog">
+      <UniqueIdentifier>{0885d506-4000-4dba-96bf-d17ee1a26898}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Security">
       <UniqueIdentifier>{60f367e9-d4fa-4972-9dfa-62ffa448b993}</UniqueIdentifier>
     </Filter>
@@ -892,6 +907,135 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Time.ixx">
       <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Context.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.IThreadable.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.SynchronizeEvent.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Exceptions.Base.ixx">
+      <Filter>Threading\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Exceptions.DeadlockExpectedException.ixx">
+      <Filter>Threading\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Exceptions.InvalidThreadException.ixx">
+      <Filter>Threading\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Exceptions.InvalidThreadObjException.ixx">
+      <Filter>Threading\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Exceptions.ThreadableAlredyStartedException.ixx">
+      <Filter>Threading\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Exceptions.ixx">
+      <Filter>Threading\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Callback.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Containers.Delegate.ixx">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.ScopedLock.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Task.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.SystemThreadPool.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Thread.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.WithIsolatedContext.ixx">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Async.Base.ixx">
+      <Filter>Threading\Async</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Async.Awaitable.ixx">
+      <Filter>Threading\Async</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Async.Sleep.ixx">
+      <Filter>Threading\Async</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Async.ixx">
+      <Filter>Threading\Async</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.Base.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.Alpc.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.IO.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.Job.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.Pool.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.ScheduledTask.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.PoolBuilder.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.ScheduledTaskBuilder.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.ThreadPoolThreadContext.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.UnifiedThreadPool.ixx">
+      <Filter>Threading\UnifiedThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.Base.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CoreLog.ixx">
+      <Filter>CoreLog</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.CoreLog.Managed.ixx">
+      <Filter>CoreLog</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.Base.Internal.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableCalback.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableThread.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolAlpcTask.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolAsyncSleep.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolIoTask.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolJob.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolScheduledEvent.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ThreadableUnifiedThreadPoolScheduledTask.ixx">
+      <Filter>Threading\Threadables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Threading.Threadables.ixx">
+      <Filter>Threading\Threadables</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Security.SecurityDescriptor.Ace.ixx">
       <Filter>Security\SecurityDescriptor</Filter>

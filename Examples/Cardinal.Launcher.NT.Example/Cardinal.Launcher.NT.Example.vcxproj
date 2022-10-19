@@ -122,6 +122,7 @@
       <CallingConvention>VectorCall</CallingConvention>
       <DisableSpecificWarnings>6262</DisableSpecificWarnings>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
     </ClCompile>
     <Link>
       <SubSystem>Native</SubSystem>
@@ -133,6 +134,7 @@
       <EntryPointSymbol>NtProcessStartup</EntryPointSymbol>
       <BaseAddress>0x500000000</BaseAddress>
       <AdditionalOptions>/ignore:4281 %(AdditionalOptions)</AdditionalOptions>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
