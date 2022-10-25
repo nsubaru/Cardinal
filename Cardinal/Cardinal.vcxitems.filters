@@ -139,6 +139,27 @@
     <Filter Include="DependencyInjection">
       <UniqueIdentifier>{3d7ead4d-d1b6-454d-aa41-33726b2e3b7b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{b4c62eb6-9c3e-43b1-bef4-b81f2e8c0717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO\Exceptions">
+      <UniqueIdentifier>{730784cd-d606-4e0c-ac32-b50f8c2f9260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO\FS">
+      <UniqueIdentifier>{153852bc-2c66-4c26-981c-2c237a412fea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO\IPC">
+      <UniqueIdentifier>{6856c90e-7f38-4344-92fb-51dc26653fff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO\FS\Exceptions">
+      <UniqueIdentifier>{ffe70dfd-5dbc-46fb-bba8-60a8d1926af5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO\IPC\Pipes">
+      <UniqueIdentifier>{7e1245ab-299d-4e9c-9073-e1cbe604fe57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO\IPC\Pipes\Exceptions">
+      <UniqueIdentifier>{7443b6e0-63e5-4b65-b28d-c5b3b98b1567}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.Internals.ixx">
@@ -1073,6 +1094,117 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.DependencyInjection.cpp">
       <Filter>DependencyInjection</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.File.cpp">
+      <Filter>IO\FS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Base.cpp">
+      <Filter>IO\FS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.AsyncFile.cpp">
+      <Filter>IO\FS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.NamedPipe.cpp">
+      <Filter>IO\IPC\Pipes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.AsyncNamedPipe.cpp">
+      <Filter>IO\IPC\Pipes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.Exceptions.Base.ixx">
+      <Filter>IO\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.Exceptions.ixx">
+      <Filter>IO\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.Exceptions.OperationCancelledException.ixx">
+      <Filter>IO\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.Base.ixx">
+      <Filter>IO\FS\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.CantReadMoreDataThanInExistInFileException.ixx">
+      <Filter>IO\FS\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.CantWriteDataAfterEofException.ixx">
+      <Filter>IO\FS\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.DirectoryIsNotFileException.ixx">
+      <Filter>IO\FS\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileBusyException.ixx">
+      <Filter>IO\FS\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileExistException.ixx">
+      <Filter>IO\FS\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileIsCoruptedException.ixx">
+      <Filter>IO\FS\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileModeNoSupportedByOperationException.ixx">
+      <Filter>IO\FS\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileNotExistException.ixx">
+      <Filter>IO\FS\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FsIoException.ixx">
+      <Filter>IO\FS\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.GenericFileException.ixx">
+      <Filter>IO\FS\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.ixx">
+      <Filter>IO\FS\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.AsyncFile.ixx">
+      <Filter>IO\FS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Base.ixx">
+      <Filter>IO\FS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.File.ixx">
+      <Filter>IO\FS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.ixx">
+      <Filter>IO\FS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.Exceptions.Base.ixx">
+      <Filter>IO\IPC\Pipes\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.Exceptions.ixx">
+      <Filter>IO\IPC\Pipes\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.Exceptions.InvalidPipeException.ixx">
+      <Filter>IO\IPC\Pipes\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.Exceptions.InvalidPipeModeException.ixx">
+      <Filter>IO\IPC\Pipes\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.Exceptions.PipeBrokenException.ixx">
+      <Filter>IO\IPC\Pipes\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.AsyncNamedPipe.ixx">
+      <Filter>IO\IPC\Pipes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.Base.ixx">
+      <Filter>IO\IPC\Pipes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.ixx">
+      <Filter>IO\IPC\Pipes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.NamedPipe.ixx">
+      <Filter>IO\IPC\Pipes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Base.ixx">
+      <Filter>IO\IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.ixx">
+      <Filter>IO\IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.Base.ixx">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.ixx">
+      <Filter>IO</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Cardinal.Definitions.h" />
@@ -1300,6 +1432,42 @@
     </Natvis>
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.RttiTypeRecord.natvis">
       <Filter>RTTI\Record</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.Exceptions.Base.natvis">
+      <Filter>IO\Exceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.Exceptions.OperationCancelledException.natvis">
+      <Filter>IO\Exceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.CantReadMoreDataThanInExistInFileException.natvis">
+      <Filter>IO\FS\Exceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.CantWriteDataAfterEofException.natvis">
+      <Filter>IO\FS\Exceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.DirectoryIsNotFileException.natvis">
+      <Filter>IO\FS\Exceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileBusyException.natvis">
+      <Filter>IO\FS\Exceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileExistException.natvis">
+      <Filter>IO\FS\Exceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileIsCoruptedException.natvis">
+      <Filter>IO\FS\Exceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileModeNoSupportedByOperationException.natvis">
+      <Filter>IO\FS\Exceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileNotExistException.natvis">
+      <Filter>IO\FS\Exceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FsIoException.natvis">
+      <Filter>IO\FS\Exceptions</Filter>
+    </Natvis>
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.GenericFileException.natvis">
+      <Filter>IO\FS\Exceptions</Filter>
     </Natvis>
   </ItemGroup>
 </Project>

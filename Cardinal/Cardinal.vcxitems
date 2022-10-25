@@ -157,6 +157,52 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.Optional.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.Result.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Functionality.UnionType.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.Exceptions.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.Exceptions.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.Exceptions.OperationCancelledException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.AsyncFile.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.AsyncFile.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Base.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.CantReadMoreDataThanInExistInFileException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.CantWriteDataAfterEofException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.DirectoryIsNotFileException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileBusyException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileExistException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileIsCoruptedException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileModeNoSupportedByOperationException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileNotExistException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FsIoException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.GenericFileException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.File.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.File.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.AsyncNamedPipe.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.AsyncNamedPipe.ixx">
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ShowIncludes>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.Exceptions.Base.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.Exceptions.InvalidPipeException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.Exceptions.InvalidPipeModeException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.Exceptions.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.Exceptions.PipeBrokenException.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.NamedPipe.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.IPC.Pipes.NamedPipe.ixx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.IO.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Logger.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Logger.StaticLogger.ixx" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Cardinal.Logger.StaticLogger.Managed.ixx" />
@@ -401,6 +447,18 @@
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.InvalidTypeException.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.KeyAllreadyExistException.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.Exceptions.Base.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.Exceptions.OperationCancelledException.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.CantReadMoreDataThanInExistInFileException.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.CantWriteDataAfterEofException.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.DirectoryIsNotFileException.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileBusyException.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileExistException.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileIsCoruptedException.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileModeNoSupportedByOperationException.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FileNotExistException.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.FsIoException.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.IO.FS.Exceptions.GenericFileException.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.RTTI.Record.RttiTypeRecord.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.StringView.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)Cardinal.Exceptions.NotFoundException.natvis" />
