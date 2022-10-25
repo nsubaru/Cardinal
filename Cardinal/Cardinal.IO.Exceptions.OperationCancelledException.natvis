@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="Cardinal::IO::OperationCancelledException" Inheritable="true">
+		<DisplayString>{{Exception: {exceptionName.str, na}}}</DisplayString>
+		<Expand>
+			<Item Name="Name">exceptionName.str, su</Item>
+			<Synthetic Name="Location">
+				<DisplayString>{location.SourceLocation.FileName.str, sub}:{location.SourceLocation.Line} in thread {location.ThreadID}</DisplayString>
+				<Expand>
+					<ExpandedItem>location</ExpandedItem>
+					<Item Name="StackTrace">stackTrace</Item>
+				</Expand>
+			</Synthetic>
+		</Expand>
+	</Type>
+</AutoVisualizer>
